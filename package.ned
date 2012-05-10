@@ -1,0 +1,3 @@
+package homenet;
+
+@license(LGPL);
