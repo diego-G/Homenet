@@ -2,7 +2,7 @@
 # OMNeT++/OMNEST Makefile for Homenet
 #
 # This file was generated with the command:
-#  opp_makemake -f --deep -O out -I../Inet/src/linklayer/ethernet -I../Inet/src/networklayer/ipv4 -I../Inet/src/networklayer/common -I../Inet/src/networklayer/rsvp_te -I../Inet/src/networklayer/icmpv6 -I../Inet/src/transport/tcp -I../Inet/src/networklayer/mpls -I../Inet/src/base -I../Inet/src/networklayer/ted -I../Inet/src/util/headerserializers -I../Inet/src/networklayer/contract -I../Inet/obsolete/rsvp_te -I../Inet/src/util -I../Inet/src/transport/contract -I../Inet/src/networklayer/ipv6 -I../Inet/src/transport/sctp -I../Inet/src/linklayer/mfcore -I../Inet/src/world -I../Inet/src/applications/pingapp -I../Inet/src/linklayer/contract -I../Inet/src/networklayer/arp -I../Inet/src/networklayer/ldp -I../Inet/src/transport/udp -L../Inet/out/$(CONFIGNAME)/src -linet -KINET_PROJ=../Inet
+#  opp_makemake -f --deep -O out -I../inet/src/linklayer/ethernet -I../inet/src/networklayer/ipv4 -I../inet/src/networklayer/common -I../inet/src/networklayer/rsvp_te -I../inet/src/networklayer/icmpv6 -I../inet/src/transport/tcp -I../inet/src/networklayer/mpls -I../inet/src/base -I../inet/src/networklayer/ted -I../inet/src/util/headerserializers -I../inet/src/networklayer/contract -I../inet/obsolete/rsvp_te -I../inet/src/util -I../inet/src/transport/contract -I../inet/src/networklayer/ipv6 -I../inet/src/transport/sctp -I../inet/src/linklayer/mfcore -I../inet/src/world -I../inet/src/applications/pingapp -I../inet/src/linklayer/contract -I../inet/src/networklayer/arp -I../inet/src/networklayer/ldp -I../inet/src/transport/udp -L../inet/out/$(CONFIGNAME)/src -linet -KINET_PROJ=../inet
 #
 
 # Name of target to be created (-o option)
@@ -15,29 +15,29 @@ USERIF_LIBS = $(ALL_ENV_LIBS) # that is, $(TKENV_LIBS) $(CMDENV_LIBS)
 
 # C++ include paths (with -I)
 INCLUDE_PATH = \
-    -I../Inet/src/linklayer/ethernet \
-    -I../Inet/src/networklayer/ipv4 \
-    -I../Inet/src/networklayer/common \
-    -I../Inet/src/networklayer/rsvp_te \
-    -I../Inet/src/networklayer/icmpv6 \
-    -I../Inet/src/transport/tcp \
-    -I../Inet/src/networklayer/mpls \
-    -I../Inet/src/base \
-    -I../Inet/src/networklayer/ted \
-    -I../Inet/src/util/headerserializers \
-    -I../Inet/src/networklayer/contract \
-    -I../Inet/obsolete/rsvp_te \
-    -I../Inet/src/util \
-    -I../Inet/src/transport/contract \
-    -I../Inet/src/networklayer/ipv6 \
-    -I../Inet/src/transport/sctp \
-    -I../Inet/src/linklayer/mfcore \
-    -I../Inet/src/world \
-    -I../Inet/src/applications/pingapp \
-    -I../Inet/src/linklayer/contract \
-    -I../Inet/src/networklayer/arp \
-    -I../Inet/src/networklayer/ldp \
-    -I../Inet/src/transport/udp \
+    -I../inet/src/linklayer/ethernet \
+    -I../inet/src/networklayer/ipv4 \
+    -I../inet/src/networklayer/common \
+    -I../inet/src/networklayer/rsvp_te \
+    -I../inet/src/networklayer/icmpv6 \
+    -I../inet/src/transport/tcp \
+    -I../inet/src/networklayer/mpls \
+    -I../inet/src/base \
+    -I../inet/src/networklayer/ted \
+    -I../inet/src/util/headerserializers \
+    -I../inet/src/networklayer/contract \
+    -I../inet/obsolete/rsvp_te \
+    -I../inet/src/util \
+    -I../inet/src/transport/contract \
+    -I../inet/src/networklayer/ipv6 \
+    -I../inet/src/transport/sctp \
+    -I../inet/src/linklayer/mfcore \
+    -I../inet/src/world \
+    -I../inet/src/applications/pingapp \
+    -I../inet/src/linklayer/contract \
+    -I../inet/src/networklayer/arp \
+    -I../inet/src/networklayer/ldp \
+    -I../inet/src/transport/udp \
     -I. \
     -Isimulations \
     -Isimulations/results \
@@ -47,8 +47,8 @@ INCLUDE_PATH = \
 EXTRA_OBJS =
 
 # Additional libraries (-L, -l options)
-LIBS = -L../Inet/out/$(CONFIGNAME)/src  -linet
-LIBS += -Wl,-rpath,`abspath ../Inet/out/$(CONFIGNAME)/src`
+LIBS = -L../inet/out/$(CONFIGNAME)/src  -linet
+LIBS += -Wl,-rpath,`abspath ../inet/out/$(CONFIGNAME)/src`
 
 # Output directory
 PROJECT_OUTPUT_DIR = out
@@ -62,7 +62,7 @@ OBJS = $O/src/HomenetDecider.o $O/src/Values.o $O/src/HomenetThM.o $O/src/Copy.o
 MSGFILES =
 
 # Other makefile variables (-K)
-INET_PROJ=../Inet
+INET_PROJ=../inet
 
 #------------------------------------------------------------------------------
 
