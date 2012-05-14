@@ -39,6 +39,8 @@ INCLUDE_PATH = \
     -I../inet/src/networklayer/ldp \
     -I../inet/src/transport/udp \
     -I. \
+    -Idoc \
+    -Idoc/neddoc \
     -Isimulations \
     -Isimulations/results \
     -Isrc
@@ -134,6 +136,8 @@ clean:
 	-rm -rf $O
 	-rm -f Homenet Homenet.exe libHomenet.so libHomenet.a libHomenet.dll libHomenet.dylib
 	-rm -f ./*_m.cc ./*_m.h
+	-rm -f doc/*_m.cc doc/*_m.h
+	-rm -f doc/neddoc/*_m.cc doc/neddoc/*_m.h
 	-rm -f simulations/*_m.cc simulations/*_m.h
 	-rm -f simulations/results/*_m.cc simulations/results/*_m.h
 	-rm -f src/*_m.cc src/*_m.h
@@ -142,7 +146,7 @@ cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc simulations/*.cc simulations/results/*.cc src/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/neddoc/*.cc simulations/*.cc simulations/results/*.cc src/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/src/Copy.o: src/Copy.cc \
