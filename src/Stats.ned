@@ -4,15 +4,10 @@ import inet.linklayer.ethernet.EtherEncap;
 import inet.linklayer.ethernet.EtherMAC;
 import inet.linklayer.etherswitch.MACRelayUnit;
 
-
 //
-// Model of an Ethernet switch.
-//
-// The duplexChannel attributes of the MACs must be set according to the
-// medium connected to the port; if collisions are possible (it's a bus or hub)
-// it must be set to false, otherwise it can be set to true.
-//
-// This model does not contain the spanning tree algorithm.
+// This module is very important. Inside of it, we will take the measurements 
+// and record the results. There will be one in emitter and another in receiver
+// mode.
 //
 module Stats
 {
@@ -41,7 +36,7 @@ module Stats
         etherEncap: EtherEncap {
             @display("p=117,140");
         }
-        thruputMeter: HomenetThM {
+        thruputMeter: ThM {
             @display("p=262,52");
         }
         copy: Copy {

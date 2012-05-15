@@ -1,0 +1,144 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+      <link rel="stylesheet" type="text/css" href="style.css" />
+   </head>
+   <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
+<h2 class="comptitle">Simple Module <i>Decider</i></h2>
+<b>Package:</b> homenet.src<br/><b>File: <a href="src-Decider.ned.html">src/Decider.ned</a></b><br/>
+<p>This module decides if we are going to use the active or passive mode. We 
+will use two variables, passive and emitter, to take the decision.</p>
+<p>In emitter module ON, we have to send packets in the direction of stats 
+module towards the network. When emitter module is OFF, We are the receiver 
+module, so we receive packet and send reply.</p>
+<p>In the passive mode, every packet that we receive from the statistics module
+will be discarded. It only lets the flow between stats and the host 
+connected to our emitter module. If the passive mode is off, it would
+be the opposite way: only packets from statistics module and not from the 
+host.</p>
+<img src="homenet.src.Decider-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="homenet.src.Decider.html" title="Decider" alt="Decider" coords="0,31,97,71">
+</map>
+<h3 class="subtitle">Used in compound modules:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="homenet.src.Receiver.html">Receiver</a>
+   </td>
+   <td>
+<i>compound&nbsp;module</i>
+   </td>
+   <td>
+
+<p>This module receives the information and make the right calculations to 
+obtain the end-to-end delay and jitter.</p>
+
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="homenet.src.Trasmitter.html">Trasmitter</a>
+   </td>
+   <td>
+<i>compound&nbsp;module</i>
+   </td>
+   <td>
+
+<p>This module is the generator of traffic. It takes the time when the packet 
+was created and the moment when it arrives to the module. This data is 
+attached in the packet.</p>
+
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Parameters:</h3>
+<table class="paramstable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="defaultvalue">Default value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>emitter</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td></td>
+   <td>
+<p>1 emitter, 0 receiver</p>
+   </td>
+</tr>
+<tr class="local">
+   <td>passive</td>
+   <td>
+      <i>int</i>
+   </td>
+   <td></td>
+   <td>
+<p>1 passive, 0 active</p>
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Properties:</h3>
+<table class="propertiestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="value">Value</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>display</td>
+   <td><i>i=block/layer</i></td>
+   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Gates:</h3>
+<table class="gatestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Direction</th>
+      <th class="gatesize">Size</th>
+      <th class="description">Description</th>
+   </tr>
+<tr class="local">
+   <td>ethg [ ]</xsl:if></td>
+   <td><i>inout</i></td>
+   <td></td>   <td></td>
+</tr>
+</table>
+<h3 class="subtitle">Source code:</h3>
+<pre class="src"><span style="color: #808080; font-style: italic; ">//
+// This module decides if we are going to use the active or passive mode. We 
+// will use two variables, passive and emitter, to take the decision.
+//
+// In emitter module ON, we have to send packets in the direction of stats 
+// module towards the network. When emitter module is OFF, We are the receiver 
+// module, so we receive packet and send reply.
+//
+// In the passive mode, every packet that we receive from the statistics module
+// will be discarded. It only lets the flow between stats and the host 
+// connected to our emitter module. If the passive mode is off, it would
+// be the opposite way: only packets from statistics module and not from the 
+// host.
+//
+</span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">Decider</span><span style="color: #000000; ">
+{
+    </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">emitter</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// 1 emitter, 0 receiver
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">passive</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// 1 passive, 0 active
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/layer&quot;</span><span style="color: #000000; ">);
+    </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
+        </span><span style="color: #000080; font-weight: bold; ">inout</span><span style="color: #000000; "> </span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[] </span><span style="color: #000000; font-weight: bold; ">@labels</span><span style="color: #000000; ">(</span><span style="color: #000000; ">EtherFrame</span><span style="color: #000000; ">-</span><span style="color: #000000; ">conn</span><span style="color: #000000; ">);
+}
+
+
+</span></pre>
+   <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>
+   </body>
+</html>

@@ -1,7 +1,8 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
-inspector "homenet" "homenet" "2" "791x661+1+54:normal"
-inspector "homenet.Emitter0" "EandR" "2" "607x423+662+167:normal"
+inspector "Homenet" "Homenet" "2" "791x661+1+54:normal"
 inspector "ospfmultiarea.emitterstat" "Emitterstat" "2" "607x342+15+407:normal"
+inspector "homenet.Emitter0" "EandR" "2" "607x423+662+167:normal"
 inspector "ospfmultiarea.etherSwitch1" "EtherSwitch" "2" "607x342+1+78:normal"
 inspector "ospfmultiarea" "ospfmultiarea" "2" "607x342+0+49:normal"
+inspector "homenet" "homenet" "2" "791x661+1+54:normal"
 

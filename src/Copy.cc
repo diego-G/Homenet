@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
-#include "Copy.h"
+
 #include "IInterfaceTable.h"
 #include "InterfaceTableAccess.h"
 #include "EtherMAC.h"

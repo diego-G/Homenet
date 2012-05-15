@@ -8,17 +8,16 @@ import inet.networklayer.queue.OutputQueue;
 
 
 //
-// Ethernet network interface with Drops generator. Complements EtherMAC and EtherEncap
-// with an output queue for QoS and RED support.
+// Ethernet network interface with Drops generator. Complements EtherMAC and 
+// EtherEncap with an output queue for QoS and RED support.
 // 
-//
 // @see EthernetInterface2, EthernetInterfaceNoQueue
 //
 module EthernetInterfaceDrops like INetworkInterface
 {
     parameters:
         string queueType = default("DropTailQueue");
-        @display("i=block/ifcard;bgb=212,345");
+        @display("i=block/ifcard;bgb=212,345;i2=status/lightning");
     gates:
         input netwIn;
         output netwOut;

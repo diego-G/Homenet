@@ -14,54 +14,70 @@
    </tr>
 <tr>
    <td>
-<a href="homenet.src.EthernetInterfaceDLThruputMeter.html">EthernetInterfaceDLThruputMeter</a>
+<a href="homenet.src.EthernetInterfaceDrops.html">EthernetInterfaceDrops</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>Ethernet network interface. Complements EtherMAC and EtherEncap
-with an output queue for QoS and RED support.</p>
+<p>Ethernet network interface with Drops generator. Complements EtherMAC and 
+EtherEncap with an output queue for QoS and RED support.</p>
 
    </td>
 </tr>
 <tr>
    <td>
-<a href="homenet.src.HomenetReceiver.html">HomenetReceiver</a>
+<a href="homenet.src.EthernetInterfaceThM.html">EthernetInterfaceThM</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>Ethernet network interface with thorughput meter. Complements EtherMAC and 
+EtherEncap with an output queue for QoS and RED support.</p>
 
    </td>
 </tr>
 <tr>
    <td>
-<a href="homenet.src.HomenetStatistics.html">HomenetStatistics</a>
+<a href="homenet.src.HomenetHost.html">HomenetHost</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>IP host with SCTP, TCP, UDP layers and applications AND PPPInterfaceWithDLThruputMeter.</p>
+<p>IP host with TCP and UDP layers and PING application.</p>
 
    </td>
 </tr>
 <tr>
    <td>
-<a href="homenet.src.HomenetTrasmitter.html">HomenetTrasmitter</a>
+<a href="homenet.src.HostWithDropsGenerator.html">HostWithDropsGenerator</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>IP host with TCP and UDP layers and PING application. Besides, it has a drops
+generator in order to loose packets when neccesary.</p>
+
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="homenet.src.Receiver.html">Receiver</a>
+   </td>
+   <td>
+<i>compound&nbsp;module</i>
+   </td>
+   <td>
+
+<p>This module receives the information and make the right calculations to 
+obtain the end-to-end delay and jitter.</p>
 
    </td>
 </tr>
@@ -74,7 +90,24 @@ with an output queue for QoS and RED support.</p>
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>This module is very important. Inside of it, we will take the measurements 
+and record the results. There will be one in emitter and another in receiver
+mode.</p>
+
+   </td>
+</tr>
+<tr>
+   <td>
+<a href="homenet.src.Trasmitter.html">Trasmitter</a>
+   </td>
+   <td>
+<i>compound&nbsp;module</i>
+   </td>
+   <td>
+
+<p>This module is the generator of traffic. It takes the time when the packet 
+was created and the moment when it arrives to the module. This data is 
+attached in the packet.</p>
 
    </td>
 </tr>
@@ -88,13 +121,15 @@ with an output queue for QoS and RED support.</p>
    </tr>
 <tr>
    <td>
-<a href="homenet.html">homenet</a>
+<a href="homenet.simulations.Homenet.html">Homenet</a>
    </td>
    <td>
 <i>network</i>
    </td>
    <td>
-<i>(no description)</i>
+
+<p><h3> Homenetwork topology scenario </h3> </p>
+
    </td>
 </tr>
 </table>

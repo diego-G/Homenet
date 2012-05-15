@@ -6,7 +6,12 @@
    <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
 <h2 class="comptitle">Simple Module <i>Copy</i></h2>
 <b>Package:</b> homenet.src<br/><b>File: <a href="src-Copy.ned.html">src/Copy.ned</a></b><br/>
-<p>Send message to thrupumeter and to the network.</p>
+<p>This module makes possible to choose if the incoming message is interesting 
+for our statistics or its useless. Depending which kind of packet is, it is 
+processed through throughput meter or it is sent to the network.</p>
+<img src="homenet.src.Copy-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="homenet.src.Copy.html" title="Copy" alt="Copy" coords="0,31,78,71">
+</map>
 <h3 class="subtitle">Used in compound modules:</h3>
 <table class="typestable">
    <tr>
@@ -23,7 +28,9 @@
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>This module is very important. Inside of it, we will take the measurements 
+and record the results. There will be one in emitter and another in receiver
+mode.</p>
 
    </td>
 </tr>
@@ -42,7 +49,9 @@
       <i>int</i>
    </td>
    <td>1</td>
-   <td>   </td>
+   <td>
+<p>1 for emitter mode, 2 to receiver mode</p>
+   </td>
 </tr>
 <tr class="local">
    <td>pktLost</td>
@@ -50,7 +59,9 @@
       <i>double</i>
    </td>
    <td>0</td>
-   <td>   </td>
+   <td>
+<p>Number of Packets lost</p>
+   </td>
 </tr>
 </table>
 <h3 class="subtitle">Properties:</h3>
@@ -88,24 +99,26 @@
    <td>thGate</xsl:if></td>
    <td><i>output</i></td>
    <td></td>   <td>
-<p>thruput connection</p>
+<p>Throughputmeter connection</p>
 </td>
 </tr>
 </table>
 <h3 class="subtitle">Source code:</h3>
 <pre class="src"><span style="color: #808080; font-style: italic; ">//
-// Send message to thrupumeter and to the network.
+// This module makes possible to choose if the incoming message is interesting 
+// for our statistics or its useless. Depending which kind of packet is, it is 
+// processed through throughput meter or it is sent to the network.
 //
 </span><span style="color: #800000; font-weight: bold; ">simple</span><span style="color: #000000; "> </span><span style="color: #000000; ">Copy</span><span style="color: #000000; ">
 {
     </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
-        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">mode</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">);
-        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">pktLost</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">);
-        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/broadcast&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000080; font-weight: bold; ">int</span><span style="color: #000000; "> </span><span style="color: #000000; ">mode</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">1</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// 1 for emitter mode, 2 to receiver mode
+</span><span style="color: #000000; ">        </span><span style="color: #000080; font-weight: bold; ">double</span><span style="color: #000000; "> </span><span style="color: #000000; ">pktLost</span><span style="color: #000000; "> = </span><span style="color: #800000; font-weight: bold; ">default</span><span style="color: #000000; ">(</span><span style="color: #008000; ">0</span><span style="color: #000000; ">); </span><span style="color: #808080; font-style: italic; ">// Number of Packets lost
+</span><span style="color: #000000; ">        </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;i=block/broadcast&quot;</span><span style="color: #000000; ">);
     </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
         </span><span style="color: #000080; font-weight: bold; ">input</span><span style="color: #000000; "> </span><span style="color: #000000; ">inEncapGate</span><span style="color: #000000; ">;
         </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">outEncapGate</span><span style="color: #000000; ">;
-        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">thGate</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// thruput connection
+        </span><span style="color: #000080; font-weight: bold; ">output</span><span style="color: #000000; "> </span><span style="color: #000000; ">thGate</span><span style="color: #000000; ">; </span><span style="color: #808080; font-style: italic; ">// Throughputmeter connection
 </span><span style="color: #000000; ">}
 </span></pre>
    <hr><p class="footer"><a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top"><img src="by-sa.png"></a> This documentation is released under the <a href="http://creativecommons.org/licenses/by-sa/3.0" target="_top">Creative Commons license</a></p>

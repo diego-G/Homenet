@@ -6,11 +6,16 @@
    <body onload="if (top.frames['componentsframe'] == undefined) { s = window.location.toString(); window.location = 'index.html?p=' + s.substring(s.lastIndexOf('/')+1); }">
 <h2 class="comptitle">Compound Module <i>Stats</i></h2>
 <b>Package:</b> homenet.src<br/><b>File: <a href="src-Stats.ned.html">src/Stats.ned</a></b><br/>
-<p>Model of an Ethernet switch.</p>
-<p>The duplexChannel attributes of the MACs must be set according to the
-medium connected to the port; if collisions are possible (it's a bus or hub)
-it must be set to false, otherwise it can be set to true.</p>
-<p>This model does not contain the spanning tree algorithm.</p>
+<p>This module is very important. Inside of it, we will take the measurements 
+and record the results. There will be one in emitter and another in receiver
+mode.</p>
+<img src="homenet.src.Stats-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
+<area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html" title="MACRelayUnit" alt="MACRelayUnit" coords="296,160,358,221">
+<area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html" title="EtherMAC" alt="EtherMAC" coords="59,247,180,308">
+<area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherEncap.html" title="EtherEncap" alt="EtherEncap" coords="80,160,159,221">
+<area shape="rect" href="homenet.src.ThM.html" title="ThM" alt="ThM" coords="217,84,312,121">
+<area shape="rect" href="homenet.src.Copy.html" title="Copy" alt="Copy" coords="99,72,143,133">
+</map>
 <h3 class="subtitle">Used in compound modules:</h3>
 <table class="typestable">
    <tr>
@@ -20,27 +25,30 @@ it must be set to false, otherwise it can be set to true.</p>
    </tr>
 <tr>
    <td>
-<a href="homenet.src.HomenetReceiver.html">HomenetReceiver</a>
+<a href="homenet.src.Receiver.html">Receiver</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>This module receives the information and make the right calculations to 
+obtain the end-to-end delay and jitter.</p>
 
    </td>
 </tr>
 <tr>
    <td>
-<a href="homenet.src.HomenetTrasmitter.html">HomenetTrasmitter</a>
+<a href="homenet.src.Trasmitter.html">Trasmitter</a>
    </td>
    <td>
 <i>compound&nbsp;module</i>
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>This module is the generator of traffic. It takes the time when the packet 
+was created and the moment when it arrives to the module. This data is 
+attached in the packet.</p>
 
    </td>
 </tr>
@@ -198,7 +206,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.startTime</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.startTime</td>
    <td>
       <i>double</i>
    </td>
@@ -206,7 +214,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.batchSize</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.batchSize</td>
    <td>
       <i>int</i>
    </td>
@@ -214,7 +222,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.maxInterval</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.maxInterval</td>
    <td>
       <i>double</i>
    </td>
@@ -223,7 +231,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.emisor</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.emisor</td>
    <td>
       <i>int</i>
    </td>
@@ -231,7 +239,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.rcv_win</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.rcv_win</td>
    <td>
       <i>double</i>
    </td>
@@ -239,7 +247,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.HomenetThM.html">thruputMeter</a>.tcp</td>
+   <td><a href="homenet.src.ThM.html">thruputMeter</a>.tcp</td>
    <td>
       <i>int</i>
    </td>
@@ -253,7 +261,9 @@ additional frames are dropped. Only used if queueModule==""</p>
       <i>int</i>
    </td>
    <td>1</td>
-   <td>   </td>
+   <td>
+<p>1 for emitter mode, 2 to receiver mode</p>
+   </td>
 </tr>
 <tr>
    <td><a href="homenet.src.Copy.html">copy</a>.pktLost</td>
@@ -261,18 +271,16 @@ additional frames are dropped. Only used if queueModule==""</p>
       <i>double</i>
    </td>
    <td>0</td>
-   <td>   </td>
+   <td>
+<p>Number of Packets lost</p>
+   </td>
 </tr>
 </table>
 <h3 class="subtitle">Source code:</h3>
 <pre class="src"><span style="color: #808080; font-style: italic; ">//
-// Model of an Ethernet switch.
-//
-// The duplexChannel attributes of the MACs must be set according to the
-// medium connected to the port; if collisions are possible (it's a bus or hub)
-// it must be set to false, otherwise it can be set to true.
-//
-// This model does not contain the spanning tree algorithm.
+// This module is very important. Inside of it, we will take the measurements 
+// and record the results. There will be one in emitter and another in receiver
+// mode.
 //
 </span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Stats</span><span style="color: #000000; ">
 {
@@ -301,7 +309,7 @@ additional frames are dropped. Only used if queueModule==""</p>
         </span><span style="color: #000000; ">etherEncap</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherEncap</span><span style="color: #000000; "> {
             </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=117,140&quot;</span><span style="color: #000000; ">);
         }
-        </span><span style="color: #000000; ">thruputMeter</span><span style="color: #000000; ">: </span><span style="color: #000000; ">HomenetThM</span><span style="color: #000000; "> {
+        </span><span style="color: #000000; ">thruputMeter</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ThM</span><span style="color: #000000; "> {
             </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=262,52&quot;</span><span style="color: #000000; ">);
         }
         </span><span style="color: #000000; ">copy</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Copy</span><span style="color: #000000; "> {

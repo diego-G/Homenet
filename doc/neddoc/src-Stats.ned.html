@@ -20,7 +20,9 @@
    </td>
    <td>
 
-<p>Model of an Ethernet switch.</p>
+<p>This module is very important. Inside of it, we will take the measurements 
+and record the results. There will be one in emitter and another in receiver
+mode.</p>
 
    </td>
 </tr>
@@ -32,15 +34,10 @@
 </span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">inet</span><span style="color: #000000; ">.</span><span style="color: #000000; ">linklayer</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethernet</span><span style="color: #000000; ">.</span><span style="color: #000000; ">EtherMAC</span><span style="color: #000000; ">;
 </span><span style="color: #800000; font-weight: bold; ">import</span><span style="color: #000000; "> </span><span style="color: #000000; ">inet</span><span style="color: #000000; ">.</span><span style="color: #000000; ">linklayer</span><span style="color: #000000; ">.</span><span style="color: #000000; ">etherswitch</span><span style="color: #000000; ">.</span><span style="color: #000000; ">MACRelayUnit</span><span style="color: #000000; ">;
 
-
 </span><span style="color: #808080; font-style: italic; ">//
-// Model of an Ethernet switch.
-//
-// The duplexChannel attributes of the MACs must be set according to the
-// medium connected to the port; if collisions are possible (it's a bus or hub)
-// it must be set to false, otherwise it can be set to true.
-//
-// This model does not contain the spanning tree algorithm.
+// This module is very important. Inside of it, we will take the measurements 
+// and record the results. There will be one in emitter and another in receiver
+// mode.
 //
 </span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Stats</span><span style="color: #000000; ">
 {
@@ -69,7 +66,7 @@
         </span><span style="color: #000000; ">etherEncap</span><span style="color: #000000; ">: </span><span style="color: #000000; ">EtherEncap</span><span style="color: #000000; "> {
             </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=117,140&quot;</span><span style="color: #000000; ">);
         }
-        </span><span style="color: #000000; ">thruputMeter</span><span style="color: #000000; ">: </span><span style="color: #000000; ">HomenetThM</span><span style="color: #000000; "> {
+        </span><span style="color: #000000; ">thruputMeter</span><span style="color: #000000; ">: </span><span style="color: #000000; ">ThM</span><span style="color: #000000; "> {
             </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=262,52&quot;</span><span style="color: #000000; ">);
         }
         </span><span style="color: #000000; ">copy</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Copy</span><span style="color: #000000; "> {

@@ -8,8 +8,8 @@ import inet.networklayer.queue.OutputQueue;
 
 
 //
-// Ethernet network interface. Complements EtherMAC and EtherEncap
-// with an output queue for QoS and RED support.
+// Ethernet network interface with thorughput meter. Complements EtherMAC and 
+// EtherEncap with an output queue for QoS and RED support.
 //
 // @see EthernetInterface2, EthernetInterfaceNoQueue
 //

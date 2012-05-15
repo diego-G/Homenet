@@ -58,7 +58,7 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
-OBJS = $O/src/HomenetDecider.o $O/src/Values.o $O/src/HomenetThM.o $O/src/Copy.o
+OBJS = $O/src/Values.o $O/src/ThM.o $O/src/Decider.o $O/src/Copy.o
 
 # Message files
 MSGFILES =
@@ -170,10 +170,10 @@ $O/src/Copy.o: src/Copy.cc \
 	$(INET_PROJ)/src/networklayer/common/InterfaceTableAccess.h \
 	$(INET_PROJ)/src/networklayer/common/InterfaceToken.h \
 	$(INET_PROJ)/src/networklayer/contract/IPAddress.h
-$O/src/HomenetDecider.o: src/HomenetDecider.cc \
-	src/HomenetDecider.h
-$O/src/HomenetThM.o: src/HomenetThM.cc \
-	src/HomenetThM.h \
+$O/src/Decider.o: src/Decider.cc \
+	src/Decider.h
+$O/src/ThM.o: src/ThM.cc \
+	src/ThM.h \
 	src/Values.h \
 	$(INET_PROJ)/src/base/INETDefs.h \
 	$(INET_PROJ)/src/networklayer/contract/IPAddress.h \

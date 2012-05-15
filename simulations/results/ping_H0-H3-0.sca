@@ -1,1204 +1,1206 @@
 version 2
-run ping_H0-H3-0-20120510-19:48:55-21388
+run ping_H0-H3-0-20120515-11:23:15-4355
 attr configname ping_H0-H3
-attr datetime 20120510-19:48:55
+attr datetime 20120515-11:23:15
 attr experiment ping_H0-H3
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
-attr network homenet
-attr processid 21388
+attr network Homenet
+attr processid 4355
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-scalar homenet.room_A.networkLayer.arp 	"ARP requests sent" 	2
-scalar homenet.room_A.networkLayer.arp 	"ARP replies sent" 	4
-scalar homenet.room_A.networkLayer.arp 	"ARP resolutions" 	2
-scalar homenet.room_A.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.room_A.eth[0].queue 	"packets received by queue" 	18
-scalar homenet.room_A.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.room_A.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_A.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.room_A.eth[0].mac 	"full duplex" 	0
-scalar homenet.room_A.eth[0].mac 	"frames sent" 	18
-scalar homenet.room_A.eth[0].mac 	"frames rcvd" 	23
-scalar homenet.room_A.eth[0].mac 	"bytes sent" 	1152
-scalar homenet.room_A.eth[0].mac 	"bytes rcvd" 	1472
-scalar homenet.room_A.eth[0].mac 	"frames from higher layer" 	18
-scalar homenet.room_A.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_A.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_A.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_A.eth[0].mac 	"frames passed up to HL" 	23
-scalar homenet.room_A.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_A.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_A.eth[0].mac 	"frames/sec sent" 	0.89998446896865
-scalar homenet.room_A.eth[0].mac 	"frames/sec rcvd" 	1.1499801547933
-scalar homenet.room_A.eth[0].mac 	"bits/sec sent" 	460.79204811195
-scalar homenet.room_A.eth[0].mac 	"bits/sec rcvd" 	588.78983925416
-scalar homenet.room_A.eth[0].mac 	"rx channel idle (%)" 	99.998809620557
-scalar homenet.room_A.eth[0].mac 	"rx channel utilization (%)" 	0.0011807796232869
-scalar homenet.room_A.eth[0].mac 	"rx channel collision (%)" 	9.5998193359244e-06
-scalar homenet.room_A.eth[0].mac 	collisions 	3
-scalar homenet.room_A.eth[0].mac 	backoffs 	3
-scalar homenet.room_A.eth[0].encap 	"packets from higher layer" 	18
-scalar homenet.room_A.eth[0].encap 	"frames from MAC" 	23
-scalar homenet.room_A.eth[1].queue 	"packets received by queue" 	33
-scalar homenet.room_A.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.room_A.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_A.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.room_A.eth[1].mac 	"full duplex" 	0
-scalar homenet.room_A.eth[1].mac 	"frames sent" 	33
-scalar homenet.room_A.eth[1].mac 	"frames rcvd" 	30
-scalar homenet.room_A.eth[1].mac 	"bytes sent" 	2112
-scalar homenet.room_A.eth[1].mac 	"bytes rcvd" 	1920
-scalar homenet.room_A.eth[1].mac 	"frames from higher layer" 	33
-scalar homenet.room_A.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_A.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_A.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_A.eth[1].mac 	"frames passed up to HL" 	30
-scalar homenet.room_A.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_A.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_A.eth[1].mac 	"frames/sec sent" 	1.6499715264425
-scalar homenet.room_A.eth[1].mac 	"frames/sec rcvd" 	1.4999741149477
-scalar homenet.room_A.eth[1].mac 	"bits/sec sent" 	844.78542153857
-scalar homenet.room_A.eth[1].mac 	"bits/sec rcvd" 	767.98674685325
-scalar homenet.room_A.eth[1].mac 	"rx channel idle (%)" 	99.998172231532
-scalar homenet.room_A.eth[1].mac 	"rx channel utilization (%)" 	0.0018143686894408
-scalar homenet.room_A.eth[1].mac 	"rx channel collision (%)" 	1.3399778760027e-05
-scalar homenet.room_A.eth[1].mac 	collisions 	4
-scalar homenet.room_A.eth[1].mac 	backoffs 	4
-scalar homenet.room_A.eth[1].encap 	"packets from higher layer" 	33
-scalar homenet.room_A.eth[1].encap 	"frames from MAC" 	30
-scalar homenet.room_A.eth[2].queue 	"packets received by queue" 	20
-scalar homenet.room_A.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.room_A.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_A.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.room_A.eth[2].mac 	"full duplex" 	0
-scalar homenet.room_A.eth[2].mac 	"frames sent" 	20
-scalar homenet.room_A.eth[2].mac 	"frames rcvd" 	23
-scalar homenet.room_A.eth[2].mac 	"bytes sent" 	1280
-scalar homenet.room_A.eth[2].mac 	"bytes rcvd" 	1472
-scalar homenet.room_A.eth[2].mac 	"frames from higher layer" 	20
-scalar homenet.room_A.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_A.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_A.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_A.eth[2].mac 	"frames passed up to HL" 	23
-scalar homenet.room_A.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_A.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_A.eth[2].mac 	"frames/sec sent" 	0.9999827432985
-scalar homenet.room_A.eth[2].mac 	"frames/sec rcvd" 	1.1499801547933
-scalar homenet.room_A.eth[2].mac 	"bits/sec sent" 	511.99116456883
-scalar homenet.room_A.eth[2].mac 	"bits/sec rcvd" 	588.78983925416
-scalar homenet.room_A.eth[2].mac 	"rx channel idle (%)" 	99.998753821505
-scalar homenet.room_A.eth[2].mac 	"rx channel utilization (%)" 	0.0012383786293009
-scalar homenet.room_A.eth[2].mac 	"rx channel collision (%)" 	7.7998653977283e-06
-scalar homenet.room_A.eth[2].mac 	collisions 	3
-scalar homenet.room_A.eth[2].mac 	backoffs 	3
-scalar homenet.room_A.eth[2].encap 	"packets from higher layer" 	20
-scalar homenet.room_A.eth[2].encap 	"frames from MAC" 	23
-scalar homenet.room_C.networkLayer.arp 	"ARP requests sent" 	1
-scalar homenet.room_C.networkLayer.arp 	"ARP replies sent" 	2
-scalar homenet.room_C.networkLayer.arp 	"ARP resolutions" 	1
-scalar homenet.room_C.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.room_C.eth[0].queue 	"packets received by queue" 	2
-scalar homenet.room_C.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.room_C.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_C.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.room_C.eth[0].mac 	"full duplex" 	0
-scalar homenet.room_C.eth[0].mac 	"frames sent" 	2
-scalar homenet.room_C.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.room_C.eth[0].mac 	"bytes sent" 	128
-scalar homenet.room_C.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.room_C.eth[0].mac 	"frames from higher layer" 	2
-scalar homenet.room_C.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_C.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_C.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_C.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.room_C.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_C.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_C.eth[0].mac 	"frames/sec sent" 	0.09999827432985
-scalar homenet.room_C.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.room_C.eth[0].mac 	"bits/sec sent" 	51.199116456883
-scalar homenet.room_C.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.room_C.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.room_C.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.room_C.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.room_C.eth[0].mac 	collisions 	0
-scalar homenet.room_C.eth[0].mac 	backoffs 	0
-scalar homenet.room_C.eth[0].encap 	"packets from higher layer" 	2
-scalar homenet.room_C.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.room_C.eth[1].queue 	"packets received by queue" 	19
-scalar homenet.room_C.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.room_C.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_C.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.room_C.eth[1].mac 	"full duplex" 	0
-scalar homenet.room_C.eth[1].mac 	"frames sent" 	19
-scalar homenet.room_C.eth[1].mac 	"frames rcvd" 	27
-scalar homenet.room_C.eth[1].mac 	"bytes sent" 	1216
-scalar homenet.room_C.eth[1].mac 	"bytes rcvd" 	1728
-scalar homenet.room_C.eth[1].mac 	"frames from higher layer" 	19
-scalar homenet.room_C.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_C.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_C.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_C.eth[1].mac 	"frames passed up to HL" 	27
-scalar homenet.room_C.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_C.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_C.eth[1].mac 	"frames/sec sent" 	0.94998360613357
-scalar homenet.room_C.eth[1].mac 	"frames/sec rcvd" 	1.349976703453
-scalar homenet.room_C.eth[1].mac 	"bits/sec sent" 	486.39160634039
-scalar homenet.room_C.eth[1].mac 	"bits/sec rcvd" 	691.18807216792
-scalar homenet.room_C.eth[1].mac 	"rx channel idle (%)" 	99.998662223086
-scalar homenet.room_C.eth[1].mac 	"rx channel utilization (%)" 	0.0013247771383219
-scalar homenet.room_C.eth[1].mac 	"rx channel collision (%)" 	1.299977566288e-05
-scalar homenet.room_C.eth[1].mac 	collisions 	5
-scalar homenet.room_C.eth[1].mac 	backoffs 	5
-scalar homenet.room_C.eth[1].encap 	"packets from higher layer" 	19
-scalar homenet.room_C.eth[1].encap 	"frames from MAC" 	27
-scalar homenet.room_C.eth[2].queue 	"packets received by queue" 	19
-scalar homenet.room_C.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.room_C.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_C.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.room_C.eth[2].mac 	"full duplex" 	0
-scalar homenet.room_C.eth[2].mac 	"frames sent" 	19
-scalar homenet.room_C.eth[2].mac 	"frames rcvd" 	23
-scalar homenet.room_C.eth[2].mac 	"bytes sent" 	1216
-scalar homenet.room_C.eth[2].mac 	"bytes rcvd" 	1472
-scalar homenet.room_C.eth[2].mac 	"frames from higher layer" 	19
-scalar homenet.room_C.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_C.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_C.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_C.eth[2].mac 	"frames passed up to HL" 	23
-scalar homenet.room_C.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_C.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_C.eth[2].mac 	"frames/sec sent" 	0.94998360613357
-scalar homenet.room_C.eth[2].mac 	"frames/sec rcvd" 	1.1499801547933
-scalar homenet.room_C.eth[2].mac 	"bits/sec sent" 	486.39160634039
-scalar homenet.room_C.eth[2].mac 	"bits/sec rcvd" 	588.78983925416
-scalar homenet.room_C.eth[2].mac 	"rx channel idle (%)" 	99.998782221005
-scalar homenet.room_C.eth[2].mac 	"rx channel utilization (%)" 	0.0012095791262939
-scalar homenet.room_C.eth[2].mac 	"rx channel collision (%)" 	8.1998684948751e-06
-scalar homenet.room_C.eth[2].mac 	collisions 	2
-scalar homenet.room_C.eth[2].mac 	backoffs 	2
-scalar homenet.room_C.eth[2].encap 	"packets from higher layer" 	19
-scalar homenet.room_C.eth[2].encap 	"frames from MAC" 	23
-scalar homenet.garage.networkLayer.arp 	"ARP requests sent" 	1
-scalar homenet.garage.networkLayer.arp 	"ARP replies sent" 	2
-scalar homenet.garage.networkLayer.arp 	"ARP resolutions" 	1
-scalar homenet.garage.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.garage.eth[0].queue 	"packets received by queue" 	2
-scalar homenet.garage.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.garage.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.garage.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.garage.eth[0].mac 	"full duplex" 	0
-scalar homenet.garage.eth[0].mac 	"frames sent" 	2
-scalar homenet.garage.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.garage.eth[0].mac 	"bytes sent" 	128
-scalar homenet.garage.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.garage.eth[0].mac 	"frames from higher layer" 	2
-scalar homenet.garage.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.garage.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.garage.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.garage.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.garage.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.garage.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.garage.eth[0].mac 	"frames/sec sent" 	0.09999827432985
-scalar homenet.garage.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.garage.eth[0].mac 	"bits/sec sent" 	51.199116456883
-scalar homenet.garage.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.garage.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.garage.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.garage.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.garage.eth[0].mac 	collisions 	0
-scalar homenet.garage.eth[0].mac 	backoffs 	0
-scalar homenet.garage.eth[0].encap 	"packets from higher layer" 	2
-scalar homenet.garage.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.garage.eth[1].queue 	"packets received by queue" 	18
-scalar homenet.garage.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.garage.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.garage.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.garage.eth[1].mac 	"full duplex" 	0
-scalar homenet.garage.eth[1].mac 	"frames sent" 	18
-scalar homenet.garage.eth[1].mac 	"frames rcvd" 	28
-scalar homenet.garage.eth[1].mac 	"bytes sent" 	1152
-scalar homenet.garage.eth[1].mac 	"bytes rcvd" 	1792
-scalar homenet.garage.eth[1].mac 	"frames from higher layer" 	18
-scalar homenet.garage.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.garage.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.garage.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.garage.eth[1].mac 	"frames passed up to HL" 	28
-scalar homenet.garage.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.garage.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.garage.eth[1].mac 	"frames/sec sent" 	0.89998446896865
-scalar homenet.garage.eth[1].mac 	"frames/sec rcvd" 	1.3999758406179
-scalar homenet.garage.eth[1].mac 	"bits/sec sent" 	460.79204811195
-scalar homenet.garage.eth[1].mac 	"bits/sec rcvd" 	716.78763039636
-scalar homenet.garage.eth[1].mac 	"rx channel idle (%)" 	99.998672622907
-scalar homenet.garage.eth[1].mac 	"rx channel utilization (%)" 	0.0013247771383219
-scalar homenet.garage.eth[1].mac 	"rx channel collision (%)" 	2.5999551325761e-06
-scalar homenet.garage.eth[1].mac 	collisions 	1
-scalar homenet.garage.eth[1].mac 	backoffs 	1
-scalar homenet.garage.eth[1].encap 	"packets from higher layer" 	18
-scalar homenet.garage.eth[1].encap 	"frames from MAC" 	28
-scalar homenet.garage.eth[2].queue 	"packets received by queue" 	19
-scalar homenet.garage.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.garage.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.garage.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.garage.eth[2].mac 	"full duplex" 	0
-scalar homenet.garage.eth[2].mac 	"frames sent" 	19
-scalar homenet.garage.eth[2].mac 	"frames rcvd" 	23
-scalar homenet.garage.eth[2].mac 	"bytes sent" 	1216
-scalar homenet.garage.eth[2].mac 	"bytes rcvd" 	1472
-scalar homenet.garage.eth[2].mac 	"frames from higher layer" 	19
-scalar homenet.garage.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.garage.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.garage.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.garage.eth[2].mac 	"frames passed up to HL" 	23
-scalar homenet.garage.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.garage.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.garage.eth[2].mac 	"frames/sec sent" 	0.94998360613357
-scalar homenet.garage.eth[2].mac 	"frames/sec rcvd" 	1.1499801547933
-scalar homenet.garage.eth[2].mac 	"bits/sec sent" 	486.39160634039
-scalar homenet.garage.eth[2].mac 	"bits/sec rcvd" 	588.78983925416
-scalar homenet.garage.eth[2].mac 	"rx channel idle (%)" 	99.998790420874
-scalar homenet.garage.eth[2].mac 	"rx channel utilization (%)" 	0.0012095791262939
-scalar homenet.garage.eth[2].mac 	"rx channel collision (%)" 	0
-scalar homenet.garage.eth[2].mac 	collisions 	0
-scalar homenet.garage.eth[2].mac 	backoffs 	0
-scalar homenet.garage.eth[2].encap 	"packets from higher layer" 	19
-scalar homenet.garage.eth[2].encap 	"frames from MAC" 	23
-scalar homenet.kitchen.networkLayer.arp 	"ARP requests sent" 	2
-scalar homenet.kitchen.networkLayer.arp 	"ARP replies sent" 	3
-scalar homenet.kitchen.networkLayer.arp 	"ARP resolutions" 	2
-scalar homenet.kitchen.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.kitchen.eth[0].queue 	"packets received by queue" 	3
-scalar homenet.kitchen.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.kitchen.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.kitchen.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.kitchen.eth[0].mac 	"full duplex" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames sent" 	3
-scalar homenet.kitchen.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.kitchen.eth[0].mac 	"bytes sent" 	192
-scalar homenet.kitchen.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames from higher layer" 	3
-scalar homenet.kitchen.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.kitchen.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.kitchen.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.kitchen.eth[0].mac 	"frames/sec sent" 	0.14999741149477
-scalar homenet.kitchen.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.kitchen.eth[0].mac 	"bits/sec sent" 	76.798674685325
-scalar homenet.kitchen.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.kitchen.eth[0].mac 	"rx channel idle (%)" 	99.999913601491
-scalar homenet.kitchen.eth[0].mac 	"rx channel utilization (%)" 	8.639850902099e-05
-scalar homenet.kitchen.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.kitchen.eth[0].mac 	collisions 	0
-scalar homenet.kitchen.eth[0].mac 	backoffs 	0
-scalar homenet.kitchen.eth[0].encap 	"packets from higher layer" 	3
-scalar homenet.kitchen.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.kitchen.eth[1].queue 	"packets received by queue" 	26
-scalar homenet.kitchen.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.kitchen.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.kitchen.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.kitchen.eth[1].mac 	"full duplex" 	0
-scalar homenet.kitchen.eth[1].mac 	"frames sent" 	26
-scalar homenet.kitchen.eth[1].mac 	"frames rcvd" 	33
-scalar homenet.kitchen.eth[1].mac 	"bytes sent" 	1664
-scalar homenet.kitchen.eth[1].mac 	"bytes rcvd" 	2598
-scalar homenet.kitchen.eth[1].mac 	"frames from higher layer" 	26
-scalar homenet.kitchen.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.kitchen.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.kitchen.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.kitchen.eth[1].mac 	"frames passed up to HL" 	33
-scalar homenet.kitchen.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.kitchen.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.kitchen.eth[1].mac 	"frames/sec sent" 	1.299977566288
-scalar homenet.kitchen.eth[1].mac 	"frames/sec rcvd" 	1.6499715264425
-scalar homenet.kitchen.eth[1].mac 	"bits/sec sent" 	665.58851393948
-scalar homenet.kitchen.eth[1].mac 	"bits/sec rcvd" 	1039.1820668358
-scalar homenet.kitchen.eth[1].mac 	"rx channel idle (%)" 	99.998090432923
-scalar homenet.kitchen.eth[1].mac 	"rx channel utilization (%)" 	0.00189356732271
-scalar homenet.kitchen.eth[1].mac 	"rx channel collision (%)" 	1.5999753892258e-05
-scalar homenet.kitchen.eth[1].mac 	collisions 	5
-scalar homenet.kitchen.eth[1].mac 	backoffs 	5
-scalar homenet.kitchen.eth[1].encap 	"packets from higher layer" 	26
-scalar homenet.kitchen.eth[1].encap 	"frames from MAC" 	33
-scalar homenet.kitchen.eth[2].queue 	"packets received by queue" 	15
-scalar homenet.kitchen.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.kitchen.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.kitchen.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.kitchen.eth[2].mac 	"full duplex" 	0
-scalar homenet.kitchen.eth[2].mac 	"frames sent" 	15
-scalar homenet.kitchen.eth[2].mac 	"frames rcvd" 	21
-scalar homenet.kitchen.eth[2].mac 	"bytes sent" 	960
-scalar homenet.kitchen.eth[2].mac 	"bytes rcvd" 	1344
-scalar homenet.kitchen.eth[2].mac 	"frames from higher layer" 	15
-scalar homenet.kitchen.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.kitchen.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.kitchen.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.kitchen.eth[2].mac 	"frames passed up to HL" 	21
-scalar homenet.kitchen.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.kitchen.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.kitchen.eth[2].mac 	"frames/sec sent" 	0.74998705747387
-scalar homenet.kitchen.eth[2].mac 	"frames/sec rcvd" 	1.0499818804634
-scalar homenet.kitchen.eth[2].mac 	"bits/sec sent" 	383.99337342662
-scalar homenet.kitchen.eth[2].mac 	"bits/sec rcvd" 	537.59072279727
-scalar homenet.kitchen.eth[2].mac 	"rx channel idle (%)" 	99.998963217892
-scalar homenet.kitchen.eth[2].mac 	"rx channel utilization (%)" 	0.0010367821082519
-scalar homenet.kitchen.eth[2].mac 	"rx channel collision (%)" 	0
-scalar homenet.kitchen.eth[2].mac 	collisions 	0
-scalar homenet.kitchen.eth[2].mac 	backoffs 	0
-scalar homenet.kitchen.eth[2].encap 	"packets from higher layer" 	15
-scalar homenet.kitchen.eth[2].encap 	"frames from MAC" 	21
-scalar homenet.office.networkLayer.arp 	"ARP requests sent" 	4
-scalar homenet.office.networkLayer.arp 	"ARP replies sent" 	3
-scalar homenet.office.networkLayer.arp 	"ARP resolutions" 	4
-scalar homenet.office.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.office.eth[0].queue 	"packets received by queue" 	2
-scalar homenet.office.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.office.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.office.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.office.eth[0].mac 	"full duplex" 	0
-scalar homenet.office.eth[0].mac 	"frames sent" 	2
-scalar homenet.office.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.office.eth[0].mac 	"bytes sent" 	128
-scalar homenet.office.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.office.eth[0].mac 	"frames from higher layer" 	2
-scalar homenet.office.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.office.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.office.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.office.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.office.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.office.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.office.eth[0].mac 	"frames/sec sent" 	0.09999827432985
-scalar homenet.office.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.office.eth[0].mac 	"bits/sec sent" 	51.199116456883
-scalar homenet.office.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.office.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.office.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.office.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.office.eth[0].mac 	collisions 	0
-scalar homenet.office.eth[0].mac 	backoffs 	0
-scalar homenet.office.eth[0].encap 	"packets from higher layer" 	2
-scalar homenet.office.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.office.eth[1].queue 	"packets received by queue" 	21
-scalar homenet.office.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.office.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.office.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.office.eth[1].mac 	"full duplex" 	0
-scalar homenet.office.eth[1].mac 	"frames sent" 	21
-scalar homenet.office.eth[1].mac 	"frames rcvd" 	15
-scalar homenet.office.eth[1].mac 	"bytes sent" 	1344
-scalar homenet.office.eth[1].mac 	"bytes rcvd" 	960
-scalar homenet.office.eth[1].mac 	"frames from higher layer" 	21
-scalar homenet.office.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.office.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.office.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.office.eth[1].mac 	"frames passed up to HL" 	15
-scalar homenet.office.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.office.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.office.eth[1].mac 	"frames/sec sent" 	1.0499818804634
-scalar homenet.office.eth[1].mac 	"frames/sec rcvd" 	0.74998705747387
-scalar homenet.office.eth[1].mac 	"bits/sec sent" 	537.59072279727
-scalar homenet.office.eth[1].mac 	"bits/sec rcvd" 	383.99337342662
-scalar homenet.office.eth[1].mac 	"rx channel idle (%)" 	99.998963217892
-scalar homenet.office.eth[1].mac 	"rx channel utilization (%)" 	0.0010367821082519
-scalar homenet.office.eth[1].mac 	"rx channel collision (%)" 	0
-scalar homenet.office.eth[1].mac 	collisions 	0
-scalar homenet.office.eth[1].mac 	backoffs 	0
-scalar homenet.office.eth[1].encap 	"packets from higher layer" 	21
-scalar homenet.office.eth[1].encap 	"frames from MAC" 	15
-scalar homenet.office.eth[2].queue 	"packets received by queue" 	22
-scalar homenet.office.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.office.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.office.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.office.eth[2].mac 	"full duplex" 	0
-scalar homenet.office.eth[2].mac 	"frames sent" 	22
-scalar homenet.office.eth[2].mac 	"frames rcvd" 	23
-scalar homenet.office.eth[2].mac 	"bytes sent" 	1408
-scalar homenet.office.eth[2].mac 	"bytes rcvd" 	1472
-scalar homenet.office.eth[2].mac 	"frames from higher layer" 	22
-scalar homenet.office.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.office.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.office.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.office.eth[2].mac 	"frames passed up to HL" 	23
-scalar homenet.office.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.office.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.office.eth[2].mac 	"frames/sec sent" 	1.0999810176283
-scalar homenet.office.eth[2].mac 	"frames/sec rcvd" 	1.1499801547933
-scalar homenet.office.eth[2].mac 	"bits/sec sent" 	563.19028102571
-scalar homenet.office.eth[2].mac 	"bits/sec rcvd" 	588.78983925416
-scalar homenet.office.eth[2].mac 	"rx channel idle (%)" 	99.998704022365
-scalar homenet.office.eth[2].mac 	"rx channel utilization (%)" 	0.0012959776353149
-scalar homenet.office.eth[2].mac 	"rx channel collision (%)" 	0
-scalar homenet.office.eth[2].mac 	collisions 	0
-scalar homenet.office.eth[2].mac 	backoffs 	0
-scalar homenet.office.eth[2].encap 	"packets from higher layer" 	22
-scalar homenet.office.eth[2].encap 	"frames from MAC" 	23
-scalar homenet.office.eth[3].queue 	"packets received by queue" 	30
-scalar homenet.office.eth[3].queue 	"packets dropped by queue" 	0
-scalar homenet.office.eth[3].mac 	"simulated time" 	20.000345139986
-scalar homenet.office.eth[3].mac 	"txrate (Mb)" 	100
-scalar homenet.office.eth[3].mac 	"full duplex" 	0
-scalar homenet.office.eth[3].mac 	"frames sent" 	30
-scalar homenet.office.eth[3].mac 	"frames rcvd" 	33
-scalar homenet.office.eth[3].mac 	"bytes sent" 	1920
-scalar homenet.office.eth[3].mac 	"bytes rcvd" 	2112
-scalar homenet.office.eth[3].mac 	"frames from higher layer" 	30
-scalar homenet.office.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.office.eth[3].mac 	"frames dropped (bit error)" 	0
-scalar homenet.office.eth[3].mac 	"frames dropped (not for us)" 	0
-scalar homenet.office.eth[3].mac 	"frames passed up to HL" 	33
-scalar homenet.office.eth[3].mac 	"PAUSE frames sent" 	0
-scalar homenet.office.eth[3].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.office.eth[3].mac 	"frames/sec sent" 	1.4999741149477
-scalar homenet.office.eth[3].mac 	"frames/sec rcvd" 	1.6499715264425
-scalar homenet.office.eth[3].mac 	"bits/sec sent" 	767.98674685325
-scalar homenet.office.eth[3].mac 	"bits/sec rcvd" 	844.78542153857
-scalar homenet.office.eth[3].mac 	"rx channel idle (%)" 	99.998172231532
-scalar homenet.office.eth[3].mac 	"rx channel utilization (%)" 	0.0018143686894408
-scalar homenet.office.eth[3].mac 	"rx channel collision (%)" 	1.3399778760027e-05
-scalar homenet.office.eth[3].mac 	collisions 	4
-scalar homenet.office.eth[3].mac 	backoffs 	4
-scalar homenet.office.eth[3].encap 	"packets from higher layer" 	30
-scalar homenet.office.eth[3].encap 	"frames from MAC" 	33
-scalar homenet.office.eth[4].queue 	"packets received by queue" 	23
-scalar homenet.office.eth[4].queue 	"packets dropped by queue" 	0
-scalar homenet.office.eth[4].mac 	"simulated time" 	20.000345139986
-scalar homenet.office.eth[4].mac 	"txrate (Mb)" 	100
-scalar homenet.office.eth[4].mac 	"full duplex" 	0
-scalar homenet.office.eth[4].mac 	"frames sent" 	23
-scalar homenet.office.eth[4].mac 	"frames rcvd" 	19
-scalar homenet.office.eth[4].mac 	"bytes sent" 	1472
-scalar homenet.office.eth[4].mac 	"bytes rcvd" 	1216
-scalar homenet.office.eth[4].mac 	"frames from higher layer" 	23
-scalar homenet.office.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.office.eth[4].mac 	"frames dropped (bit error)" 	0
-scalar homenet.office.eth[4].mac 	"frames dropped (not for us)" 	0
-scalar homenet.office.eth[4].mac 	"frames passed up to HL" 	19
-scalar homenet.office.eth[4].mac 	"PAUSE frames sent" 	0
-scalar homenet.office.eth[4].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.office.eth[4].mac 	"frames/sec sent" 	1.1499801547933
-scalar homenet.office.eth[4].mac 	"frames/sec rcvd" 	0.94998360613357
-scalar homenet.office.eth[4].mac 	"bits/sec sent" 	588.78983925416
-scalar homenet.office.eth[4].mac 	"bits/sec rcvd" 	486.39160634039
-scalar homenet.office.eth[4].mac 	"rx channel idle (%)" 	99.998782221005
-scalar homenet.office.eth[4].mac 	"rx channel utilization (%)" 	0.0012095791262939
-scalar homenet.office.eth[4].mac 	"rx channel collision (%)" 	8.1998684948751e-06
-scalar homenet.office.eth[4].mac 	collisions 	2
-scalar homenet.office.eth[4].mac 	backoffs 	2
-scalar homenet.office.eth[4].encap 	"packets from higher layer" 	23
-scalar homenet.office.eth[4].encap 	"frames from MAC" 	19
-scalar homenet.room_B.networkLayer.arp 	"ARP requests sent" 	5
-scalar homenet.room_B.networkLayer.arp 	"ARP replies sent" 	5
-scalar homenet.room_B.networkLayer.arp 	"ARP resolutions" 	5
-scalar homenet.room_B.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.room_B.eth[0].queue 	"packets received by queue" 	3
-scalar homenet.room_B.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.room_B.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_B.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.room_B.eth[0].mac 	"full duplex" 	0
-scalar homenet.room_B.eth[0].mac 	"frames sent" 	3
-scalar homenet.room_B.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.room_B.eth[0].mac 	"bytes sent" 	192
-scalar homenet.room_B.eth[0].mac 	"bytes rcvd" 	614
-scalar homenet.room_B.eth[0].mac 	"frames from higher layer" 	3
-scalar homenet.room_B.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_B.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_B.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_B.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.room_B.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_B.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_B.eth[0].mac 	"frames/sec sent" 	0.14999741149477
-scalar homenet.room_B.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.room_B.eth[0].mac 	"bits/sec sent" 	76.798674685325
-scalar homenet.room_B.eth[0].mac 	"bits/sec rcvd" 	245.59576175411
-scalar homenet.room_B.eth[0].mac 	"rx channel idle (%)" 	99.99966160584
-scalar homenet.room_B.eth[0].mac 	"rx channel utilization (%)" 	0.00033839416033221
-scalar homenet.room_B.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.room_B.eth[0].mac 	collisions 	0
-scalar homenet.room_B.eth[0].mac 	backoffs 	0
-scalar homenet.room_B.eth[0].encap 	"packets from higher layer" 	3
-scalar homenet.room_B.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.room_B.eth[1].queue 	"packets received by queue" 	27
-scalar homenet.room_B.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.room_B.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_B.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.room_B.eth[1].mac 	"full duplex" 	0
-scalar homenet.room_B.eth[1].mac 	"frames sent" 	27
-scalar homenet.room_B.eth[1].mac 	"frames rcvd" 	19
-scalar homenet.room_B.eth[1].mac 	"bytes sent" 	1728
-scalar homenet.room_B.eth[1].mac 	"bytes rcvd" 	1216
-scalar homenet.room_B.eth[1].mac 	"frames from higher layer" 	27
-scalar homenet.room_B.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_B.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_B.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_B.eth[1].mac 	"frames passed up to HL" 	19
-scalar homenet.room_B.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_B.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_B.eth[1].mac 	"frames/sec sent" 	1.349976703453
-scalar homenet.room_B.eth[1].mac 	"frames/sec rcvd" 	0.94998360613357
-scalar homenet.room_B.eth[1].mac 	"bits/sec sent" 	691.18807216792
-scalar homenet.room_B.eth[1].mac 	"bits/sec rcvd" 	486.39160634039
-scalar homenet.room_B.eth[1].mac 	"rx channel idle (%)" 	99.998662223086
-scalar homenet.room_B.eth[1].mac 	"rx channel utilization (%)" 	0.0013247771383219
-scalar homenet.room_B.eth[1].mac 	"rx channel collision (%)" 	1.299977566288e-05
-scalar homenet.room_B.eth[1].mac 	collisions 	5
-scalar homenet.room_B.eth[1].mac 	backoffs 	5
-scalar homenet.room_B.eth[1].encap 	"packets from higher layer" 	27
-scalar homenet.room_B.eth[1].encap 	"frames from MAC" 	19
-scalar homenet.room_B.eth[2].queue 	"packets received by queue" 	23
-scalar homenet.room_B.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.room_B.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_B.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.room_B.eth[2].mac 	"full duplex" 	0
-scalar homenet.room_B.eth[2].mac 	"frames sent" 	23
-scalar homenet.room_B.eth[2].mac 	"frames rcvd" 	18
-scalar homenet.room_B.eth[2].mac 	"bytes sent" 	1472
-scalar homenet.room_B.eth[2].mac 	"bytes rcvd" 	1152
-scalar homenet.room_B.eth[2].mac 	"frames from higher layer" 	23
-scalar homenet.room_B.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_B.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_B.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_B.eth[2].mac 	"frames passed up to HL" 	18
-scalar homenet.room_B.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_B.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_B.eth[2].mac 	"frames/sec sent" 	1.1499801547933
-scalar homenet.room_B.eth[2].mac 	"frames/sec rcvd" 	0.89998446896865
-scalar homenet.room_B.eth[2].mac 	"bits/sec sent" 	588.78983925416
-scalar homenet.room_B.eth[2].mac 	"bits/sec rcvd" 	460.79204811195
-scalar homenet.room_B.eth[2].mac 	"rx channel idle (%)" 	99.998809620557
-scalar homenet.room_B.eth[2].mac 	"rx channel utilization (%)" 	0.0011807796232869
-scalar homenet.room_B.eth[2].mac 	"rx channel collision (%)" 	9.5998193359244e-06
-scalar homenet.room_B.eth[2].mac 	collisions 	3
-scalar homenet.room_B.eth[2].mac 	backoffs 	3
-scalar homenet.room_B.eth[2].encap 	"packets from higher layer" 	23
-scalar homenet.room_B.eth[2].encap 	"frames from MAC" 	18
-scalar homenet.room_B.eth[3].queue 	"packets received by queue" 	35
-scalar homenet.room_B.eth[3].queue 	"packets dropped by queue" 	0
-scalar homenet.room_B.eth[3].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_B.eth[3].mac 	"txrate (Mb)" 	100
-scalar homenet.room_B.eth[3].mac 	"full duplex" 	0
-scalar homenet.room_B.eth[3].mac 	"frames sent" 	35
-scalar homenet.room_B.eth[3].mac 	"frames rcvd" 	33
-scalar homenet.room_B.eth[3].mac 	"bytes sent" 	2726
-scalar homenet.room_B.eth[3].mac 	"bytes rcvd" 	2112
-scalar homenet.room_B.eth[3].mac 	"frames from higher layer" 	35
-scalar homenet.room_B.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_B.eth[3].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_B.eth[3].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_B.eth[3].mac 	"frames passed up to HL" 	33
-scalar homenet.room_B.eth[3].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_B.eth[3].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_B.eth[3].mac 	"frames/sec sent" 	1.7499698007724
-scalar homenet.room_B.eth[3].mac 	"frames/sec rcvd" 	1.6499715264425
-scalar homenet.room_B.eth[3].mac 	"bits/sec sent" 	1090.3811832927
-scalar homenet.room_B.eth[3].mac 	"bits/sec rcvd" 	844.78542153857
-scalar homenet.room_B.eth[3].mac 	"rx channel idle (%)" 	99.997844637195
-scalar homenet.room_B.eth[3].mac 	"rx channel utilization (%)" 	0.002152762849773
-scalar homenet.room_B.eth[3].mac 	"rx channel collision (%)" 	2.5999551325761e-06
-scalar homenet.room_B.eth[3].mac 	collisions 	1
-scalar homenet.room_B.eth[3].mac 	backoffs 	1
-scalar homenet.room_B.eth[3].encap 	"packets from higher layer" 	35
-scalar homenet.room_B.eth[3].encap 	"frames from MAC" 	33
-scalar homenet.room_B.eth[4].queue 	"packets received by queue" 	28
-scalar homenet.room_B.eth[4].queue 	"packets dropped by queue" 	0
-scalar homenet.room_B.eth[4].mac 	"simulated time" 	20.000345139986
-scalar homenet.room_B.eth[4].mac 	"txrate (Mb)" 	100
-scalar homenet.room_B.eth[4].mac 	"full duplex" 	0
-scalar homenet.room_B.eth[4].mac 	"frames sent" 	28
-scalar homenet.room_B.eth[4].mac 	"frames rcvd" 	18
-scalar homenet.room_B.eth[4].mac 	"bytes sent" 	1792
-scalar homenet.room_B.eth[4].mac 	"bytes rcvd" 	1152
-scalar homenet.room_B.eth[4].mac 	"frames from higher layer" 	28
-scalar homenet.room_B.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.room_B.eth[4].mac 	"frames dropped (bit error)" 	0
-scalar homenet.room_B.eth[4].mac 	"frames dropped (not for us)" 	0
-scalar homenet.room_B.eth[4].mac 	"frames passed up to HL" 	18
-scalar homenet.room_B.eth[4].mac 	"PAUSE frames sent" 	0
-scalar homenet.room_B.eth[4].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.room_B.eth[4].mac 	"frames/sec sent" 	1.3999758406179
-scalar homenet.room_B.eth[4].mac 	"frames/sec rcvd" 	0.89998446896865
-scalar homenet.room_B.eth[4].mac 	"bits/sec sent" 	716.78763039636
-scalar homenet.room_B.eth[4].mac 	"bits/sec rcvd" 	460.79204811195
-scalar homenet.room_B.eth[4].mac 	"rx channel idle (%)" 	99.998672622907
-scalar homenet.room_B.eth[4].mac 	"rx channel utilization (%)" 	0.0013247771383219
-scalar homenet.room_B.eth[4].mac 	"rx channel collision (%)" 	2.5999551325761e-06
-scalar homenet.room_B.eth[4].mac 	collisions 	1
-scalar homenet.room_B.eth[4].mac 	backoffs 	1
-scalar homenet.room_B.eth[4].encap 	"packets from higher layer" 	28
-scalar homenet.room_B.eth[4].encap 	"frames from MAC" 	18
-scalar homenet.living_room.networkLayer.arp 	"ARP requests sent" 	7
-scalar homenet.living_room.networkLayer.arp 	"ARP replies sent" 	3
-scalar homenet.living_room.networkLayer.arp 	"ARP resolutions" 	7
-scalar homenet.living_room.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.living_room.eth[0].queue 	"packets received by queue" 	2
-scalar homenet.living_room.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[0].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[0].mac 	"frames sent" 	2
-scalar homenet.living_room.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.living_room.eth[0].mac 	"bytes sent" 	128
-scalar homenet.living_room.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.living_room.eth[0].mac 	"frames from higher layer" 	2
-scalar homenet.living_room.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.living_room.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[0].mac 	"frames/sec sent" 	0.09999827432985
-scalar homenet.living_room.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.living_room.eth[0].mac 	"bits/sec sent" 	51.199116456883
-scalar homenet.living_room.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.living_room.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.living_room.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.living_room.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.living_room.eth[0].mac 	collisions 	0
-scalar homenet.living_room.eth[0].mac 	backoffs 	0
-scalar homenet.living_room.eth[0].encap 	"packets from higher layer" 	2
-scalar homenet.living_room.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.living_room.eth[1].queue 	"packets received by queue" 	23
-scalar homenet.living_room.eth[1].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[1].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[1].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[1].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[1].mac 	"frames sent" 	23
-scalar homenet.living_room.eth[1].mac 	"frames rcvd" 	19
-scalar homenet.living_room.eth[1].mac 	"bytes sent" 	1472
-scalar homenet.living_room.eth[1].mac 	"bytes rcvd" 	1216
-scalar homenet.living_room.eth[1].mac 	"frames from higher layer" 	23
-scalar homenet.living_room.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[1].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[1].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[1].mac 	"frames passed up to HL" 	19
-scalar homenet.living_room.eth[1].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[1].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[1].mac 	"frames/sec sent" 	1.1499801547933
-scalar homenet.living_room.eth[1].mac 	"frames/sec rcvd" 	0.94998360613357
-scalar homenet.living_room.eth[1].mac 	"bits/sec sent" 	588.78983925416
-scalar homenet.living_room.eth[1].mac 	"bits/sec rcvd" 	486.39160634039
-scalar homenet.living_room.eth[1].mac 	"rx channel idle (%)" 	99.998790420874
-scalar homenet.living_room.eth[1].mac 	"rx channel utilization (%)" 	0.0012095791262939
-scalar homenet.living_room.eth[1].mac 	"rx channel collision (%)" 	0
-scalar homenet.living_room.eth[1].mac 	collisions 	0
-scalar homenet.living_room.eth[1].mac 	backoffs 	0
-scalar homenet.living_room.eth[1].encap 	"packets from higher layer" 	23
-scalar homenet.living_room.eth[1].encap 	"frames from MAC" 	19
-scalar homenet.living_room.eth[2].queue 	"packets received by queue" 	33
-scalar homenet.living_room.eth[2].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[2].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[2].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[2].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[2].mac 	"frames sent" 	33
-scalar homenet.living_room.eth[2].mac 	"frames rcvd" 	35
-scalar homenet.living_room.eth[2].mac 	"bytes sent" 	2112
-scalar homenet.living_room.eth[2].mac 	"bytes rcvd" 	2726
-scalar homenet.living_room.eth[2].mac 	"frames from higher layer" 	33
-scalar homenet.living_room.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[2].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[2].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[2].mac 	"frames passed up to HL" 	35
-scalar homenet.living_room.eth[2].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[2].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[2].mac 	"frames/sec sent" 	1.6499715264425
-scalar homenet.living_room.eth[2].mac 	"frames/sec rcvd" 	1.7499698007724
-scalar homenet.living_room.eth[2].mac 	"bits/sec sent" 	844.78542153857
-scalar homenet.living_room.eth[2].mac 	"bits/sec rcvd" 	1090.3811832927
-scalar homenet.living_room.eth[2].mac 	"rx channel idle (%)" 	99.997844637195
-scalar homenet.living_room.eth[2].mac 	"rx channel utilization (%)" 	0.002152762849773
-scalar homenet.living_room.eth[2].mac 	"rx channel collision (%)" 	2.5999551325761e-06
-scalar homenet.living_room.eth[2].mac 	collisions 	1
-scalar homenet.living_room.eth[2].mac 	backoffs 	1
-scalar homenet.living_room.eth[2].encap 	"packets from higher layer" 	33
-scalar homenet.living_room.eth[2].encap 	"frames from MAC" 	35
-scalar homenet.living_room.eth[3].queue 	"packets received by queue" 	23
-scalar homenet.living_room.eth[3].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[3].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[3].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[3].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[3].mac 	"frames sent" 	23
-scalar homenet.living_room.eth[3].mac 	"frames rcvd" 	20
-scalar homenet.living_room.eth[3].mac 	"bytes sent" 	1472
-scalar homenet.living_room.eth[3].mac 	"bytes rcvd" 	1280
-scalar homenet.living_room.eth[3].mac 	"frames from higher layer" 	23
-scalar homenet.living_room.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[3].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[3].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[3].mac 	"frames passed up to HL" 	20
-scalar homenet.living_room.eth[3].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[3].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[3].mac 	"frames/sec sent" 	1.1499801547933
-scalar homenet.living_room.eth[3].mac 	"frames/sec rcvd" 	0.9999827432985
-scalar homenet.living_room.eth[3].mac 	"bits/sec sent" 	588.78983925416
-scalar homenet.living_room.eth[3].mac 	"bits/sec rcvd" 	511.99116456883
-scalar homenet.living_room.eth[3].mac 	"rx channel idle (%)" 	99.998753821505
-scalar homenet.living_room.eth[3].mac 	"rx channel utilization (%)" 	0.0012383786293009
-scalar homenet.living_room.eth[3].mac 	"rx channel collision (%)" 	7.7998653977283e-06
-scalar homenet.living_room.eth[3].mac 	collisions 	3
-scalar homenet.living_room.eth[3].mac 	backoffs 	3
-scalar homenet.living_room.eth[3].encap 	"packets from higher layer" 	23
-scalar homenet.living_room.eth[3].encap 	"frames from MAC" 	20
-scalar homenet.living_room.eth[4].queue 	"packets received by queue" 	23
-scalar homenet.living_room.eth[4].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[4].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[4].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[4].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[4].mac 	"frames sent" 	23
-scalar homenet.living_room.eth[4].mac 	"frames rcvd" 	22
-scalar homenet.living_room.eth[4].mac 	"bytes sent" 	1472
-scalar homenet.living_room.eth[4].mac 	"bytes rcvd" 	1408
-scalar homenet.living_room.eth[4].mac 	"frames from higher layer" 	23
-scalar homenet.living_room.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[4].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[4].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[4].mac 	"frames passed up to HL" 	22
-scalar homenet.living_room.eth[4].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[4].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[4].mac 	"frames/sec sent" 	1.1499801547933
-scalar homenet.living_room.eth[4].mac 	"frames/sec rcvd" 	1.0999810176283
-scalar homenet.living_room.eth[4].mac 	"bits/sec sent" 	588.78983925416
-scalar homenet.living_room.eth[4].mac 	"bits/sec rcvd" 	563.19028102571
-scalar homenet.living_room.eth[4].mac 	"rx channel idle (%)" 	99.998704022365
-scalar homenet.living_room.eth[4].mac 	"rx channel utilization (%)" 	0.0012959776353149
-scalar homenet.living_room.eth[4].mac 	"rx channel collision (%)" 	0
-scalar homenet.living_room.eth[4].mac 	collisions 	0
-scalar homenet.living_room.eth[4].mac 	backoffs 	0
-scalar homenet.living_room.eth[4].encap 	"packets from higher layer" 	23
-scalar homenet.living_room.eth[4].encap 	"frames from MAC" 	22
-scalar homenet.living_room.eth[5].queue 	"packets received by queue" 	33
-scalar homenet.living_room.eth[5].queue 	"packets dropped by queue" 	0
-scalar homenet.living_room.eth[5].mac 	"simulated time" 	20.000345139986
-scalar homenet.living_room.eth[5].mac 	"txrate (Mb)" 	100
-scalar homenet.living_room.eth[5].mac 	"full duplex" 	0
-scalar homenet.living_room.eth[5].mac 	"frames sent" 	33
-scalar homenet.living_room.eth[5].mac 	"frames rcvd" 	26
-scalar homenet.living_room.eth[5].mac 	"bytes sent" 	2598
-scalar homenet.living_room.eth[5].mac 	"bytes rcvd" 	1664
-scalar homenet.living_room.eth[5].mac 	"frames from higher layer" 	33
-scalar homenet.living_room.eth[5].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.living_room.eth[5].mac 	"frames dropped (bit error)" 	0
-scalar homenet.living_room.eth[5].mac 	"frames dropped (not for us)" 	0
-scalar homenet.living_room.eth[5].mac 	"frames passed up to HL" 	26
-scalar homenet.living_room.eth[5].mac 	"PAUSE frames sent" 	0
-scalar homenet.living_room.eth[5].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.living_room.eth[5].mac 	"frames/sec sent" 	1.6499715264425
-scalar homenet.living_room.eth[5].mac 	"frames/sec rcvd" 	1.299977566288
-scalar homenet.living_room.eth[5].mac 	"bits/sec sent" 	1039.1820668358
-scalar homenet.living_room.eth[5].mac 	"bits/sec rcvd" 	665.58851393948
-scalar homenet.living_room.eth[5].mac 	"rx channel idle (%)" 	99.998090432923
-scalar homenet.living_room.eth[5].mac 	"rx channel utilization (%)" 	0.00189356732271
-scalar homenet.living_room.eth[5].mac 	"rx channel collision (%)" 	1.5999753892258e-05
-scalar homenet.living_room.eth[5].mac 	collisions 	5
-scalar homenet.living_room.eth[5].mac 	backoffs 	5
-scalar homenet.living_room.eth[5].encap 	"packets from higher layer" 	33
-scalar homenet.living_room.eth[5].encap 	"frames from MAC" 	26
-scalar homenet.Host0.pingApp 	"Pings sent" 	1
-scalar homenet.Host0.pingApp 	"Pings dropped" 	0
-scalar homenet.Host0.pingApp 	"Out-of-order ping arrivals" 	0
-scalar homenet.Host0.pingApp 	"Pings outstanding at end" 	1
-scalar homenet.Host0.pingApp 	"Ping drop rate (%)" 	0
-scalar homenet.Host0.pingApp 	"Ping out-of-order rate (%)" 	0
-statistic homenet.Host0.pingApp 	"Ping roundtrip delays"
-field count 0
-field mean 0
-field stddev -nan
-field sum 0
-field sqrsum 0
-field min 0
-field max 0
-scalar homenet.Host0.networkLayer.arp 	"ARP requests sent" 	1
-scalar homenet.Host0.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host0.networkLayer.arp 	"ARP resolutions" 	1
-scalar homenet.Host0.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host0.eth[0].queue 	"packets received by queue" 	2
-scalar homenet.Host0.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host0.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host0.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host0.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host0.eth[0].mac 	"frames sent" 	2
-scalar homenet.Host0.eth[0].mac 	"frames rcvd" 	3
-scalar homenet.Host0.eth[0].mac 	"bytes sent" 	614
-scalar homenet.Host0.eth[0].mac 	"bytes rcvd" 	192
-scalar homenet.Host0.eth[0].mac 	"frames from higher layer" 	2
-scalar homenet.Host0.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host0.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host0.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host0.eth[0].mac 	"frames passed up to HL" 	3
-scalar homenet.Host0.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host0.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host0.eth[0].mac 	"frames/sec sent" 	0.09999827432985
-scalar homenet.Host0.eth[0].mac 	"frames/sec rcvd" 	0.14999741149477
-scalar homenet.Host0.eth[0].mac 	"bits/sec sent" 	245.59576175411
-scalar homenet.Host0.eth[0].mac 	"bits/sec rcvd" 	76.798674685325
-scalar homenet.Host0.eth[0].mac 	"rx channel idle (%)" 	99.99966160584
-scalar homenet.Host0.eth[0].mac 	"rx channel utilization (%)" 	0.00033839416033221
-scalar homenet.Host0.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host0.eth[0].mac 	collisions 	0
-scalar homenet.Host0.eth[0].mac 	backoffs 	0
-scalar homenet.Host0.eth[0].encap 	"packets from higher layer" 	2
-scalar homenet.Host0.eth[0].encap 	"frames from MAC" 	3
-scalar homenet.Host1.pingApp 	"Pings sent" 	0
-scalar homenet.Host1.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Host1.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host1.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Host1.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host1.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Host1.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host1.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host1.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host1.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host1.eth[0].mac 	"frames sent" 	0
-scalar homenet.Host1.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.Host1.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Host1.eth[0].mac 	"bytes rcvd" 	128
-scalar homenet.Host1.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Host1.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host1.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host1.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host1.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.Host1.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host1.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host1.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Host1.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Host1.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Host1.eth[0].mac 	"bits/sec rcvd" 	51.199116456883
-scalar homenet.Host1.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Host1.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Host1.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host1.eth[0].mac 	collisions 	0
-scalar homenet.Host1.eth[0].mac 	backoffs 	0
-scalar homenet.Host1.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Host1.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.Host2.pingApp 	"Pings sent" 	0
-scalar homenet.Host2.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Host2.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host2.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Host2.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host2.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Host2.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host2.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host2.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host2.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host2.eth[0].mac 	"frames sent" 	0
-scalar homenet.Host2.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.Host2.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Host2.eth[0].mac 	"bytes rcvd" 	128
-scalar homenet.Host2.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Host2.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host2.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host2.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host2.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.Host2.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host2.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host2.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Host2.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Host2.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Host2.eth[0].mac 	"bits/sec rcvd" 	51.199116456883
-scalar homenet.Host2.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Host2.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Host2.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host2.eth[0].mac 	collisions 	0
-scalar homenet.Host2.eth[0].mac 	backoffs 	0
-scalar homenet.Host2.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Host2.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.Host3.pingApp 	"Pings sent" 	0
-scalar homenet.Host3.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Host3.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host3.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Host3.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host3.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Host3.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host3.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host3.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host3.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host3.eth[0].mac 	"frames sent" 	0
-scalar homenet.Host3.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.Host3.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Host3.eth[0].mac 	"bytes rcvd" 	128
-scalar homenet.Host3.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Host3.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host3.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host3.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host3.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.Host3.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host3.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host3.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Host3.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Host3.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Host3.eth[0].mac 	"bits/sec rcvd" 	51.199116456883
-scalar homenet.Host3.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Host3.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Host3.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host3.eth[0].mac 	collisions 	0
-scalar homenet.Host3.eth[0].mac 	backoffs 	0
-scalar homenet.Host3.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Host3.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.Host4.pingApp 	"Pings sent" 	0
-scalar homenet.Host4.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Host4.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host4.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Host4.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host4.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Host4.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host4.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host4.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host4.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host4.eth[0].mac 	"frames sent" 	0
-scalar homenet.Host4.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.Host4.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Host4.eth[0].mac 	"bytes rcvd" 	128
-scalar homenet.Host4.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Host4.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host4.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host4.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host4.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.Host4.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host4.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host4.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Host4.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Host4.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Host4.eth[0].mac 	"bits/sec rcvd" 	51.199116456883
-scalar homenet.Host4.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Host4.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Host4.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host4.eth[0].mac 	collisions 	0
-scalar homenet.Host4.eth[0].mac 	backoffs 	0
-scalar homenet.Host4.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Host4.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.Host5.pingApp 	"Pings sent" 	0
-scalar homenet.Host5.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Host5.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Host5.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Host5.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Host5.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Host5.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Host5.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Host5.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Host5.eth[0].mac 	"full duplex" 	0
-scalar homenet.Host5.eth[0].mac 	"frames sent" 	0
-scalar homenet.Host5.eth[0].mac 	"frames rcvd" 	2
-scalar homenet.Host5.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Host5.eth[0].mac 	"bytes rcvd" 	128
-scalar homenet.Host5.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Host5.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Host5.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Host5.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Host5.eth[0].mac 	"frames passed up to HL" 	2
-scalar homenet.Host5.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Host5.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Host5.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Host5.eth[0].mac 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Host5.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Host5.eth[0].mac 	"bits/sec rcvd" 	51.199116456883
-scalar homenet.Host5.eth[0].mac 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Host5.eth[0].mac 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Host5.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Host5.eth[0].mac 	collisions 	0
-scalar homenet.Host5.eth[0].mac 	backoffs 	0
-scalar homenet.Host5.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Host5.eth[0].encap 	"frames from MAC" 	2
-scalar homenet.etherHub0 	"simulated time" 	20.000345139986
-scalar homenet.etherHub0 	"messages handled" 	7
-scalar homenet.etherHub0 	messages/sec 	0.34999396015447
-scalar homenet.etherHub1 	"simulated time" 	20.000345139986
-scalar homenet.etherHub1 	"messages handled" 	4
-scalar homenet.etherHub1 	messages/sec 	0.1999965486597
-scalar homenet.etherHub2 	"simulated time" 	20.000345139986
-scalar homenet.etherHub2 	"messages handled" 	4
-scalar homenet.etherHub2 	messages/sec 	0.1999965486597
-scalar homenet.etherHub3 	"simulated time" 	20.000345139986
-scalar homenet.etherHub3 	"messages handled" 	5
-scalar homenet.etherHub3 	messages/sec 	0.24999568582462
-scalar homenet.etherHub4 	"simulated time" 	20.000345139986
-scalar homenet.etherHub4 	"messages handled" 	4
-scalar homenet.etherHub4 	messages/sec 	0.1999965486597
-scalar homenet.etherHub5 	"simulated time" 	20.000345139986
-scalar homenet.etherHub5 	"messages handled" 	4
-scalar homenet.etherHub5 	messages/sec 	0.1999965486597
-scalar homenet.Receptor3.statistics.pingApp 	"Pings sent" 	0
-scalar homenet.Receptor3.statistics.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Receptor3.statistics.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Receptor3.statistics.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Receptor3.statistics.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Receptor3.statistics.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Receptor3.statistics.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Receptor3.statistics.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Receptor3.statistics.eth[0].mac 	"full duplex" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames sent" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"rx channel idle (%)" 	100
-scalar homenet.Receptor3.statistics.eth[0].mac 	"rx channel utilization (%)" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	collisions 	0
-scalar homenet.Receptor3.statistics.eth[0].mac 	backoffs 	0
-scalar homenet.Receptor3.statistics.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Receptor3.statistics.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.Receptor3.stats.relayUnit 	"processed frames" 	3
-scalar homenet.Receptor3.stats.relayUnit 	"dropped frames" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"simulated time" 	20.000345139986
-scalar homenet.Receptor3.stats.mac[0] 	"txrate (Mb)" 	100
-scalar homenet.Receptor3.stats.mac[0] 	"full duplex" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames sent" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames rcvd" 	3
-scalar homenet.Receptor3.stats.mac[0] 	"bytes sent" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"bytes rcvd" 	192
-scalar homenet.Receptor3.stats.mac[0] 	"frames from higher layer" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames dropped (bit error)" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames dropped (not for us)" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames passed up to HL" 	3
-scalar homenet.Receptor3.stats.mac[0] 	"PAUSE frames sent" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"PAUSE frames rcvd" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames/sec sent" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"frames/sec rcvd" 	0.14999741149477
-scalar homenet.Receptor3.stats.mac[0] 	"bits/sec sent" 	0
-scalar homenet.Receptor3.stats.mac[0] 	"bits/sec rcvd" 	76.798674685325
-scalar homenet.Receptor3.stats.mac[0] 	"rx channel idle (%)" 	99.999913601491
-scalar homenet.Receptor3.stats.mac[0] 	"rx channel utilization (%)" 	8.639850902099e-05
-scalar homenet.Receptor3.stats.mac[0] 	"rx channel collision (%)" 	0
-scalar homenet.Receptor3.stats.mac[0] 	collisions 	0
-scalar homenet.Receptor3.stats.mac[0] 	backoffs 	0
-scalar homenet.Receptor3.stats.mac[1] 	"simulated time" 	20.000345139986
-scalar homenet.Receptor3.stats.mac[1] 	"txrate (Mb)" 	100
-scalar homenet.Receptor3.stats.mac[1] 	"full duplex" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames sent" 	2
-scalar homenet.Receptor3.stats.mac[1] 	"frames rcvd" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"bytes sent" 	128
-scalar homenet.Receptor3.stats.mac[1] 	"bytes rcvd" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames from higher layer" 	3
-scalar homenet.Receptor3.stats.mac[1] 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames dropped (bit error)" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames dropped (not for us)" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames passed up to HL" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"PAUSE frames sent" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"PAUSE frames rcvd" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"frames/sec sent" 	0.09999827432985
-scalar homenet.Receptor3.stats.mac[1] 	"frames/sec rcvd" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"bits/sec sent" 	51.199116456883
-scalar homenet.Receptor3.stats.mac[1] 	"bits/sec rcvd" 	0
-scalar homenet.Receptor3.stats.mac[1] 	"rx channel idle (%)" 	99.999942400994
-scalar homenet.Receptor3.stats.mac[1] 	"rx channel utilization (%)" 	5.7599006013994e-05
-scalar homenet.Receptor3.stats.mac[1] 	"rx channel collision (%)" 	0
-scalar homenet.Receptor3.stats.mac[1] 	collisions 	0
-scalar homenet.Receptor3.stats.mac[1] 	backoffs 	0
-scalar homenet.Receptor3.stats.etherEncap 	"packets from higher layer" 	3
-scalar homenet.Receptor3.stats.etherEncap 	"frames from MAC" 	3
-scalar homenet.Receptor3.stats.thruputMeter 	JitterMean 	0
-scalar homenet.Receptor3.stats.thruputMeter 	EedMean 	0
-scalar homenet.Receptor3.stats.thruputMeter 	Duration 	20.000345139986
-scalar homenet.Receptor3.stats.thruputMeter 	"Drop packets" 	0
-scalar homenet.Receptor3.stats.thruputMeter 	"Total packets" 	0
-scalar homenet.Receptor3.stats.thruputMeter 	"Total bits" 	0
-scalar homenet.Receptor3.stats.thruputMeter 	"Throughput avg(bit/s)" 	0
-scalar homenet.Receptor3.stats.thruputMeter 	"Packets avg/s" 	0
-scalar homenet.Emitter0.statistics.pingApp 	"Pings sent" 	0
-scalar homenet.Emitter0.statistics.networkLayer.arp 	"ARP requests sent" 	0
-scalar homenet.Emitter0.statistics.networkLayer.arp 	"ARP replies sent" 	0
-scalar homenet.Emitter0.statistics.networkLayer.arp 	"ARP resolutions" 	0
-scalar homenet.Emitter0.statistics.networkLayer.arp 	"failed ARP resolutions" 	0
-scalar homenet.Emitter0.statistics.eth[0].queue 	"packets received by queue" 	0
-scalar homenet.Emitter0.statistics.eth[0].queue 	"packets dropped by queue" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"simulated time" 	20.000345139986
-scalar homenet.Emitter0.statistics.eth[0].mac 	"txrate (Mb)" 	100
-scalar homenet.Emitter0.statistics.eth[0].mac 	"full duplex" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames sent" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames rcvd" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"bytes sent" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"bytes rcvd" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames from higher layer" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames dropped (bit error)" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames dropped (not for us)" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames passed up to HL" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"PAUSE frames sent" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"PAUSE frames rcvd" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames/sec sent" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"frames/sec rcvd" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"bits/sec sent" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"bits/sec rcvd" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"rx channel idle (%)" 	100
-scalar homenet.Emitter0.statistics.eth[0].mac 	"rx channel utilization (%)" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	"rx channel collision (%)" 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	collisions 	0
-scalar homenet.Emitter0.statistics.eth[0].mac 	backoffs 	0
-scalar homenet.Emitter0.statistics.eth[0].encap 	"packets from higher layer" 	0
-scalar homenet.Emitter0.statistics.eth[0].encap 	"frames from MAC" 	0
-scalar homenet.Emitter0.stats.relayUnit 	"processed frames" 	5
-scalar homenet.Emitter0.stats.relayUnit 	"dropped frames" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"simulated time" 	20.000345139986
-scalar homenet.Emitter0.stats.mac[0] 	"txrate (Mb)" 	100
-scalar homenet.Emitter0.stats.mac[0] 	"full duplex" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"frames sent" 	3
-scalar homenet.Emitter0.stats.mac[0] 	"frames rcvd" 	2
-scalar homenet.Emitter0.stats.mac[0] 	"bytes sent" 	192
-scalar homenet.Emitter0.stats.mac[0] 	"bytes rcvd" 	614
-scalar homenet.Emitter0.stats.mac[0] 	"frames from higher layer" 	3
-scalar homenet.Emitter0.stats.mac[0] 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"frames dropped (bit error)" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"frames dropped (not for us)" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"frames passed up to HL" 	2
-scalar homenet.Emitter0.stats.mac[0] 	"PAUSE frames sent" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"PAUSE frames rcvd" 	0
-scalar homenet.Emitter0.stats.mac[0] 	"frames/sec sent" 	0.14999741149477
-scalar homenet.Emitter0.stats.mac[0] 	"frames/sec rcvd" 	0.09999827432985
-scalar homenet.Emitter0.stats.mac[0] 	"bits/sec sent" 	76.798674685325
-scalar homenet.Emitter0.stats.mac[0] 	"bits/sec rcvd" 	245.59576175411
-scalar homenet.Emitter0.stats.mac[0] 	"rx channel idle (%)" 	99.99966160584
-scalar homenet.Emitter0.stats.mac[0] 	"rx channel utilization (%)" 	0.00033839416033221
-scalar homenet.Emitter0.stats.mac[0] 	"rx channel collision (%)" 	0
-scalar homenet.Emitter0.stats.mac[0] 	collisions 	0
-scalar homenet.Emitter0.stats.mac[0] 	backoffs 	0
-scalar homenet.Emitter0.stats.mac[1] 	"simulated time" 	20.000345139986
-scalar homenet.Emitter0.stats.mac[1] 	"txrate (Mb)" 	100
-scalar homenet.Emitter0.stats.mac[1] 	"full duplex" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"frames sent" 	2
-scalar homenet.Emitter0.stats.mac[1] 	"frames rcvd" 	3
-scalar homenet.Emitter0.stats.mac[1] 	"bytes sent" 	614
-scalar homenet.Emitter0.stats.mac[1] 	"bytes rcvd" 	192
-scalar homenet.Emitter0.stats.mac[1] 	"frames from higher layer" 	2
-scalar homenet.Emitter0.stats.mac[1] 	"frames from higher layer dropped (iface down)" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"frames dropped (bit error)" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"frames dropped (not for us)" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"frames passed up to HL" 	3
-scalar homenet.Emitter0.stats.mac[1] 	"PAUSE frames sent" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"PAUSE frames rcvd" 	0
-scalar homenet.Emitter0.stats.mac[1] 	"frames/sec sent" 	0.09999827432985
-scalar homenet.Emitter0.stats.mac[1] 	"frames/sec rcvd" 	0.14999741149477
-scalar homenet.Emitter0.stats.mac[1] 	"bits/sec sent" 	245.59576175411
-scalar homenet.Emitter0.stats.mac[1] 	"bits/sec rcvd" 	76.798674685325
-scalar homenet.Emitter0.stats.mac[1] 	"rx channel idle (%)" 	99.99966160584
-scalar homenet.Emitter0.stats.mac[1] 	"rx channel utilization (%)" 	0.00033839416033221
-scalar homenet.Emitter0.stats.mac[1] 	"rx channel collision (%)" 	0
-scalar homenet.Emitter0.stats.mac[1] 	collisions 	0
-scalar homenet.Emitter0.stats.mac[1] 	backoffs 	0
-scalar homenet.Emitter0.stats.etherEncap 	"packets from higher layer" 	2
-scalar homenet.Emitter0.stats.etherEncap 	"frames from MAC" 	2
-scalar homenet.Emitter0.stats.thruputMeter 	JitterMean 	0
-scalar homenet.Emitter0.stats.thruputMeter 	EedMean 	0
-scalar homenet.Emitter0.stats.thruputMeter 	Duration 	20.000345139986
-scalar homenet.Emitter0.stats.thruputMeter 	"Drop packets" 	0
-scalar homenet.Emitter0.stats.thruputMeter 	"Total packets" 	0
-scalar homenet.Emitter0.stats.thruputMeter 	"Total bits" 	0
-scalar homenet.Emitter0.stats.thruputMeter 	"Throughput avg(bit/s)" 	0
-scalar homenet.Emitter0.stats.thruputMeter 	"Packets avg/s" 	0
+scalar Homenet.room_A.networkLayer.arp 	"ARP requests sent" 	3
+scalar Homenet.room_A.networkLayer.arp 	"ARP replies sent" 	1
+scalar Homenet.room_A.networkLayer.arp 	"ARP resolutions" 	3
+scalar Homenet.room_A.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.room_A.eth[0].queue 	"packets received by queue" 	23
+scalar Homenet.room_A.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_A.eth[0].mac 	"simulated time" 	40
+scalar Homenet.room_A.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_A.eth[0].mac 	"full duplex" 	0
+scalar Homenet.room_A.eth[0].mac 	"frames sent" 	23
+scalar Homenet.room_A.eth[0].mac 	"frames rcvd" 	22
+scalar Homenet.room_A.eth[0].mac 	"bytes sent" 	1472
+scalar Homenet.room_A.eth[0].mac 	"bytes rcvd" 	1408
+scalar Homenet.room_A.eth[0].mac 	"frames from higher layer" 	23
+scalar Homenet.room_A.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_A.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_A.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_A.eth[0].mac 	"frames passed up to HL" 	22
+scalar Homenet.room_A.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_A.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_A.eth[0].mac 	"frames/sec sent" 	0.575
+scalar Homenet.room_A.eth[0].mac 	"frames/sec rcvd" 	0.55
+scalar Homenet.room_A.eth[0].mac 	"bits/sec sent" 	294.4
+scalar Homenet.room_A.eth[0].mac 	"bits/sec rcvd" 	281.6
+scalar Homenet.room_A.eth[0].mac 	"rx channel idle (%)" 	99.9993481
+scalar Homenet.room_A.eth[0].mac 	"rx channel utilization (%)" 	0.000648
+scalar Homenet.room_A.eth[0].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.room_A.eth[0].mac 	collisions 	3
+scalar Homenet.room_A.eth[0].mac 	backoffs 	3
+scalar Homenet.room_A.eth[0].encap 	"packets from higher layer" 	23
+scalar Homenet.room_A.eth[0].encap 	"frames from MAC" 	22
+scalar Homenet.room_A.eth[1].queue 	"packets received by queue" 	27
+scalar Homenet.room_A.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_A.eth[1].mac 	"simulated time" 	40
+scalar Homenet.room_A.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_A.eth[1].mac 	"full duplex" 	0
+scalar Homenet.room_A.eth[1].mac 	"frames sent" 	27
+scalar Homenet.room_A.eth[1].mac 	"frames rcvd" 	28
+scalar Homenet.room_A.eth[1].mac 	"bytes sent" 	1728
+scalar Homenet.room_A.eth[1].mac 	"bytes rcvd" 	1792
+scalar Homenet.room_A.eth[1].mac 	"frames from higher layer" 	27
+scalar Homenet.room_A.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_A.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_A.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_A.eth[1].mac 	"frames passed up to HL" 	28
+scalar Homenet.room_A.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_A.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_A.eth[1].mac 	"frames/sec sent" 	0.675
+scalar Homenet.room_A.eth[1].mac 	"frames/sec rcvd" 	0.7
+scalar Homenet.room_A.eth[1].mac 	"bits/sec sent" 	345.6
+scalar Homenet.room_A.eth[1].mac 	"bits/sec rcvd" 	358.4
+scalar Homenet.room_A.eth[1].mac 	"rx channel idle (%)" 	99.9992054
+scalar Homenet.room_A.eth[1].mac 	"rx channel utilization (%)" 	0.000792
+scalar Homenet.room_A.eth[1].mac 	"rx channel collision (%)" 	2.6e-06
+scalar Homenet.room_A.eth[1].mac 	collisions 	2
+scalar Homenet.room_A.eth[1].mac 	backoffs 	2
+scalar Homenet.room_A.eth[1].encap 	"packets from higher layer" 	27
+scalar Homenet.room_A.eth[1].encap 	"frames from MAC" 	28
+scalar Homenet.room_A.eth[2].queue 	"packets received by queue" 	28
+scalar Homenet.room_A.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_A.eth[2].mac 	"simulated time" 	40
+scalar Homenet.room_A.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_A.eth[2].mac 	"full duplex" 	0
+scalar Homenet.room_A.eth[2].mac 	"frames sent" 	28
+scalar Homenet.room_A.eth[2].mac 	"frames rcvd" 	30
+scalar Homenet.room_A.eth[2].mac 	"bytes sent" 	1792
+scalar Homenet.room_A.eth[2].mac 	"bytes rcvd" 	1920
+scalar Homenet.room_A.eth[2].mac 	"frames from higher layer" 	28
+scalar Homenet.room_A.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_A.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_A.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_A.eth[2].mac 	"frames passed up to HL" 	30
+scalar Homenet.room_A.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_A.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_A.eth[2].mac 	"frames/sec sent" 	0.7
+scalar Homenet.room_A.eth[2].mac 	"frames/sec rcvd" 	0.75
+scalar Homenet.room_A.eth[2].mac 	"bits/sec sent" 	358.4
+scalar Homenet.room_A.eth[2].mac 	"bits/sec rcvd" 	384
+scalar Homenet.room_A.eth[2].mac 	"rx channel idle (%)" 	99.9991609
+scalar Homenet.room_A.eth[2].mac 	"rx channel utilization (%)" 	0.0008352
+scalar Homenet.room_A.eth[2].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.room_A.eth[2].mac 	collisions 	3
+scalar Homenet.room_A.eth[2].mac 	backoffs 	3
+scalar Homenet.room_A.eth[2].encap 	"packets from higher layer" 	28
+scalar Homenet.room_A.eth[2].encap 	"frames from MAC" 	30
+scalar Homenet.room_C.networkLayer.arp 	"ARP requests sent" 	1
+scalar Homenet.room_C.networkLayer.arp 	"ARP replies sent" 	8
+scalar Homenet.room_C.networkLayer.arp 	"ARP resolutions" 	1
+scalar Homenet.room_C.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.room_C.eth[0].queue 	"packets received by queue" 	4
+scalar Homenet.room_C.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_C.eth[0].mac 	"simulated time" 	40
+scalar Homenet.room_C.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_C.eth[0].mac 	"full duplex" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames sent" 	4
+scalar Homenet.room_C.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.room_C.eth[0].mac 	"bytes sent" 	256
+scalar Homenet.room_C.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames from higher layer" 	4
+scalar Homenet.room_C.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.room_C.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_C.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_C.eth[0].mac 	"frames/sec sent" 	0.1
+scalar Homenet.room_C.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.room_C.eth[0].mac 	"bits/sec sent" 	51.2
+scalar Homenet.room_C.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.room_C.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.room_C.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.room_C.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.room_C.eth[0].mac 	collisions 	0
+scalar Homenet.room_C.eth[0].mac 	backoffs 	0
+scalar Homenet.room_C.eth[0].encap 	"packets from higher layer" 	4
+scalar Homenet.room_C.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.room_C.eth[1].queue 	"packets received by queue" 	18
+scalar Homenet.room_C.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_C.eth[1].mac 	"simulated time" 	40
+scalar Homenet.room_C.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_C.eth[1].mac 	"full duplex" 	0
+scalar Homenet.room_C.eth[1].mac 	"frames sent" 	18
+scalar Homenet.room_C.eth[1].mac 	"frames rcvd" 	26
+scalar Homenet.room_C.eth[1].mac 	"bytes sent" 	1152
+scalar Homenet.room_C.eth[1].mac 	"bytes rcvd" 	1664
+scalar Homenet.room_C.eth[1].mac 	"frames from higher layer" 	18
+scalar Homenet.room_C.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_C.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_C.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_C.eth[1].mac 	"frames passed up to HL" 	26
+scalar Homenet.room_C.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_C.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_C.eth[1].mac 	"frames/sec sent" 	0.45
+scalar Homenet.room_C.eth[1].mac 	"frames/sec rcvd" 	0.65
+scalar Homenet.room_C.eth[1].mac 	"bits/sec sent" 	230.4
+scalar Homenet.room_C.eth[1].mac 	"bits/sec rcvd" 	332.8
+scalar Homenet.room_C.eth[1].mac 	"rx channel idle (%)" 	99.9993638
+scalar Homenet.room_C.eth[1].mac 	"rx channel utilization (%)" 	0.0006336
+scalar Homenet.room_C.eth[1].mac 	"rx channel collision (%)" 	2.6e-06
+scalar Homenet.room_C.eth[1].mac 	collisions 	2
+scalar Homenet.room_C.eth[1].mac 	backoffs 	2
+scalar Homenet.room_C.eth[1].encap 	"packets from higher layer" 	18
+scalar Homenet.room_C.eth[1].encap 	"frames from MAC" 	26
+scalar Homenet.room_C.eth[2].queue 	"packets received by queue" 	33
+scalar Homenet.room_C.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_C.eth[2].mac 	"simulated time" 	40
+scalar Homenet.room_C.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_C.eth[2].mac 	"full duplex" 	0
+scalar Homenet.room_C.eth[2].mac 	"frames sent" 	33
+scalar Homenet.room_C.eth[2].mac 	"frames rcvd" 	43
+scalar Homenet.room_C.eth[2].mac 	"bytes sent" 	2112
+scalar Homenet.room_C.eth[2].mac 	"bytes rcvd" 	2752
+scalar Homenet.room_C.eth[2].mac 	"frames from higher layer" 	33
+scalar Homenet.room_C.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_C.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_C.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_C.eth[2].mac 	"frames passed up to HL" 	43
+scalar Homenet.room_C.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_C.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_C.eth[2].mac 	"frames/sec sent" 	0.825
+scalar Homenet.room_C.eth[2].mac 	"frames/sec rcvd" 	1.075
+scalar Homenet.room_C.eth[2].mac 	"bits/sec sent" 	422.4
+scalar Homenet.room_C.eth[2].mac 	"bits/sec rcvd" 	550.4
+scalar Homenet.room_C.eth[2].mac 	"rx channel idle (%)" 	99.9989043
+scalar Homenet.room_C.eth[2].mac 	"rx channel utilization (%)" 	0.0010944
+scalar Homenet.room_C.eth[2].mac 	"rx channel collision (%)" 	1.3e-06
+scalar Homenet.room_C.eth[2].mac 	collisions 	1
+scalar Homenet.room_C.eth[2].mac 	backoffs 	1
+scalar Homenet.room_C.eth[2].encap 	"packets from higher layer" 	33
+scalar Homenet.room_C.eth[2].encap 	"frames from MAC" 	43
+scalar Homenet.garage.networkLayer.arp 	"ARP requests sent" 	3
+scalar Homenet.garage.networkLayer.arp 	"ARP replies sent" 	1
+scalar Homenet.garage.networkLayer.arp 	"ARP resolutions" 	3
+scalar Homenet.garage.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.garage.eth[0].queue 	"packets received by queue" 	4
+scalar Homenet.garage.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.garage.eth[0].mac 	"simulated time" 	40
+scalar Homenet.garage.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.garage.eth[0].mac 	"full duplex" 	0
+scalar Homenet.garage.eth[0].mac 	"frames sent" 	4
+scalar Homenet.garage.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.garage.eth[0].mac 	"bytes sent" 	256
+scalar Homenet.garage.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.garage.eth[0].mac 	"frames from higher layer" 	4
+scalar Homenet.garage.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.garage.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.garage.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.garage.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.garage.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.garage.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.garage.eth[0].mac 	"frames/sec sent" 	0.1
+scalar Homenet.garage.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.garage.eth[0].mac 	"bits/sec sent" 	51.2
+scalar Homenet.garage.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.garage.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.garage.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.garage.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.garage.eth[0].mac 	collisions 	0
+scalar Homenet.garage.eth[0].mac 	backoffs 	0
+scalar Homenet.garage.eth[0].encap 	"packets from higher layer" 	4
+scalar Homenet.garage.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.garage.eth[1].queue 	"packets received by queue" 	19
+scalar Homenet.garage.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.garage.eth[1].mac 	"simulated time" 	40
+scalar Homenet.garage.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.garage.eth[1].mac 	"full duplex" 	0
+scalar Homenet.garage.eth[1].mac 	"frames sent" 	19
+scalar Homenet.garage.eth[1].mac 	"frames rcvd" 	26
+scalar Homenet.garage.eth[1].mac 	"bytes sent" 	1216
+scalar Homenet.garage.eth[1].mac 	"bytes rcvd" 	1664
+scalar Homenet.garage.eth[1].mac 	"frames from higher layer" 	19
+scalar Homenet.garage.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.garage.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.garage.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.garage.eth[1].mac 	"frames passed up to HL" 	26
+scalar Homenet.garage.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.garage.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.garage.eth[1].mac 	"frames/sec sent" 	0.475
+scalar Homenet.garage.eth[1].mac 	"frames/sec rcvd" 	0.65
+scalar Homenet.garage.eth[1].mac 	"bits/sec sent" 	243.2
+scalar Homenet.garage.eth[1].mac 	"bits/sec rcvd" 	332.8
+scalar Homenet.garage.eth[1].mac 	"rx channel idle (%)" 	99.999352
+scalar Homenet.garage.eth[1].mac 	"rx channel utilization (%)" 	0.000648
+scalar Homenet.garage.eth[1].mac 	"rx channel collision (%)" 	0
+scalar Homenet.garage.eth[1].mac 	collisions 	0
+scalar Homenet.garage.eth[1].mac 	backoffs 	0
+scalar Homenet.garage.eth[1].encap 	"packets from higher layer" 	19
+scalar Homenet.garage.eth[1].encap 	"frames from MAC" 	26
+scalar Homenet.garage.eth[2].queue 	"packets received by queue" 	32
+scalar Homenet.garage.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.garage.eth[2].mac 	"simulated time" 	40
+scalar Homenet.garage.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.garage.eth[2].mac 	"full duplex" 	0
+scalar Homenet.garage.eth[2].mac 	"frames sent" 	32
+scalar Homenet.garage.eth[2].mac 	"frames rcvd" 	38
+scalar Homenet.garage.eth[2].mac 	"bytes sent" 	2048
+scalar Homenet.garage.eth[2].mac 	"bytes rcvd" 	2432
+scalar Homenet.garage.eth[2].mac 	"frames from higher layer" 	32
+scalar Homenet.garage.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.garage.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.garage.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.garage.eth[2].mac 	"frames passed up to HL" 	38
+scalar Homenet.garage.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.garage.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.garage.eth[2].mac 	"frames/sec sent" 	0.8
+scalar Homenet.garage.eth[2].mac 	"frames/sec rcvd" 	0.95
+scalar Homenet.garage.eth[2].mac 	"bits/sec sent" 	409.6
+scalar Homenet.garage.eth[2].mac 	"bits/sec rcvd" 	486.4
+scalar Homenet.garage.eth[2].mac 	"rx channel idle (%)" 	99.9989842
+scalar Homenet.garage.eth[2].mac 	"rx channel utilization (%)" 	0.001008
+scalar Homenet.garage.eth[2].mac 	"rx channel collision (%)" 	7.8e-06
+scalar Homenet.garage.eth[2].mac 	collisions 	6
+scalar Homenet.garage.eth[2].mac 	backoffs 	6
+scalar Homenet.garage.eth[2].encap 	"packets from higher layer" 	32
+scalar Homenet.garage.eth[2].encap 	"frames from MAC" 	38
+scalar Homenet.kitchen.networkLayer.arp 	"ARP requests sent" 	17
+scalar Homenet.kitchen.networkLayer.arp 	"ARP replies sent" 	17
+scalar Homenet.kitchen.networkLayer.arp 	"ARP resolutions" 	17
+scalar Homenet.kitchen.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.kitchen.eth[0].queue 	"packets received by queue" 	35
+scalar Homenet.kitchen.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.kitchen.eth[0].mac 	"simulated time" 	40
+scalar Homenet.kitchen.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.kitchen.eth[0].mac 	"full duplex" 	0
+scalar Homenet.kitchen.eth[0].mac 	"frames sent" 	35
+scalar Homenet.kitchen.eth[0].mac 	"frames rcvd" 	31
+scalar Homenet.kitchen.eth[0].mac 	"bytes sent" 	9530
+scalar Homenet.kitchen.eth[0].mac 	"bytes rcvd" 	9274
+scalar Homenet.kitchen.eth[0].mac 	"frames from higher layer" 	35
+scalar Homenet.kitchen.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.kitchen.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.kitchen.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.kitchen.eth[0].mac 	"frames passed up to HL" 	31
+scalar Homenet.kitchen.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.kitchen.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.kitchen.eth[0].mac 	"frames/sec sent" 	0.875
+scalar Homenet.kitchen.eth[0].mac 	"frames/sec rcvd" 	0.775
+scalar Homenet.kitchen.eth[0].mac 	"bits/sec sent" 	1906
+scalar Homenet.kitchen.eth[0].mac 	"bits/sec rcvd" 	1854.8
+scalar Homenet.kitchen.eth[0].mac 	"rx channel idle (%)" 	99.9961336
+scalar Homenet.kitchen.eth[0].mac 	"rx channel utilization (%)" 	0.0038664
+scalar Homenet.kitchen.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.kitchen.eth[0].mac 	collisions 	0
+scalar Homenet.kitchen.eth[0].mac 	backoffs 	0
+scalar Homenet.kitchen.eth[0].encap 	"packets from higher layer" 	35
+scalar Homenet.kitchen.eth[0].encap 	"frames from MAC" 	31
+scalar Homenet.kitchen.eth[1].queue 	"packets received by queue" 	55
+scalar Homenet.kitchen.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.kitchen.eth[1].mac 	"simulated time" 	40
+scalar Homenet.kitchen.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.kitchen.eth[1].mac 	"full duplex" 	0
+scalar Homenet.kitchen.eth[1].mac 	"frames sent" 	55
+scalar Homenet.kitchen.eth[1].mac 	"frames rcvd" 	63
+scalar Homenet.kitchen.eth[1].mac 	"bytes sent" 	10810
+scalar Homenet.kitchen.eth[1].mac 	"bytes rcvd" 	11322
+scalar Homenet.kitchen.eth[1].mac 	"frames from higher layer" 	55
+scalar Homenet.kitchen.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.kitchen.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.kitchen.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.kitchen.eth[1].mac 	"frames passed up to HL" 	63
+scalar Homenet.kitchen.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.kitchen.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.kitchen.eth[1].mac 	"frames/sec sent" 	1.375
+scalar Homenet.kitchen.eth[1].mac 	"frames/sec rcvd" 	1.575
+scalar Homenet.kitchen.eth[1].mac 	"bits/sec sent" 	2162
+scalar Homenet.kitchen.eth[1].mac 	"bits/sec rcvd" 	2264.4
+scalar Homenet.kitchen.eth[1].mac 	"rx channel idle (%)" 	99.995382600008
+scalar Homenet.kitchen.eth[1].mac 	"rx channel utilization (%)" 	0.0046152
+scalar Homenet.kitchen.eth[1].mac 	"rx channel collision (%)" 	2.1999925e-06
+scalar Homenet.kitchen.eth[1].mac 	collisions 	1
+scalar Homenet.kitchen.eth[1].mac 	backoffs 	1
+scalar Homenet.kitchen.eth[1].encap 	"packets from higher layer" 	55
+scalar Homenet.kitchen.eth[1].encap 	"frames from MAC" 	63
+scalar Homenet.kitchen.eth[2].queue 	"packets received by queue" 	24
+scalar Homenet.kitchen.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.kitchen.eth[2].mac 	"simulated time" 	40
+scalar Homenet.kitchen.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.kitchen.eth[2].mac 	"full duplex" 	0
+scalar Homenet.kitchen.eth[2].mac 	"frames sent" 	24
+scalar Homenet.kitchen.eth[2].mac 	"frames rcvd" 	27
+scalar Homenet.kitchen.eth[2].mac 	"bytes sent" 	1536
+scalar Homenet.kitchen.eth[2].mac 	"bytes rcvd" 	1728
+scalar Homenet.kitchen.eth[2].mac 	"frames from higher layer" 	24
+scalar Homenet.kitchen.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.kitchen.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.kitchen.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.kitchen.eth[2].mac 	"frames passed up to HL" 	27
+scalar Homenet.kitchen.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.kitchen.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.kitchen.eth[2].mac 	"frames/sec sent" 	0.6
+scalar Homenet.kitchen.eth[2].mac 	"frames/sec rcvd" 	0.675
+scalar Homenet.kitchen.eth[2].mac 	"bits/sec sent" 	307.2
+scalar Homenet.kitchen.eth[2].mac 	"bits/sec rcvd" 	345.6
+scalar Homenet.kitchen.eth[2].mac 	"rx channel idle (%)" 	99.9992617
+scalar Homenet.kitchen.eth[2].mac 	"rx channel utilization (%)" 	0.0007344
+scalar Homenet.kitchen.eth[2].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.kitchen.eth[2].mac 	collisions 	3
+scalar Homenet.kitchen.eth[2].mac 	backoffs 	3
+scalar Homenet.kitchen.eth[2].encap 	"packets from higher layer" 	24
+scalar Homenet.kitchen.eth[2].encap 	"frames from MAC" 	27
+scalar Homenet.office.networkLayer.arp 	"ARP requests sent" 	15
+scalar Homenet.office.networkLayer.arp 	"ARP replies sent" 	2
+scalar Homenet.office.networkLayer.arp 	"ARP resolutions" 	15
+scalar Homenet.office.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.office.eth[0].queue 	"packets received by queue" 	4
+scalar Homenet.office.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.office.eth[0].mac 	"simulated time" 	40
+scalar Homenet.office.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.office.eth[0].mac 	"full duplex" 	0
+scalar Homenet.office.eth[0].mac 	"frames sent" 	4
+scalar Homenet.office.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.office.eth[0].mac 	"bytes sent" 	256
+scalar Homenet.office.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.office.eth[0].mac 	"frames from higher layer" 	4
+scalar Homenet.office.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.office.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.office.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.office.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.office.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.office.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.office.eth[0].mac 	"frames/sec sent" 	0.1
+scalar Homenet.office.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.office.eth[0].mac 	"bits/sec sent" 	51.2
+scalar Homenet.office.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.office.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.office.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.office.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.office.eth[0].mac 	collisions 	0
+scalar Homenet.office.eth[0].mac 	backoffs 	0
+scalar Homenet.office.eth[0].encap 	"packets from higher layer" 	4
+scalar Homenet.office.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.office.eth[1].queue 	"packets received by queue" 	27
+scalar Homenet.office.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.office.eth[1].mac 	"simulated time" 	40
+scalar Homenet.office.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.office.eth[1].mac 	"full duplex" 	0
+scalar Homenet.office.eth[1].mac 	"frames sent" 	27
+scalar Homenet.office.eth[1].mac 	"frames rcvd" 	24
+scalar Homenet.office.eth[1].mac 	"bytes sent" 	1728
+scalar Homenet.office.eth[1].mac 	"bytes rcvd" 	1536
+scalar Homenet.office.eth[1].mac 	"frames from higher layer" 	27
+scalar Homenet.office.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.office.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.office.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.office.eth[1].mac 	"frames passed up to HL" 	24
+scalar Homenet.office.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.office.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.office.eth[1].mac 	"frames/sec sent" 	0.675
+scalar Homenet.office.eth[1].mac 	"frames/sec rcvd" 	0.6
+scalar Homenet.office.eth[1].mac 	"bits/sec sent" 	345.6
+scalar Homenet.office.eth[1].mac 	"bits/sec rcvd" 	307.2
+scalar Homenet.office.eth[1].mac 	"rx channel idle (%)" 	99.9992617
+scalar Homenet.office.eth[1].mac 	"rx channel utilization (%)" 	0.0007344
+scalar Homenet.office.eth[1].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.office.eth[1].mac 	collisions 	3
+scalar Homenet.office.eth[1].mac 	backoffs 	3
+scalar Homenet.office.eth[1].encap 	"packets from higher layer" 	27
+scalar Homenet.office.eth[1].encap 	"frames from MAC" 	24
+scalar Homenet.office.eth[2].queue 	"packets received by queue" 	43
+scalar Homenet.office.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.office.eth[2].mac 	"simulated time" 	40
+scalar Homenet.office.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.office.eth[2].mac 	"full duplex" 	0
+scalar Homenet.office.eth[2].mac 	"frames sent" 	43
+scalar Homenet.office.eth[2].mac 	"frames rcvd" 	40
+scalar Homenet.office.eth[2].mac 	"bytes sent" 	2752
+scalar Homenet.office.eth[2].mac 	"bytes rcvd" 	2560
+scalar Homenet.office.eth[2].mac 	"frames from higher layer" 	43
+scalar Homenet.office.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.office.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.office.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.office.eth[2].mac 	"frames passed up to HL" 	40
+scalar Homenet.office.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.office.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.office.eth[2].mac 	"frames/sec sent" 	1.075
+scalar Homenet.office.eth[2].mac 	"frames/sec rcvd" 	1
+scalar Homenet.office.eth[2].mac 	"bits/sec sent" 	550.4
+scalar Homenet.office.eth[2].mac 	"bits/sec rcvd" 	512
+scalar Homenet.office.eth[2].mac 	"rx channel idle (%)" 	99.9988048
+scalar Homenet.office.eth[2].mac 	"rx channel utilization (%)" 	0.0011952
+scalar Homenet.office.eth[2].mac 	"rx channel collision (%)" 	0
+scalar Homenet.office.eth[2].mac 	collisions 	0
+scalar Homenet.office.eth[2].mac 	backoffs 	0
+scalar Homenet.office.eth[2].encap 	"packets from higher layer" 	43
+scalar Homenet.office.eth[2].encap 	"frames from MAC" 	40
+scalar Homenet.office.eth[3].queue 	"packets received by queue" 	28
+scalar Homenet.office.eth[3].queue 	"packets dropped by queue" 	0
+scalar Homenet.office.eth[3].mac 	"simulated time" 	40
+scalar Homenet.office.eth[3].mac 	"txrate (Mb)" 	100
+scalar Homenet.office.eth[3].mac 	"full duplex" 	0
+scalar Homenet.office.eth[3].mac 	"frames sent" 	28
+scalar Homenet.office.eth[3].mac 	"frames rcvd" 	27
+scalar Homenet.office.eth[3].mac 	"bytes sent" 	1792
+scalar Homenet.office.eth[3].mac 	"bytes rcvd" 	1728
+scalar Homenet.office.eth[3].mac 	"frames from higher layer" 	28
+scalar Homenet.office.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.office.eth[3].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.office.eth[3].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.office.eth[3].mac 	"frames passed up to HL" 	27
+scalar Homenet.office.eth[3].mac 	"PAUSE frames sent" 	0
+scalar Homenet.office.eth[3].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.office.eth[3].mac 	"frames/sec sent" 	0.7
+scalar Homenet.office.eth[3].mac 	"frames/sec rcvd" 	0.675
+scalar Homenet.office.eth[3].mac 	"bits/sec sent" 	358.4
+scalar Homenet.office.eth[3].mac 	"bits/sec rcvd" 	345.6
+scalar Homenet.office.eth[3].mac 	"rx channel idle (%)" 	99.9992054
+scalar Homenet.office.eth[3].mac 	"rx channel utilization (%)" 	0.000792
+scalar Homenet.office.eth[3].mac 	"rx channel collision (%)" 	2.6e-06
+scalar Homenet.office.eth[3].mac 	collisions 	2
+scalar Homenet.office.eth[3].mac 	backoffs 	2
+scalar Homenet.office.eth[3].encap 	"packets from higher layer" 	28
+scalar Homenet.office.eth[3].encap 	"frames from MAC" 	27
+scalar Homenet.office.eth[4].queue 	"packets received by queue" 	43
+scalar Homenet.office.eth[4].queue 	"packets dropped by queue" 	0
+scalar Homenet.office.eth[4].mac 	"simulated time" 	40
+scalar Homenet.office.eth[4].mac 	"txrate (Mb)" 	100
+scalar Homenet.office.eth[4].mac 	"full duplex" 	0
+scalar Homenet.office.eth[4].mac 	"frames sent" 	43
+scalar Homenet.office.eth[4].mac 	"frames rcvd" 	33
+scalar Homenet.office.eth[4].mac 	"bytes sent" 	2752
+scalar Homenet.office.eth[4].mac 	"bytes rcvd" 	2112
+scalar Homenet.office.eth[4].mac 	"frames from higher layer" 	43
+scalar Homenet.office.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.office.eth[4].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.office.eth[4].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.office.eth[4].mac 	"frames passed up to HL" 	33
+scalar Homenet.office.eth[4].mac 	"PAUSE frames sent" 	0
+scalar Homenet.office.eth[4].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.office.eth[4].mac 	"frames/sec sent" 	1.075
+scalar Homenet.office.eth[4].mac 	"frames/sec rcvd" 	0.825
+scalar Homenet.office.eth[4].mac 	"bits/sec sent" 	550.4
+scalar Homenet.office.eth[4].mac 	"bits/sec rcvd" 	422.4
+scalar Homenet.office.eth[4].mac 	"rx channel idle (%)" 	99.9989043
+scalar Homenet.office.eth[4].mac 	"rx channel utilization (%)" 	0.0010944
+scalar Homenet.office.eth[4].mac 	"rx channel collision (%)" 	1.3e-06
+scalar Homenet.office.eth[4].mac 	collisions 	1
+scalar Homenet.office.eth[4].mac 	backoffs 	1
+scalar Homenet.office.eth[4].encap 	"packets from higher layer" 	43
+scalar Homenet.office.eth[4].encap 	"frames from MAC" 	33
+scalar Homenet.room_B.networkLayer.arp 	"ARP requests sent" 	18
+scalar Homenet.room_B.networkLayer.arp 	"ARP replies sent" 	17
+scalar Homenet.room_B.networkLayer.arp 	"ARP resolutions" 	18
+scalar Homenet.room_B.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.room_B.eth[0].queue 	"packets received by queue" 	34
+scalar Homenet.room_B.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_B.eth[0].mac 	"simulated time" 	40
+scalar Homenet.room_B.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_B.eth[0].mac 	"full duplex" 	0
+scalar Homenet.room_B.eth[0].mac 	"frames sent" 	34
+scalar Homenet.room_B.eth[0].mac 	"frames rcvd" 	30
+scalar Homenet.room_B.eth[0].mac 	"bytes sent" 	9466
+scalar Homenet.room_B.eth[0].mac 	"bytes rcvd" 	9210
+scalar Homenet.room_B.eth[0].mac 	"frames from higher layer" 	34
+scalar Homenet.room_B.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_B.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_B.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_B.eth[0].mac 	"frames passed up to HL" 	30
+scalar Homenet.room_B.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_B.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_B.eth[0].mac 	"frames/sec sent" 	0.85
+scalar Homenet.room_B.eth[0].mac 	"frames/sec rcvd" 	0.75
+scalar Homenet.room_B.eth[0].mac 	"bits/sec sent" 	1893.2
+scalar Homenet.room_B.eth[0].mac 	"bits/sec rcvd" 	1842
+scalar Homenet.room_B.eth[0].mac 	"rx channel idle (%)" 	99.9961624
+scalar Homenet.room_B.eth[0].mac 	"rx channel utilization (%)" 	0.0038376
+scalar Homenet.room_B.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.room_B.eth[0].mac 	collisions 	0
+scalar Homenet.room_B.eth[0].mac 	backoffs 	0
+scalar Homenet.room_B.eth[0].encap 	"packets from higher layer" 	34
+scalar Homenet.room_B.eth[0].encap 	"frames from MAC" 	30
+scalar Homenet.room_B.eth[1].queue 	"packets received by queue" 	26
+scalar Homenet.room_B.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_B.eth[1].mac 	"simulated time" 	40
+scalar Homenet.room_B.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_B.eth[1].mac 	"full duplex" 	0
+scalar Homenet.room_B.eth[1].mac 	"frames sent" 	26
+scalar Homenet.room_B.eth[1].mac 	"frames rcvd" 	18
+scalar Homenet.room_B.eth[1].mac 	"bytes sent" 	1664
+scalar Homenet.room_B.eth[1].mac 	"bytes rcvd" 	1152
+scalar Homenet.room_B.eth[1].mac 	"frames from higher layer" 	26
+scalar Homenet.room_B.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_B.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_B.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_B.eth[1].mac 	"frames passed up to HL" 	18
+scalar Homenet.room_B.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_B.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_B.eth[1].mac 	"frames/sec sent" 	0.65
+scalar Homenet.room_B.eth[1].mac 	"frames/sec rcvd" 	0.45
+scalar Homenet.room_B.eth[1].mac 	"bits/sec sent" 	332.8
+scalar Homenet.room_B.eth[1].mac 	"bits/sec rcvd" 	230.4
+scalar Homenet.room_B.eth[1].mac 	"rx channel idle (%)" 	99.9993638
+scalar Homenet.room_B.eth[1].mac 	"rx channel utilization (%)" 	0.0006336
+scalar Homenet.room_B.eth[1].mac 	"rx channel collision (%)" 	2.6e-06
+scalar Homenet.room_B.eth[1].mac 	collisions 	2
+scalar Homenet.room_B.eth[1].mac 	backoffs 	2
+scalar Homenet.room_B.eth[1].encap 	"packets from higher layer" 	26
+scalar Homenet.room_B.eth[1].encap 	"frames from MAC" 	18
+scalar Homenet.room_B.eth[2].queue 	"packets received by queue" 	22
+scalar Homenet.room_B.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_B.eth[2].mac 	"simulated time" 	40
+scalar Homenet.room_B.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_B.eth[2].mac 	"full duplex" 	0
+scalar Homenet.room_B.eth[2].mac 	"frames sent" 	22
+scalar Homenet.room_B.eth[2].mac 	"frames rcvd" 	23
+scalar Homenet.room_B.eth[2].mac 	"bytes sent" 	1408
+scalar Homenet.room_B.eth[2].mac 	"bytes rcvd" 	1472
+scalar Homenet.room_B.eth[2].mac 	"frames from higher layer" 	22
+scalar Homenet.room_B.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_B.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_B.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_B.eth[2].mac 	"frames passed up to HL" 	23
+scalar Homenet.room_B.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_B.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_B.eth[2].mac 	"frames/sec sent" 	0.55
+scalar Homenet.room_B.eth[2].mac 	"frames/sec rcvd" 	0.575
+scalar Homenet.room_B.eth[2].mac 	"bits/sec sent" 	281.6
+scalar Homenet.room_B.eth[2].mac 	"bits/sec rcvd" 	294.4
+scalar Homenet.room_B.eth[2].mac 	"rx channel idle (%)" 	99.9993481
+scalar Homenet.room_B.eth[2].mac 	"rx channel utilization (%)" 	0.000648
+scalar Homenet.room_B.eth[2].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.room_B.eth[2].mac 	collisions 	3
+scalar Homenet.room_B.eth[2].mac 	backoffs 	3
+scalar Homenet.room_B.eth[2].encap 	"packets from higher layer" 	22
+scalar Homenet.room_B.eth[2].encap 	"frames from MAC" 	23
+scalar Homenet.room_B.eth[3].queue 	"packets received by queue" 	59
+scalar Homenet.room_B.eth[3].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_B.eth[3].mac 	"simulated time" 	40
+scalar Homenet.room_B.eth[3].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_B.eth[3].mac 	"full duplex" 	0
+scalar Homenet.room_B.eth[3].mac 	"frames sent" 	59
+scalar Homenet.room_B.eth[3].mac 	"frames rcvd" 	61
+scalar Homenet.room_B.eth[3].mac 	"bytes sent" 	11066
+scalar Homenet.room_B.eth[3].mac 	"bytes rcvd" 	11194
+scalar Homenet.room_B.eth[3].mac 	"frames from higher layer" 	59
+scalar Homenet.room_B.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_B.eth[3].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_B.eth[3].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_B.eth[3].mac 	"frames passed up to HL" 	61
+scalar Homenet.room_B.eth[3].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_B.eth[3].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_B.eth[3].mac 	"frames/sec sent" 	1.475
+scalar Homenet.room_B.eth[3].mac 	"frames/sec rcvd" 	1.525
+scalar Homenet.room_B.eth[3].mac 	"bits/sec sent" 	2213.2
+scalar Homenet.room_B.eth[3].mac 	"bits/sec rcvd" 	2238.8
+scalar Homenet.room_B.eth[3].mac 	"rx channel idle (%)" 	99.9953547
+scalar Homenet.room_B.eth[3].mac 	"rx channel utilization (%)" 	0.004644
+scalar Homenet.room_B.eth[3].mac 	"rx channel collision (%)" 	1.3e-06
+scalar Homenet.room_B.eth[3].mac 	collisions 	1
+scalar Homenet.room_B.eth[3].mac 	backoffs 	1
+scalar Homenet.room_B.eth[3].encap 	"packets from higher layer" 	59
+scalar Homenet.room_B.eth[3].encap 	"frames from MAC" 	61
+scalar Homenet.room_B.eth[4].queue 	"packets received by queue" 	26
+scalar Homenet.room_B.eth[4].queue 	"packets dropped by queue" 	0
+scalar Homenet.room_B.eth[4].mac 	"simulated time" 	40
+scalar Homenet.room_B.eth[4].mac 	"txrate (Mb)" 	100
+scalar Homenet.room_B.eth[4].mac 	"full duplex" 	0
+scalar Homenet.room_B.eth[4].mac 	"frames sent" 	26
+scalar Homenet.room_B.eth[4].mac 	"frames rcvd" 	19
+scalar Homenet.room_B.eth[4].mac 	"bytes sent" 	1664
+scalar Homenet.room_B.eth[4].mac 	"bytes rcvd" 	1216
+scalar Homenet.room_B.eth[4].mac 	"frames from higher layer" 	26
+scalar Homenet.room_B.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.room_B.eth[4].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.room_B.eth[4].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.room_B.eth[4].mac 	"frames passed up to HL" 	19
+scalar Homenet.room_B.eth[4].mac 	"PAUSE frames sent" 	0
+scalar Homenet.room_B.eth[4].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.room_B.eth[4].mac 	"frames/sec sent" 	0.65
+scalar Homenet.room_B.eth[4].mac 	"frames/sec rcvd" 	0.475
+scalar Homenet.room_B.eth[4].mac 	"bits/sec sent" 	332.8
+scalar Homenet.room_B.eth[4].mac 	"bits/sec rcvd" 	243.2
+scalar Homenet.room_B.eth[4].mac 	"rx channel idle (%)" 	99.999352
+scalar Homenet.room_B.eth[4].mac 	"rx channel utilization (%)" 	0.000648
+scalar Homenet.room_B.eth[4].mac 	"rx channel collision (%)" 	0
+scalar Homenet.room_B.eth[4].mac 	collisions 	0
+scalar Homenet.room_B.eth[4].mac 	backoffs 	0
+scalar Homenet.room_B.eth[4].encap 	"packets from higher layer" 	26
+scalar Homenet.room_B.eth[4].encap 	"frames from MAC" 	19
+scalar Homenet.living_room.networkLayer.arp 	"ARP requests sent" 	17
+scalar Homenet.living_room.networkLayer.arp 	"ARP replies sent" 	29
+scalar Homenet.living_room.networkLayer.arp 	"ARP resolutions" 	17
+scalar Homenet.living_room.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.living_room.eth[0].queue 	"packets received by queue" 	4
+scalar Homenet.living_room.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[0].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[0].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames sent" 	4
+scalar Homenet.living_room.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.living_room.eth[0].mac 	"bytes sent" 	256
+scalar Homenet.living_room.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames from higher layer" 	4
+scalar Homenet.living_room.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.living_room.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[0].mac 	"frames/sec sent" 	0.1
+scalar Homenet.living_room.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.living_room.eth[0].mac 	"bits/sec sent" 	51.2
+scalar Homenet.living_room.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.living_room.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.living_room.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.living_room.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.living_room.eth[0].mac 	collisions 	0
+scalar Homenet.living_room.eth[0].mac 	backoffs 	0
+scalar Homenet.living_room.eth[0].encap 	"packets from higher layer" 	4
+scalar Homenet.living_room.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.living_room.eth[1].queue 	"packets received by queue" 	38
+scalar Homenet.living_room.eth[1].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[1].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[1].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[1].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[1].mac 	"frames sent" 	38
+scalar Homenet.living_room.eth[1].mac 	"frames rcvd" 	32
+scalar Homenet.living_room.eth[1].mac 	"bytes sent" 	2432
+scalar Homenet.living_room.eth[1].mac 	"bytes rcvd" 	2048
+scalar Homenet.living_room.eth[1].mac 	"frames from higher layer" 	38
+scalar Homenet.living_room.eth[1].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[1].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[1].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[1].mac 	"frames passed up to HL" 	32
+scalar Homenet.living_room.eth[1].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[1].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[1].mac 	"frames/sec sent" 	0.95
+scalar Homenet.living_room.eth[1].mac 	"frames/sec rcvd" 	0.8
+scalar Homenet.living_room.eth[1].mac 	"bits/sec sent" 	486.4
+scalar Homenet.living_room.eth[1].mac 	"bits/sec rcvd" 	409.6
+scalar Homenet.living_room.eth[1].mac 	"rx channel idle (%)" 	99.9989842
+scalar Homenet.living_room.eth[1].mac 	"rx channel utilization (%)" 	0.001008
+scalar Homenet.living_room.eth[1].mac 	"rx channel collision (%)" 	7.8e-06
+scalar Homenet.living_room.eth[1].mac 	collisions 	6
+scalar Homenet.living_room.eth[1].mac 	backoffs 	6
+scalar Homenet.living_room.eth[1].encap 	"packets from higher layer" 	38
+scalar Homenet.living_room.eth[1].encap 	"frames from MAC" 	32
+scalar Homenet.living_room.eth[2].queue 	"packets received by queue" 	61
+scalar Homenet.living_room.eth[2].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[2].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[2].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[2].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[2].mac 	"frames sent" 	61
+scalar Homenet.living_room.eth[2].mac 	"frames rcvd" 	59
+scalar Homenet.living_room.eth[2].mac 	"bytes sent" 	11194
+scalar Homenet.living_room.eth[2].mac 	"bytes rcvd" 	11066
+scalar Homenet.living_room.eth[2].mac 	"frames from higher layer" 	61
+scalar Homenet.living_room.eth[2].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[2].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[2].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[2].mac 	"frames passed up to HL" 	59
+scalar Homenet.living_room.eth[2].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[2].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[2].mac 	"frames/sec sent" 	1.525
+scalar Homenet.living_room.eth[2].mac 	"frames/sec rcvd" 	1.475
+scalar Homenet.living_room.eth[2].mac 	"bits/sec sent" 	2238.8
+scalar Homenet.living_room.eth[2].mac 	"bits/sec rcvd" 	2213.2
+scalar Homenet.living_room.eth[2].mac 	"rx channel idle (%)" 	99.9953547
+scalar Homenet.living_room.eth[2].mac 	"rx channel utilization (%)" 	0.004644
+scalar Homenet.living_room.eth[2].mac 	"rx channel collision (%)" 	1.3e-06
+scalar Homenet.living_room.eth[2].mac 	collisions 	1
+scalar Homenet.living_room.eth[2].mac 	backoffs 	1
+scalar Homenet.living_room.eth[2].encap 	"packets from higher layer" 	61
+scalar Homenet.living_room.eth[2].encap 	"frames from MAC" 	59
+scalar Homenet.living_room.eth[3].queue 	"packets received by queue" 	30
+scalar Homenet.living_room.eth[3].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[3].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[3].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[3].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[3].mac 	"frames sent" 	30
+scalar Homenet.living_room.eth[3].mac 	"frames rcvd" 	28
+scalar Homenet.living_room.eth[3].mac 	"bytes sent" 	1920
+scalar Homenet.living_room.eth[3].mac 	"bytes rcvd" 	1792
+scalar Homenet.living_room.eth[3].mac 	"frames from higher layer" 	30
+scalar Homenet.living_room.eth[3].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[3].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[3].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[3].mac 	"frames passed up to HL" 	28
+scalar Homenet.living_room.eth[3].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[3].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[3].mac 	"frames/sec sent" 	0.75
+scalar Homenet.living_room.eth[3].mac 	"frames/sec rcvd" 	0.7
+scalar Homenet.living_room.eth[3].mac 	"bits/sec sent" 	384
+scalar Homenet.living_room.eth[3].mac 	"bits/sec rcvd" 	358.4
+scalar Homenet.living_room.eth[3].mac 	"rx channel idle (%)" 	99.9991609
+scalar Homenet.living_room.eth[3].mac 	"rx channel utilization (%)" 	0.0008352
+scalar Homenet.living_room.eth[3].mac 	"rx channel collision (%)" 	3.9e-06
+scalar Homenet.living_room.eth[3].mac 	collisions 	3
+scalar Homenet.living_room.eth[3].mac 	backoffs 	3
+scalar Homenet.living_room.eth[3].encap 	"packets from higher layer" 	30
+scalar Homenet.living_room.eth[3].encap 	"frames from MAC" 	28
+scalar Homenet.living_room.eth[4].queue 	"packets received by queue" 	40
+scalar Homenet.living_room.eth[4].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[4].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[4].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[4].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[4].mac 	"frames sent" 	40
+scalar Homenet.living_room.eth[4].mac 	"frames rcvd" 	43
+scalar Homenet.living_room.eth[4].mac 	"bytes sent" 	2560
+scalar Homenet.living_room.eth[4].mac 	"bytes rcvd" 	2752
+scalar Homenet.living_room.eth[4].mac 	"frames from higher layer" 	40
+scalar Homenet.living_room.eth[4].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[4].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[4].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[4].mac 	"frames passed up to HL" 	43
+scalar Homenet.living_room.eth[4].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[4].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[4].mac 	"frames/sec sent" 	1
+scalar Homenet.living_room.eth[4].mac 	"frames/sec rcvd" 	1.075
+scalar Homenet.living_room.eth[4].mac 	"bits/sec sent" 	512
+scalar Homenet.living_room.eth[4].mac 	"bits/sec rcvd" 	550.4
+scalar Homenet.living_room.eth[4].mac 	"rx channel idle (%)" 	99.9988048
+scalar Homenet.living_room.eth[4].mac 	"rx channel utilization (%)" 	0.0011952
+scalar Homenet.living_room.eth[4].mac 	"rx channel collision (%)" 	0
+scalar Homenet.living_room.eth[4].mac 	collisions 	0
+scalar Homenet.living_room.eth[4].mac 	backoffs 	0
+scalar Homenet.living_room.eth[4].encap 	"packets from higher layer" 	40
+scalar Homenet.living_room.eth[4].encap 	"frames from MAC" 	43
+scalar Homenet.living_room.eth[5].queue 	"packets received by queue" 	63
+scalar Homenet.living_room.eth[5].queue 	"packets dropped by queue" 	0
+scalar Homenet.living_room.eth[5].mac 	"simulated time" 	40
+scalar Homenet.living_room.eth[5].mac 	"txrate (Mb)" 	100
+scalar Homenet.living_room.eth[5].mac 	"full duplex" 	0
+scalar Homenet.living_room.eth[5].mac 	"frames sent" 	63
+scalar Homenet.living_room.eth[5].mac 	"frames rcvd" 	55
+scalar Homenet.living_room.eth[5].mac 	"bytes sent" 	11322
+scalar Homenet.living_room.eth[5].mac 	"bytes rcvd" 	10810
+scalar Homenet.living_room.eth[5].mac 	"frames from higher layer" 	63
+scalar Homenet.living_room.eth[5].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.living_room.eth[5].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.living_room.eth[5].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.living_room.eth[5].mac 	"frames passed up to HL" 	55
+scalar Homenet.living_room.eth[5].mac 	"PAUSE frames sent" 	0
+scalar Homenet.living_room.eth[5].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.living_room.eth[5].mac 	"frames/sec sent" 	1.575
+scalar Homenet.living_room.eth[5].mac 	"frames/sec rcvd" 	1.375
+scalar Homenet.living_room.eth[5].mac 	"bits/sec sent" 	2264.4
+scalar Homenet.living_room.eth[5].mac 	"bits/sec rcvd" 	2162
+scalar Homenet.living_room.eth[5].mac 	"rx channel idle (%)" 	99.995382600008
+scalar Homenet.living_room.eth[5].mac 	"rx channel utilization (%)" 	0.0046152
+scalar Homenet.living_room.eth[5].mac 	"rx channel collision (%)" 	2.1999925e-06
+scalar Homenet.living_room.eth[5].mac 	collisions 	1
+scalar Homenet.living_room.eth[5].mac 	backoffs 	1
+scalar Homenet.living_room.eth[5].encap 	"packets from higher layer" 	63
+scalar Homenet.living_room.eth[5].encap 	"frames from MAC" 	55
+scalar Homenet.Host0.pingApp 	"Pings sent" 	15
+scalar Homenet.Host0.pingApp 	"Pings dropped" 	0
+scalar Homenet.Host0.pingApp 	"Out-of-order ping arrivals" 	0
+scalar Homenet.Host0.pingApp 	"Pings outstanding at end" 	0
+scalar Homenet.Host0.pingApp 	"Ping drop rate (%)" 	0
+scalar Homenet.Host0.pingApp 	"Ping out-of-order rate (%)" 	0
+statistic Homenet.Host0.pingApp 	"Ping roundtrip delays"
+field count 15
+field mean 0.0008178773088
+field stddev 0.00011831705097537
+field sum 0.012268159632
+field sqrsum 1.022983432747e-05
+field min 0.000695679984
+field max 0.000924799968
+scalar Homenet.Host0.networkLayer.arp 	"ARP requests sent" 	8
+scalar Homenet.Host0.networkLayer.arp 	"ARP replies sent" 	7
+scalar Homenet.Host0.networkLayer.arp 	"ARP resolutions" 	8
+scalar Homenet.Host0.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host0.eth[0].queue 	"packets received by queue" 	30
+scalar Homenet.Host0.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host0.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host0.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host0.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host0.eth[0].mac 	"frames sent" 	30
+scalar Homenet.Host0.eth[0].mac 	"frames rcvd" 	34
+scalar Homenet.Host0.eth[0].mac 	"bytes sent" 	9210
+scalar Homenet.Host0.eth[0].mac 	"bytes rcvd" 	9466
+scalar Homenet.Host0.eth[0].mac 	"frames from higher layer" 	30
+scalar Homenet.Host0.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host0.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host0.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host0.eth[0].mac 	"frames passed up to HL" 	34
+scalar Homenet.Host0.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host0.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host0.eth[0].mac 	"frames/sec sent" 	0.75
+scalar Homenet.Host0.eth[0].mac 	"frames/sec rcvd" 	0.85
+scalar Homenet.Host0.eth[0].mac 	"bits/sec sent" 	1842
+scalar Homenet.Host0.eth[0].mac 	"bits/sec rcvd" 	1893.2
+scalar Homenet.Host0.eth[0].mac 	"rx channel idle (%)" 	99.9961624
+scalar Homenet.Host0.eth[0].mac 	"rx channel utilization (%)" 	0.0038376
+scalar Homenet.Host0.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host0.eth[0].mac 	collisions 	0
+scalar Homenet.Host0.eth[0].mac 	backoffs 	0
+scalar Homenet.Host0.eth[0].encap 	"packets from higher layer" 	30
+scalar Homenet.Host0.eth[0].encap 	"frames from MAC" 	34
+scalar Homenet.Host0.eth[0].dropsGenerator 	"total packets" 	30
+scalar Homenet.Host0.eth[0].dropsGenerator 	"total dropped" 	0
+scalar Homenet.Host1.pingApp 	"Pings sent" 	0
+scalar Homenet.Host1.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Host1.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Host1.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Host1.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host1.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Host1.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host1.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host1.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host1.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames rcvd" 	4
+scalar Homenet.Host1.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Host1.eth[0].mac 	"bytes rcvd" 	256
+scalar Homenet.Host1.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames passed up to HL" 	4
+scalar Homenet.Host1.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host1.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Host1.eth[0].mac 	"frames/sec rcvd" 	0.1
+scalar Homenet.Host1.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Host1.eth[0].mac 	"bits/sec rcvd" 	51.2
+scalar Homenet.Host1.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.Host1.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.Host1.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host1.eth[0].mac 	collisions 	0
+scalar Homenet.Host1.eth[0].mac 	backoffs 	0
+scalar Homenet.Host1.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Host1.eth[0].encap 	"frames from MAC" 	4
+scalar Homenet.Host2.pingApp 	"Pings sent" 	0
+scalar Homenet.Host2.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Host2.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Host2.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Host2.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host2.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Host2.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host2.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host2.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host2.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames rcvd" 	4
+scalar Homenet.Host2.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Host2.eth[0].mac 	"bytes rcvd" 	256
+scalar Homenet.Host2.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames passed up to HL" 	4
+scalar Homenet.Host2.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host2.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Host2.eth[0].mac 	"frames/sec rcvd" 	0.1
+scalar Homenet.Host2.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Host2.eth[0].mac 	"bits/sec rcvd" 	51.2
+scalar Homenet.Host2.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.Host2.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.Host2.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host2.eth[0].mac 	collisions 	0
+scalar Homenet.Host2.eth[0].mac 	backoffs 	0
+scalar Homenet.Host2.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Host2.eth[0].encap 	"frames from MAC" 	4
+scalar Homenet.Host3.pingApp 	"Pings sent" 	0
+scalar Homenet.Host3.networkLayer.arp 	"ARP requests sent" 	8
+scalar Homenet.Host3.networkLayer.arp 	"ARP replies sent" 	8
+scalar Homenet.Host3.networkLayer.arp 	"ARP resolutions" 	8
+scalar Homenet.Host3.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host3.eth[0].queue 	"packets received by queue" 	31
+scalar Homenet.Host3.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host3.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host3.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host3.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host3.eth[0].mac 	"frames sent" 	31
+scalar Homenet.Host3.eth[0].mac 	"frames rcvd" 	35
+scalar Homenet.Host3.eth[0].mac 	"bytes sent" 	9274
+scalar Homenet.Host3.eth[0].mac 	"bytes rcvd" 	9530
+scalar Homenet.Host3.eth[0].mac 	"frames from higher layer" 	31
+scalar Homenet.Host3.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host3.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host3.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host3.eth[0].mac 	"frames passed up to HL" 	35
+scalar Homenet.Host3.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host3.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host3.eth[0].mac 	"frames/sec sent" 	0.775
+scalar Homenet.Host3.eth[0].mac 	"frames/sec rcvd" 	0.875
+scalar Homenet.Host3.eth[0].mac 	"bits/sec sent" 	1854.8
+scalar Homenet.Host3.eth[0].mac 	"bits/sec rcvd" 	1906
+scalar Homenet.Host3.eth[0].mac 	"rx channel idle (%)" 	99.9961336
+scalar Homenet.Host3.eth[0].mac 	"rx channel utilization (%)" 	0.0038664
+scalar Homenet.Host3.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host3.eth[0].mac 	collisions 	0
+scalar Homenet.Host3.eth[0].mac 	backoffs 	0
+scalar Homenet.Host3.eth[0].encap 	"packets from higher layer" 	31
+scalar Homenet.Host3.eth[0].encap 	"frames from MAC" 	35
+scalar Homenet.Host4.pingApp 	"Pings sent" 	0
+scalar Homenet.Host4.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Host4.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Host4.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Host4.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host4.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Host4.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host4.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host4.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host4.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames rcvd" 	4
+scalar Homenet.Host4.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Host4.eth[0].mac 	"bytes rcvd" 	256
+scalar Homenet.Host4.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames passed up to HL" 	4
+scalar Homenet.Host4.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host4.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Host4.eth[0].mac 	"frames/sec rcvd" 	0.1
+scalar Homenet.Host4.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Host4.eth[0].mac 	"bits/sec rcvd" 	51.2
+scalar Homenet.Host4.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.Host4.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.Host4.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host4.eth[0].mac 	collisions 	0
+scalar Homenet.Host4.eth[0].mac 	backoffs 	0
+scalar Homenet.Host4.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Host4.eth[0].encap 	"frames from MAC" 	4
+scalar Homenet.Host5.pingApp 	"Pings sent" 	0
+scalar Homenet.Host5.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Host5.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Host5.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Host5.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Host5.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Host5.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Host5.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Host5.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Host5.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames rcvd" 	4
+scalar Homenet.Host5.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Host5.eth[0].mac 	"bytes rcvd" 	256
+scalar Homenet.Host5.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames passed up to HL" 	4
+scalar Homenet.Host5.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Host5.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Host5.eth[0].mac 	"frames/sec rcvd" 	0.1
+scalar Homenet.Host5.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Host5.eth[0].mac 	"bits/sec rcvd" 	51.2
+scalar Homenet.Host5.eth[0].mac 	"rx channel idle (%)" 	99.9999424
+scalar Homenet.Host5.eth[0].mac 	"rx channel utilization (%)" 	5.76e-05
+scalar Homenet.Host5.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Host5.eth[0].mac 	collisions 	0
+scalar Homenet.Host5.eth[0].mac 	backoffs 	0
+scalar Homenet.Host5.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Host5.eth[0].encap 	"frames from MAC" 	4
+scalar Homenet.etherHub0 	"simulated time" 	40
+scalar Homenet.etherHub0 	"messages handled" 	66
+scalar Homenet.etherHub0 	messages/sec 	1.65
+scalar Homenet.etherHub1 	"simulated time" 	40
+scalar Homenet.etherHub1 	"messages handled" 	6
+scalar Homenet.etherHub1 	messages/sec 	0.15
+scalar Homenet.etherHub2 	"simulated time" 	40
+scalar Homenet.etherHub2 	"messages handled" 	6
+scalar Homenet.etherHub2 	messages/sec 	0.15
+scalar Homenet.etherHub3 	"simulated time" 	40
+scalar Homenet.etherHub3 	"messages handled" 	68
+scalar Homenet.etherHub3 	messages/sec 	1.7
+scalar Homenet.etherHub4 	"simulated time" 	40
+scalar Homenet.etherHub4 	"messages handled" 	6
+scalar Homenet.etherHub4 	messages/sec 	0.15
+scalar Homenet.etherHub5 	"simulated time" 	40
+scalar Homenet.etherHub5 	"messages handled" 	6
+scalar Homenet.etherHub5 	messages/sec 	0.15
+scalar Homenet.Receptor3.statistics.pingApp 	"Pings sent" 	0
+scalar Homenet.Receptor3.statistics.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Receptor3.statistics.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Receptor3.statistics.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Receptor3.statistics.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Receptor3.statistics.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Receptor3.statistics.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"rx channel idle (%)" 	100
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"rx channel utilization (%)" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	collisions 	0
+scalar Homenet.Receptor3.statistics.eth[0].mac 	backoffs 	0
+scalar Homenet.Receptor3.statistics.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Receptor3.statistics.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.Receptor3.stats.relayUnit 	"processed frames" 	66
+scalar Homenet.Receptor3.stats.relayUnit 	"dropped frames" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"simulated time" 	40
+scalar Homenet.Receptor3.stats.mac[0] 	"txrate (Mb)" 	100
+scalar Homenet.Receptor3.stats.mac[0] 	"full duplex" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"frames sent" 	31
+scalar Homenet.Receptor3.stats.mac[0] 	"frames rcvd" 	35
+scalar Homenet.Receptor3.stats.mac[0] 	"bytes sent" 	9274
+scalar Homenet.Receptor3.stats.mac[0] 	"bytes rcvd" 	9530
+scalar Homenet.Receptor3.stats.mac[0] 	"frames from higher layer" 	31
+scalar Homenet.Receptor3.stats.mac[0] 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"frames dropped (bit error)" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"frames dropped (not for us)" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"frames passed up to HL" 	35
+scalar Homenet.Receptor3.stats.mac[0] 	"PAUSE frames sent" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"PAUSE frames rcvd" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	"frames/sec sent" 	0.775
+scalar Homenet.Receptor3.stats.mac[0] 	"frames/sec rcvd" 	0.875
+scalar Homenet.Receptor3.stats.mac[0] 	"bits/sec sent" 	1854.8
+scalar Homenet.Receptor3.stats.mac[0] 	"bits/sec rcvd" 	1906
+scalar Homenet.Receptor3.stats.mac[0] 	"rx channel idle (%)" 	99.9961336
+scalar Homenet.Receptor3.stats.mac[0] 	"rx channel utilization (%)" 	0.0038664
+scalar Homenet.Receptor3.stats.mac[0] 	"rx channel collision (%)" 	0
+scalar Homenet.Receptor3.stats.mac[0] 	collisions 	0
+scalar Homenet.Receptor3.stats.mac[0] 	backoffs 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"simulated time" 	40
+scalar Homenet.Receptor3.stats.mac[1] 	"txrate (Mb)" 	100
+scalar Homenet.Receptor3.stats.mac[1] 	"full duplex" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"frames sent" 	35
+scalar Homenet.Receptor3.stats.mac[1] 	"frames rcvd" 	31
+scalar Homenet.Receptor3.stats.mac[1] 	"bytes sent" 	9530
+scalar Homenet.Receptor3.stats.mac[1] 	"bytes rcvd" 	9274
+scalar Homenet.Receptor3.stats.mac[1] 	"frames from higher layer" 	35
+scalar Homenet.Receptor3.stats.mac[1] 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"frames dropped (bit error)" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"frames dropped (not for us)" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"frames passed up to HL" 	31
+scalar Homenet.Receptor3.stats.mac[1] 	"PAUSE frames sent" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"PAUSE frames rcvd" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	"frames/sec sent" 	0.875
+scalar Homenet.Receptor3.stats.mac[1] 	"frames/sec rcvd" 	0.775
+scalar Homenet.Receptor3.stats.mac[1] 	"bits/sec sent" 	1906
+scalar Homenet.Receptor3.stats.mac[1] 	"bits/sec rcvd" 	1854.8
+scalar Homenet.Receptor3.stats.mac[1] 	"rx channel idle (%)" 	99.9961336
+scalar Homenet.Receptor3.stats.mac[1] 	"rx channel utilization (%)" 	0.0038664
+scalar Homenet.Receptor3.stats.mac[1] 	"rx channel collision (%)" 	0
+scalar Homenet.Receptor3.stats.mac[1] 	collisions 	0
+scalar Homenet.Receptor3.stats.mac[1] 	backoffs 	0
+scalar Homenet.Receptor3.stats.etherEncap 	"packets from higher layer" 	35
+scalar Homenet.Receptor3.stats.etherEncap 	"frames from MAC" 	35
+scalar Homenet.Receptor3.stats.thruputMeter 	JitterMean 	5.8647098933333e-05
+scalar Homenet.Receptor3.stats.thruputMeter 	EedMean 	0.00034481465526667
+scalar Homenet.Receptor3.stats.thruputMeter 	Duration 	40
+scalar Homenet.Receptor3.stats.thruputMeter 	"Drop packets" 	0
+scalar Homenet.Receptor3.stats.thruputMeter 	"Total packets" 	15
+scalar Homenet.Receptor3.stats.thruputMeter 	"Total bits" 	63840
+scalar Homenet.Receptor3.stats.thruputMeter 	"Throughput avg(bit/s)" 	1596
+scalar Homenet.Receptor3.stats.thruputMeter 	"Packets avg/s" 	0.375
+scalar Homenet.Emitter0.statistics.pingApp 	"Pings sent" 	0
+scalar Homenet.Emitter0.statistics.networkLayer.arp 	"ARP requests sent" 	0
+scalar Homenet.Emitter0.statistics.networkLayer.arp 	"ARP replies sent" 	0
+scalar Homenet.Emitter0.statistics.networkLayer.arp 	"ARP resolutions" 	0
+scalar Homenet.Emitter0.statistics.networkLayer.arp 	"failed ARP resolutions" 	0
+scalar Homenet.Emitter0.statistics.eth[0].queue 	"packets received by queue" 	0
+scalar Homenet.Emitter0.statistics.eth[0].queue 	"packets dropped by queue" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"simulated time" 	40
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"txrate (Mb)" 	100
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"full duplex" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames sent" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames rcvd" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"bytes sent" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"bytes rcvd" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames from higher layer" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames dropped (bit error)" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames dropped (not for us)" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames passed up to HL" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"PAUSE frames sent" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"PAUSE frames rcvd" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames/sec sent" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"frames/sec rcvd" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"bits/sec sent" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"bits/sec rcvd" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"rx channel idle (%)" 	100
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"rx channel utilization (%)" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	"rx channel collision (%)" 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	collisions 	0
+scalar Homenet.Emitter0.statistics.eth[0].mac 	backoffs 	0
+scalar Homenet.Emitter0.statistics.eth[0].encap 	"packets from higher layer" 	0
+scalar Homenet.Emitter0.statistics.eth[0].encap 	"frames from MAC" 	0
+scalar Homenet.Emitter0.stats.relayUnit 	"processed frames" 	64
+scalar Homenet.Emitter0.stats.relayUnit 	"dropped frames" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"simulated time" 	40
+scalar Homenet.Emitter0.stats.mac[0] 	"txrate (Mb)" 	100
+scalar Homenet.Emitter0.stats.mac[0] 	"full duplex" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"frames sent" 	34
+scalar Homenet.Emitter0.stats.mac[0] 	"frames rcvd" 	30
+scalar Homenet.Emitter0.stats.mac[0] 	"bytes sent" 	9466
+scalar Homenet.Emitter0.stats.mac[0] 	"bytes rcvd" 	9210
+scalar Homenet.Emitter0.stats.mac[0] 	"frames from higher layer" 	34
+scalar Homenet.Emitter0.stats.mac[0] 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"frames dropped (bit error)" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"frames dropped (not for us)" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"frames passed up to HL" 	30
+scalar Homenet.Emitter0.stats.mac[0] 	"PAUSE frames sent" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"PAUSE frames rcvd" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	"frames/sec sent" 	0.85
+scalar Homenet.Emitter0.stats.mac[0] 	"frames/sec rcvd" 	0.75
+scalar Homenet.Emitter0.stats.mac[0] 	"bits/sec sent" 	1893.2
+scalar Homenet.Emitter0.stats.mac[0] 	"bits/sec rcvd" 	1842
+scalar Homenet.Emitter0.stats.mac[0] 	"rx channel idle (%)" 	99.9961624
+scalar Homenet.Emitter0.stats.mac[0] 	"rx channel utilization (%)" 	0.0038376
+scalar Homenet.Emitter0.stats.mac[0] 	"rx channel collision (%)" 	0
+scalar Homenet.Emitter0.stats.mac[0] 	collisions 	0
+scalar Homenet.Emitter0.stats.mac[0] 	backoffs 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"simulated time" 	40
+scalar Homenet.Emitter0.stats.mac[1] 	"txrate (Mb)" 	100
+scalar Homenet.Emitter0.stats.mac[1] 	"full duplex" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"frames sent" 	30
+scalar Homenet.Emitter0.stats.mac[1] 	"frames rcvd" 	34
+scalar Homenet.Emitter0.stats.mac[1] 	"bytes sent" 	9210
+scalar Homenet.Emitter0.stats.mac[1] 	"bytes rcvd" 	9466
+scalar Homenet.Emitter0.stats.mac[1] 	"frames from higher layer" 	30
+scalar Homenet.Emitter0.stats.mac[1] 	"frames from higher layer dropped (iface down)" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"frames dropped (bit error)" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"frames dropped (not for us)" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"frames passed up to HL" 	34
+scalar Homenet.Emitter0.stats.mac[1] 	"PAUSE frames sent" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"PAUSE frames rcvd" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	"frames/sec sent" 	0.75
+scalar Homenet.Emitter0.stats.mac[1] 	"frames/sec rcvd" 	0.85
+scalar Homenet.Emitter0.stats.mac[1] 	"bits/sec sent" 	1842
+scalar Homenet.Emitter0.stats.mac[1] 	"bits/sec rcvd" 	1893.2
+scalar Homenet.Emitter0.stats.mac[1] 	"rx channel idle (%)" 	99.9961624
+scalar Homenet.Emitter0.stats.mac[1] 	"rx channel utilization (%)" 	0.0038376
+scalar Homenet.Emitter0.stats.mac[1] 	"rx channel collision (%)" 	0
+scalar Homenet.Emitter0.stats.mac[1] 	collisions 	0
+scalar Homenet.Emitter0.stats.mac[1] 	backoffs 	0
+scalar Homenet.Emitter0.stats.etherEncap 	"packets from higher layer" 	30
+scalar Homenet.Emitter0.stats.etherEncap 	"frames from MAC" 	30
+scalar Homenet.Emitter0.stats.thruputMeter 	JitterMean 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	EedMean 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	Duration 	40
+scalar Homenet.Emitter0.stats.thruputMeter 	"Drop packets" 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	"Total packets" 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	"Total bits" 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	"Throughput avg(bit/s)" 	0
+scalar Homenet.Emitter0.stats.thruputMeter 	"Packets avg/s" 	0
