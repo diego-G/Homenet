@@ -6,8 +6,8 @@ import inet.linklayer.etherswitch.MACRelayUnit;
 
 //
 // This module is very important. Inside of it, we will take the measurements 
-// and record the results. There will be one in emitter and another in receiver
-// mode.
+// and record the results. It will develop two roles depending on whether 
+// sending or receiving statistics.
 //
 module Stats
 {

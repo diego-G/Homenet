@@ -174,6 +174,7 @@ void ThM::finish() {
 
 	ev << "  pk. delay, min:    " << pkDelayStats.getMin() << endl;
 	ev << "  pk. delay, max:    " << pkDelayStats.getMean() << endl;
+	// FIXME Mean between min and max, what happens?
 	ev << "  pk. delay, mean:   " << pkDelayStats.getMax() << endl;
 	ev << "  pk. delay, stddev: " << pkDelayStats.getStddev() << endl;
 

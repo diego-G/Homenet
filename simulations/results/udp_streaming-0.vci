@@ -1,392 +1,386 @@
-file 2557430 1336739114                                         
+file 99287 1337088243                                           
 version 2
-run udp_streaming-0-20120511-15:20:49-2195
+run udp_streaming-0-20120515-16:23:12-4765
 attr configname udp_streaming
-attr datetime 20120511-15:20:49
+attr datetime 20120515-16:23:12
 attr experiment udp_streaming
 attr inifile omnetpp.ini
 attr iterationvars ""
 attr iterationvars2 $repetition=0
 attr measurement ""
-attr network homenet
-attr processid 2195
+attr network Homenet
+attr processid 4765
 attr repetition 0
 attr replication #0
 attr resultdir results
 attr runnumber 0
 attr seedset 0
 
-vector 156  homenet.kitchen.eth[2].mac  framesSent  ETV
-vector 158  homenet.kitchen.eth[2].mac  bytesSent  ETV
-vector 185  homenet.office.eth[1].mac  framesReceivedOK  ETV
-vector 187  homenet.office.eth[1].mac  bytesReceivedOK  ETV
-vector 191  homenet.office.eth[1].mac  framesPassedToHL  ETV
-vector 226  homenet.office.eth[4].mac  framesSent  ETV
-vector 228  homenet.office.eth[4].mac  bytesSent  ETV
-vector 73  homenet.room_C.eth[2].mac  framesReceivedOK  ETV
-vector 75  homenet.room_C.eth[2].mac  bytesReceivedOK  ETV
-vector 79  homenet.room_C.eth[2].mac  framesPassedToHL  ETV
-vector 30  homenet.room_A.eth[2].mac  framesSent  ETV
-vector 32  homenet.room_A.eth[2].mac  bytesSent  ETV
-vector 353  homenet.living_room.eth[3].mac  framesReceivedOK  ETV
-vector 355  homenet.living_room.eth[3].mac  bytesReceivedOK  ETV
-vector 359  homenet.living_room.eth[3].mac  framesPassedToHL  ETV
-vector 184  homenet.office.eth[1].mac  framesSent  ETV
-vector 186  homenet.office.eth[1].mac  bytesSent  ETV
-vector 157  homenet.kitchen.eth[2].mac  framesReceivedOK  ETV
-vector 159  homenet.kitchen.eth[2].mac  bytesReceivedOK  ETV
-vector 163  homenet.kitchen.eth[2].mac  framesPassedToHL  ETV
-vector 282  homenet.room_B.eth[3].mac  framesSent  ETV
-vector 284  homenet.room_B.eth[3].mac  bytesSent  ETV
-vector 339  homenet.living_room.eth[2].mac  framesReceivedOK  ETV
-vector 341  homenet.living_room.eth[2].mac  bytesReceivedOK  ETV
-vector 345  homenet.living_room.eth[2].mac  framesPassedToHL  ETV
-vector 44  homenet.room_C.eth[0].mac  framesSent  ETV
-vector 46  homenet.room_C.eth[0].mac  bytesSent  ETV
-vector 413  homenet.Host1.eth[0].mac  framesReceivedOK  ETV
-vector 415  homenet.Host1.eth[0].mac  bytesReceivedOK  ETV
-vector 419  homenet.Host1.eth[0].mac  framesPassedToHL  ETV
-vector 2  homenet.room_A.eth[0].mac  framesSent  ETV
-vector 4  homenet.room_A.eth[0].mac  bytesSent  ETV
-vector 269  homenet.room_B.eth[2].mac  framesReceivedOK  ETV
-vector 271  homenet.room_B.eth[2].mac  bytesReceivedOK  ETV
-vector 275  homenet.room_B.eth[2].mac  framesPassedToHL  ETV
-vector 198  homenet.office.eth[2].mac  framesSent  ETV
-vector 200  homenet.office.eth[2].mac  bytesSent  ETV
-vector 367  homenet.living_room.eth[4].mac  framesReceivedOK  ETV
-vector 369  homenet.living_room.eth[4].mac  bytesReceivedOK  ETV
-vector 373  homenet.living_room.eth[4].mac  framesPassedToHL  ETV
-vector 240  homenet.room_B.eth[0].mac  framesSent  ETV
-vector 242  homenet.room_B.eth[0].mac  bytesSent  ETV
-vector 564  homenet.Emitter0.stats.mac[1]  framesReceivedOK  ETV
-vector 566  homenet.Emitter0.stats.mac[1]  bytesReceivedOK  ETV
-vector 570  homenet.Emitter0.stats.mac[1]  framesPassedToHL  ETV
-vector 550  homenet.Emitter0.stats.relayUnit  "buffer level"  ETV
-vector 551  homenet.Emitter0.stats.mac[0]  framesSent  ETV
-vector 553  homenet.Emitter0.stats.mac[0]  bytesSent  ETV
-vector 397  homenet.Host0.eth[0].mac  framesReceivedOK  ETV
-vector 399  homenet.Host0.eth[0].mac  bytesReceivedOK  ETV
-vector 403  homenet.Host0.eth[0].mac  framesPassedToHL  ETV
-vector 86  homenet.garage.eth[0].mac  framesSent  ETV
-vector 88  homenet.garage.eth[0].mac  bytesSent  ETV
-vector 478  homenet.Host5.eth[0].mac  framesReceivedOK  ETV
-vector 480  homenet.Host5.eth[0].mac  bytesReceivedOK  ETV
-vector 484  homenet.Host5.eth[0].mac  framesPassedToHL  ETV
-vector 72  homenet.room_C.eth[2].mac  framesSent  ETV
-vector 74  homenet.room_C.eth[2].mac  bytesSent  ETV
-vector 227  homenet.office.eth[4].mac  framesReceivedOK  ETV
-vector 229  homenet.office.eth[4].mac  bytesReceivedOK  ETV
-vector 233  homenet.office.eth[4].mac  framesPassedToHL  ETV
-vector 310  homenet.living_room.eth[0].mac  framesSent  ETV
-vector 312  homenet.living_room.eth[0].mac  bytesSent  ETV
-vector 462  homenet.Host4.eth[0].mac  framesReceivedOK  ETV
-vector 464  homenet.Host4.eth[0].mac  bytesReceivedOK  ETV
-vector 468  homenet.Host4.eth[0].mac  framesPassedToHL  ETV
-vector 100  homenet.garage.eth[1].mac  framesSent  ETV
-vector 102  homenet.garage.eth[1].mac  bytesSent  ETV
-vector 297  homenet.room_B.eth[4].mac  framesReceivedOK  ETV
-vector 299  homenet.room_B.eth[4].mac  bytesReceivedOK  ETV
-vector 303  homenet.room_B.eth[4].mac  framesPassedToHL  ETV
-vector 212  homenet.office.eth[3].mac  framesSent  ETV
-vector 214  homenet.office.eth[3].mac  bytesSent  ETV
-vector 17  homenet.room_A.eth[1].mac  framesReceivedOK  ETV
-vector 19  homenet.room_A.eth[1].mac  bytesReceivedOK  ETV
-vector 23  homenet.room_A.eth[1].mac  framesPassedToHL  ETV
-vector 352  homenet.living_room.eth[3].mac  framesSent  ETV
-vector 354  homenet.living_room.eth[3].mac  bytesSent  ETV
-vector 31  homenet.room_A.eth[2].mac  framesReceivedOK  ETV
-vector 33  homenet.room_A.eth[2].mac  bytesReceivedOK  ETV
-vector 37  homenet.room_A.eth[2].mac  framesPassedToHL  ETV
-vector 254  homenet.room_B.eth[1].mac  framesSent  ETV
-vector 256  homenet.room_B.eth[1].mac  bytesSent  ETV
-vector 59  homenet.room_C.eth[1].mac  framesReceivedOK  ETV
-vector 61  homenet.room_C.eth[1].mac  bytesReceivedOK  ETV
-vector 65  homenet.room_C.eth[1].mac  framesPassedToHL  ETV
-vector 324  homenet.living_room.eth[1].mac  framesSent  ETV
-vector 326  homenet.living_room.eth[1].mac  bytesSent  ETV
-vector 115  homenet.garage.eth[2].mac  framesReceivedOK  ETV
-vector 117  homenet.garage.eth[2].mac  bytesReceivedOK  ETV
-vector 121  homenet.garage.eth[2].mac  framesPassedToHL  ETV
-vector 380  homenet.living_room.eth[5].mac  framesSent  ETV
-vector 382  homenet.living_room.eth[5].mac  bytesSent  ETV
-vector 143  homenet.kitchen.eth[1].mac  framesReceivedOK  ETV
-vector 145  homenet.kitchen.eth[1].mac  bytesReceivedOK  ETV
-vector 149  homenet.kitchen.eth[1].mac  framesPassedToHL  ETV
-vector 296  homenet.room_B.eth[4].mac  framesSent  ETV
-vector 298  homenet.room_B.eth[4].mac  bytesSent  ETV
-vector 101  homenet.garage.eth[1].mac  framesReceivedOK  ETV
-vector 103  homenet.garage.eth[1].mac  bytesReceivedOK  ETV
-vector 107  homenet.garage.eth[1].mac  framesPassedToHL  ETV
-vector 170  homenet.office.eth[0].mac  framesSent  ETV
-vector 172  homenet.office.eth[0].mac  bytesSent  ETV
-vector 429  homenet.Host2.eth[0].mac  framesReceivedOK  ETV
-vector 431  homenet.Host2.eth[0].mac  bytesReceivedOK  ETV
-vector 435  homenet.Host2.eth[0].mac  framesPassedToHL  ETV
-vector 16  homenet.room_A.eth[1].mac  framesSent  ETV
-vector 18  homenet.room_A.eth[1].mac  bytesSent  ETV
-vector 213  homenet.office.eth[3].mac  framesReceivedOK  ETV
-vector 215  homenet.office.eth[3].mac  bytesReceivedOK  ETV
-vector 219  homenet.office.eth[3].mac  framesPassedToHL  ETV
-vector 366  homenet.living_room.eth[4].mac  framesSent  ETV
-vector 368  homenet.living_room.eth[4].mac  bytesSent  ETV
-vector 199  homenet.office.eth[2].mac  framesReceivedOK  ETV
-vector 201  homenet.office.eth[2].mac  bytesReceivedOK  ETV
-vector 205  homenet.office.eth[2].mac  framesPassedToHL  ETV
-vector 338  homenet.living_room.eth[2].mac  framesSent  ETV
-vector 340  homenet.living_room.eth[2].mac  bytesSent  ETV
-vector 283  homenet.room_B.eth[3].mac  framesReceivedOK  ETV
-vector 285  homenet.room_B.eth[3].mac  bytesReceivedOK  ETV
-vector 289  homenet.room_B.eth[3].mac  framesPassedToHL  ETV
-vector 268  homenet.room_B.eth[2].mac  framesSent  ETV
-vector 270  homenet.room_B.eth[2].mac  bytesSent  ETV
-vector 3  homenet.room_A.eth[0].mac  framesReceivedOK  ETV
-vector 5  homenet.room_A.eth[0].mac  bytesReceivedOK  ETV
-vector 9  homenet.room_A.eth[0].mac  framesPassedToHL  ETV
-vector 128  homenet.kitchen.eth[0].mac  framesSent  ETV
-vector 130  homenet.kitchen.eth[0].mac  bytesSent  ETV
-vector 507  homenet.Receptor3.stats.mac[0]  framesReceivedOK  ETV
-vector 509  homenet.Receptor3.stats.mac[0]  bytesReceivedOK  ETV
-vector 513  homenet.Receptor3.stats.mac[0]  framesPassedToHL  ETV
-vector 505  homenet.Receptor3.stats.relayUnit  "buffer level"  ETV
-vector 518  homenet.Receptor3.stats.mac[1]  framesSent  ETV
-vector 520  homenet.Receptor3.stats.mac[1]  bytesSent  ETV
-vector 446  homenet.Host3.eth[0].mac  framesReceivedOK  ETV
-vector 448  homenet.Host3.eth[0].mac  bytesReceivedOK  ETV
-vector 452  homenet.Host3.eth[0].mac  framesPassedToHL  ETV
-vector 58  homenet.room_C.eth[1].mac  framesSent  ETV
-vector 60  homenet.room_C.eth[1].mac  bytesSent  ETV
-vector 255  homenet.room_B.eth[1].mac  framesReceivedOK  ETV
-vector 257  homenet.room_B.eth[1].mac  bytesReceivedOK  ETV
-vector 261  homenet.room_B.eth[1].mac  framesPassedToHL  ETV
-vector 142  homenet.kitchen.eth[1].mac  framesSent  ETV
-vector 144  homenet.kitchen.eth[1].mac  bytesSent  ETV
-vector 381  homenet.living_room.eth[5].mac  framesReceivedOK  ETV
-vector 383  homenet.living_room.eth[5].mac  bytesReceivedOK  ETV
-vector 387  homenet.living_room.eth[5].mac  framesPassedToHL  ETV
-vector 114  homenet.garage.eth[2].mac  framesSent  ETV
-vector 116  homenet.garage.eth[2].mac  bytesSent  ETV
-vector 325  homenet.living_room.eth[1].mac  framesReceivedOK  ETV
-vector 327  homenet.living_room.eth[1].mac  bytesReceivedOK  ETV
-vector 331  homenet.living_room.eth[1].mac  framesPassedToHL  ETV
-vector 182  homenet.office.eth[1].queue  "queue length"  ETV
-vector 154  homenet.kitchen.eth[2].queue  "queue length"  ETV
-vector 70  homenet.room_C.eth[2].queue  "queue length"  ETV
-vector 224  homenet.office.eth[4].queue  "queue length"  ETV
-vector 350  homenet.living_room.eth[3].queue  "queue length"  ETV
-vector 28  homenet.room_A.eth[2].queue  "queue length"  ETV
-vector 294  homenet.room_B.eth[4].queue  "queue length"  ETV
-vector 98  homenet.garage.eth[1].queue  "queue length"  ETV
-vector 14  homenet.room_A.eth[1].queue  "queue length"  ETV
-vector 210  homenet.office.eth[3].queue  "queue length"  ETV
-vector 445  homenet.Host3.eth[0].mac  framesSent  ETV
-vector 447  homenet.Host3.eth[0].mac  bytesSent  ETV
-vector 519  homenet.Receptor3.stats.mac[1]  framesReceivedOK  ETV
-vector 521  homenet.Receptor3.stats.mac[1]  bytesReceivedOK  ETV
-vector 525  homenet.Receptor3.stats.mac[1]  framesPassedToHL  ETV
-vector 506  homenet.Receptor3.stats.mac[0]  framesSent  ETV
-vector 508  homenet.Receptor3.stats.mac[0]  bytesSent  ETV
-vector 129  homenet.kitchen.eth[0].mac  framesReceivedOK  ETV
-vector 131  homenet.kitchen.eth[0].mac  bytesReceivedOK  ETV
-vector 135  homenet.kitchen.eth[0].mac  framesPassedToHL  ETV
-vector 396  homenet.Host0.eth[0].mac  framesSent  ETV
-vector 398  homenet.Host0.eth[0].mac  bytesSent  ETV
-vector 552  homenet.Emitter0.stats.mac[0]  framesReceivedOK  ETV
-vector 554  homenet.Emitter0.stats.mac[0]  bytesReceivedOK  ETV
-vector 558  homenet.Emitter0.stats.mac[0]  framesPassedToHL  ETV
-vector 563  homenet.Emitter0.stats.mac[1]  framesSent  ETV
-vector 565  homenet.Emitter0.stats.mac[1]  bytesSent  ETV
-vector 241  homenet.room_B.eth[0].mac  framesReceivedOK  ETV
-vector 243  homenet.room_B.eth[0].mac  bytesReceivedOK  ETV
-vector 247  homenet.room_B.eth[0].mac  framesPassedToHL  ETV
-vector 530  homenet.Receptor3.stats.thruputMeter  "thruput (bit/sec)"  ETV
-vector 531  homenet.Receptor3.stats.thruputMeter  packet/sec  ETV
-vector 533  homenet.Receptor3.stats.thruputMeter  jitterVector  ETV
-vector 532  homenet.Receptor3.stats.thruputMeter  pkDelayVector  ETV
-vector 440  homenet.Host3.udpApp[0]  "video stream eed"  ETV
-2	11543 623 330 89815 0.09027874745 30.09027874745 25 1 25 325 5525
-3	12166 702 2124 90433 0.109572734096 30.109572734096 28 1 28 406 7714
-4	12868 666 330 89815 0.09027874745 30.09027874745 25 64 1600 20800 22630400
-5	13534 751 2124 90433 0.109572734096 30.109572734096 28 64 1792 25984 31596544
-9	14285 702 2124 90433 0.109572734096 30.109572734096 28 1 28 406 7714
-14	14987 50 5866 5871 5.106995624785 5.107002344784 2 0 1 1 1
-16	15037 750 1098 90350 0.10676142479 30.10676142479 29 1 29 435 8555
-17	15787 860 657 90042 0.099096241008 30.099096241008 33 1 33 561 12529
-18	16647 801 1098 90350 0.10676142479 30.10676142479 29 64 1856 27840 35041280
-19	17448 919 657 90042 0.099096241008 30.099096241008 33 64 2112 35904 51318784
-23	18367 860 657 90042 0.099096241008 30.099096241008 33 1 33 561 12529
-28	19227 50 4121 4130 5.099376501365 5.099383221364 2 0 1 1 1
-30	19277 984 101 89742 0.087844424168 30.087844424168 38 1 38 741 19019
-31	20261 930 672 90057 0.099141941373 30.099141941373 36 1 36 666 16206
-32	21191 1053 101 89742 0.087844424168 30.087844424168 38 64 2432 47424 77901824
-33	22244 995 672 90057 0.099141941373 30.099141941373 36 64 2304 42624 66379776
-37	23239 930 672 90057 0.099141941373 30.099141941373 36 1 36 666 16206
-44	24169 100 315 89788 0.08989012085 30.08989012085 4 1 4 10 30
-46	24269 107 315 89788 0.08989012085 30.08989012085 4 64 256 640 122880
-58	24376 744 2320 129676 0.111753480163 35.09956050136 28 1 28 406 7714
-59	25120 844 855 129666 0.101318637488 35.099543781361 32 1 32 528 11440
-60	25964 793 2320 129676 0.111753480163 35.09956050136 28 64 1792 25984 31596544
-61	26757 901 855 129666 0.101318637488 35.099543781361 32 64 2048 33792 46858240
-65	27658 844 855 129666 0.101318637488 35.099543781361 32 1 32 528 11440
-70	28502 50 3684 3689 5.098250881813 5.098257601812 2 0 1 1 1
-72	28552 872 400 89995 0.09801304182 30.09801304182 34 1 34 595 13685
-73	29424 824 87 89728 0.087580265193 30.087580265193 32 1 32 528 11440
-74	30248 933 400 89995 0.09801304182 30.09801304182 34 64 2176 38080 56053760
-75	31181 881 87 89728 0.087580265193 30.087580265193 32 64 2048 33792 46858240
-79	32062 824 87 89728 0.087580265193 30.087580265193 32 1 32 528 11440
-86	32886 104 385 89980 0.097467412056 30.097467412056 4 1 4 10 30
-88	32990 111 385 89980 0.097467412056 30.097467412056 4 64 256 640 122880
-98	33101 50 5791 5800 5.103304440723 5.103311160722 2 0 1 1 1
-100	33151 917 641 90026 0.098649498685 30.098649498685 34 1 34 595 13685
-101	34068 1136 900 90320 0.103069880731 30.103069880731 42 1 42 903 25585
-102	35204 978 641 90026 0.098649498685 30.098649498685 34 64 2176 38080 56053760
-103	36182 1213 900 90320 0.103069880731 30.103069880731 42 64 2688 57792 104796160
-107	37395 1136 900 90320 0.103069880731 30.103069880731 42 1 42 903 25585
-114	38531 431 2686 90582 0.118243337752 30.118243337752 16 1 16 136 1496
-115	38962 754 870 90290 0.10231944081 30.10231944081 28 1 28 406 7714
-116	39716 456 2686 90582 0.118243337752 30.118243337752 16 64 1024 8704 6127616
-117	40172 803 870 90290 0.10231944081 30.10231944081 28 64 1792 25984 31596544
-121	40975 754 870 90290 0.10231944081 30.10231944081 28 1 28 406 7714
-128	41729 62508 2293 168239 0.111048996553 39.990719559977 2024 1 2024 2049300 2765871900
-129	104237 606 9611 161902 20.000023639998 39.180671559974 21 1 21 231 3311
-130	104843 68604 2293 168239 0.111048996553 39.990719559977 2024 64 2093536 2115968690 2.9532029944257e+15
-131	173447 641 9611 161902 20.000023639998 39.180671559974 21 64 1344 14784 13561856
-135	174088 606 9611 161902 20.000023639998 39.180671559974 21 1 21 231 3311
-142	174694 1291 2503 162056 0.113853029435 39.190643359971 46 1 46 1081 33511
-143	175985 63187 885 168228 0.102398163519 39.990624279978 2048 1 2048 2098176 2865409024
-144	239172 1376 2503 162056 0.113853029435 39.190643359971 46 64 2944 69184 137261056
-145	240548 69277 885 168228 0.102398163519 39.990624279978 2048 64 2095072 2119113448 2.9597454296717e+15
-149	309825 63187 885 168228 0.102398163519 39.990624279978 2048 1 2048 2098176 2865409024
-154	373012 104 3049 6580 5.08921743343 10.089224153429 4 0 1 2 2
-156	373116 804 71 89635 0.072665481895 30.072665481895 30 1 30 465 9455
-157	373920 1017 117 89758 0.088982873438 30.088982873438 38 1 38 741 19019
-158	374937 857 71 89635 0.072665481895 30.072665481895 30 64 1920 29760 38727680
-159	375794 1086 117 89758 0.088982873438 30.088982873438 38 64 2432 47424 77901824
-163	376880 1017 117 89758 0.088982873438 30.088982873438 38 1 38 741 19019
-170	377897 109 1083 90335 0.105651051584 30.105651051584 4 1 4 10 30
-172	378006 116 1083 90335 0.105651051584 30.105651051584 4 64 256 640 122880
-182	378122 104 3036 6563 5.089210613431 10.08921733343 4 0 1 2 2
-184	378226 1017 116 89757 0.088982773438 30.088982773438 38 1 38 741 19019
-185	379243 804 72 89636 0.072665581895 30.072665581895 30 1 30 465 9455
-186	380047 1086 116 89757 0.088982773438 30.088982773438 38 64 2432 47424 77901824
-187	381133 857 72 89636 0.072665581895 30.072665581895 30 64 1920 29760 38727680
-191	381990 804 72 89636 0.072665581895 30.072665581895 30 1 30 465 9455
-198	382794 758 345 89940 0.092490713726 30.092490713726 28 1 28 406 7714
-199	383552 781 1450 90366 0.10819016756 30.10819016756 29 1 29 435 8555
-200	384333 807 345 89940 0.092490713726 30.092490713726 28 64 1792 25984 31596544
-201	385140 832 1450 90366 0.10819016756 30.10819016756 29 64 1856 27840 35041280
-205	385972 781 1450 90366 0.10819016756 30.10819016756 29 1 29 435 8555
-210	386753 52 5879 5888 5.107002444784 5.107009164783 2 0 1 1 1
-212	386805 893 656 90041 0.099096141008 30.099096141008 33 1 33 561 12529
-213	387698 779 1099 90351 0.10676152479 30.10676152479 29 1 29 435 8555
-214	388477 952 656 90041 0.099096141008 30.099096141008 33 64 2112 35904 51318784
-215	389429 830 1099 90351 0.10676152479 30.10676152479 29 64 1856 27840 35041280
-219	390259 779 1099 90351 0.10676152479 30.10676152479 29 1 29 435 8555
-224	391038 52 3697 3706 5.098257701812 5.098264421811 2 0 1 1 1
-226	391090 856 86 89727 0.087580165193 30.087580165193 32 1 32 528 11440
-227	391946 906 401 89996 0.09801314182 30.09801314182 34 1 34 595 13685
-228	392852 913 86 89727 0.087580165193 30.087580165193 32 64 2048 33792 46858240
-229	393765 967 401 89996 0.09801314182 30.09801314182 34 64 2176 38080 56053760
-233	394732 906 401 89996 0.09801314182 30.09801314182 34 1 34 595 13685
-240	395638 746 361 161968 0.094606483717 39.190293119979 26 1 26 351 6201
-241	396384 60416 9767 168206 20.000219119984 39.99043351998 2021 1 2021 2043231 2753594311
-242	456800 791 361 161968 0.094606483717 39.190293119979 26 64 1664 22464 25399296
-243	457591 66509 9767 168206 20.000219119984 39.99043351998 2021 64 2093344 2114593364 2.9513770812772e+15
-247	524100 60416 9767 168206 20.000219119984 39.99043351998 2021 1 2021 2043231 2753594311
-254	584516 876 854 129665 0.101318537488 35.099543681361 32 1 32 528 11440
-255	585392 772 2321 129677 0.111753580163 35.09956060136 28 1 28 406 7714
-256	586164 933 854 129665 0.101318537488 35.099543681361 32 64 2048 33792 46858240
-257	587097 821 2321 129677 0.111753580163 35.09956060136 28 64 1792 25984 31596544
-261	587918 772 2321 129677 0.111753580163 35.09956060136 28 1 28 406 7714
-268	588690 758 2123 90432 0.109572634096 30.109572634096 28 1 28 406 7714
-269	589448 673 331 89816 0.09027884745 30.09027884745 25 1 25 325 5525
-270	590121 807 2123 90432 0.109572634096 30.109572634096 28 64 1792 25984 31596544
-271	590928 716 331 89816 0.09027884745 30.09027884745 25 64 1600 20800 22630400
-275	591644 673 331 89816 0.09027884745 30.09027884745 25 1 25 325 5525
-282	592317 63488 299 168216 0.089809224551 39.990528799979 2057 1 2057 2116653 2903342365
-283	655805 1673 1605 162024 0.108576770378 39.190514439974 60 1 60 1830 73810
-284	657478 69595 299 168216 0.089809224551 39.990528799979 2057 64 2095648 2126259662 2.9695404241301e+15
-285	727073 1786 1605 162024 0.108576770378 39.190514439974 60 64 3840 117120 302325760
-289	728859 1673 1605 162024 0.108576770378 39.190514439974 60 1 60 1830 73810
-294	730532 52 5778 5783 5.103297620724 5.103304340723 2 0 1 1 1
-296	730584 1136 899 90319 0.103069780731 30.103069780731 42 1 42 903 25585
-297	731720 917 642 90027 0.098649598685 30.098649598685 34 1 34 595 13685
-298	732637 1213 899 90319 0.103069780731 30.103069780731 42 64 2688 57792 104796160
-299	733850 978 642 90027 0.098649598685 30.098649598685 34 64 2176 38080 56053760
-303	734828 917 642 90027 0.098649598685 30.098649598685 34 1 34 595 13685
-310	735745 108 626 90011 0.098600232908 30.098600232908 4 1 4 10 30
-312	735853 115 626 90011 0.098600232908 30.098600232908 4 64 256 640 122880
-324	735968 754 869 90289 0.10231934081 30.10231934081 28 1 28 406 7714
-325	736722 431 2687 90583 0.118243437752 30.118243437752 16 1 16 136 1496
-326	737153 803 869 90289 0.10231934081 30.10231934081 28 64 1792 25984 31596544
-327	737956 456 2687 90583 0.118243437752 30.118243437752 16 64 1024 8704 6127616
-331	738412 431 2687 90583 0.118243437752 30.118243437752 16 1 16 136 1496
-338	738843 1673 1604 162023 0.108576670378 39.190514339974 60 1 60 1830 73810
-339	740516 63488 300 168217 0.089809324551 39.990528899979 2057 1 2057 2116653 2903342365
-340	804004 1786 1604 162023 0.108576670378 39.190514339974 60 64 3840 117120 302325760
-341	805790 69595 300 168217 0.089809324551 39.990528899979 2057 64 2095648 2126259662 2.9695404241301e+15
-345	875385 63488 300 168217 0.089809324551 39.990528899979 2057 1 2057 2116653 2903342365
-350	938873 52 4108 4113 5.099369681366 5.099376401365 2 0 1 1 1
-352	938925 966 671 90056 0.099141841373 30.099141841373 36 1 36 666 16206
-353	939891 1022 102 89743 0.087844524168 30.087844524168 38 1 38 741 19019
-354	940913 1031 671 90056 0.099141841373 30.099141841373 36 64 2304 42624 66379776
-355	941944 1091 102 89743 0.087844524168 30.087844524168 38 64 2432 47424 77901824
-359	943035 1022 102 89743 0.087844524168 30.087844524168 38 1 38 741 19019
-366	944057 781 1449 90365 0.10819006756 30.10819006756 29 1 29 435 8555
-367	944838 758 346 89941 0.092490813726 30.092490813726 28 1 28 406 7714
-368	945596 832 1449 90365 0.10819006756 30.10819006756 29 64 1856 27840 35041280
-369	946428 807 346 89941 0.092490813726 30.092490813726 28 64 1792 25984 31596544
-373	947235 758 346 89941 0.092490813726 30.092490813726 28 1 28 406 7714
-380	947993 63187 884 168227 0.102398063519 39.990624179978 2048 1 2048 2098176 2865409024
-381	1011180 1291 2504 162057 0.113853129435 39.190643459971 46 1 46 1081 33511
-382	1012471 69277 884 168227 0.102398063519 39.990624179978 2048 64 2095072 2119113448 2.9597454296717e+15
-383	1081748 1376 2504 162057 0.113853129435 39.190643459971 46 64 2944 69184 137261056
-387	1083124 1291 2504 162057 0.113853129435 39.190643459971 46 1 46 1081 33511
-396	1084415 62416 9755 168194 20.000212199985 39.990348039981 2021 1 2021 2043231 2753594311
-397	1146831 746 370 161977 0.094613403716 39.190300039978 26 1 26 351 6201
-398	1147577 68509 9755 168194 20.000212199985 39.990348039981 2021 64 2093344 2114593364 2.9513770812772e+15
-399	1216086 791 370 161977 0.094613403716 39.190300039978 26 64 1664 22464 25399296
-403	1216877 746 370 161977 0.094613403716 39.190300039978 26 1 26 351 6201
-413	1217623 104 316 89789 0.08989032085 30.08989032085 4 1 4 10 30
-415	1217727 111 316 89789 0.08989032085 30.08989032085 4 64 256 640 122880
-419	1217838 104 316 89789 0.08989032085 30.08989032085 4 1 4 10 30
-429	1217942 109 1084 90336 0.105651251584 30.105651251584 4 1 4 10 30
-431	1218051 116 1084 90336 0.105651251584 30.105651251584 4 64 256 640 122880
-435	1218167 109 1084 90336 0.105651251584 30.105651251584 4 1 4 10 30
-440	1218276 82848 9958 168258 20.000929599968 39.990815039976 2000 0.000562279994 0.000676839986 1.127749507764 0.0006362093420106
-445	1301124 606 9602 161893 20.000016719999 39.180664639975 21 1 21 231 3311
-446	1301730 62508 2306 168252 0.111055916552 39.990805039976 2024 1 2024 2049300 2765871900
-447	1364238 641 9602 161893 20.000016719999 39.180664639975 21 64 1344 14784 13561856
-448	1364879 68604 2306 168252 0.111055916552 39.990805039976 2024 64 2093536 2115968690 2.9532029944257e+15
-452	1433483 62508 2306 168252 0.111055916552 39.990805039976 2024 1 2024 2049300 2765871900
-462	1495991 108 627 90012 0.098600432908 30.098600432908 4 1 4 10 30
-464	1496099 115 627 90012 0.098600432908 30.098600432908 4 64 256 640 122880
-468	1496214 108 627 90012 0.098600432908 30.098600432908 4 1 4 10 30
-478	1496322 108 386 89981 0.097467612056 30.097467612056 4 1 4 10 30
-480	1496430 115 386 89981 0.097467612056 30.097467612056 4 64 256 640 122880
-484	1496545 108 386 89981 0.097467612056 30.097467612056 4 1 4 10 30
-505	1496653 122319 2299 168246 0.111049096553 39.990719659977 4090 0 1046 2094880 2188416320
-506	1618972 606 9610 161901 20.000023539998 39.180671459974 21 1 21 231 3311
-507	1619578 62508 2294 168240 0.111049096553 39.990719659977 2024 1 2024 2049300 2765871900
-508	1682086 641 9610 161901 20.000023539998 39.180671459974 21 64 1344 14784 13561856
-509	1682727 68604 2294 168240 0.111049096553 39.990719659977 2024 64 2093536 2115968690 2.9532029944257e+15
-513	1751331 62508 2294 168240 0.111049096553 39.990719659977 2024 1 2024 2049300 2765871900
-518	1813839 62508 2305 168251 0.111055816552 39.990804939976 2024 1 2024 2049300 2765871900
-519	1876347 606 9603 161894 20.000016819999 39.180664739975 21 1 21 231 3311
-520	1876953 68604 2305 168251 0.111055816552 39.990804939976 2024 64 2093536 2115968690 2.9532029944257e+15
-521	1945557 641 9603 161894 20.000016819999 39.180664739975 21 64 1344 14784 13561856
-525	1946198 606 9603 161894 20.000016819999 39.180664739975 21 1 21 231 3311
-530	1946804 1344 9944 164471 0 39.000719659977 40 0 822588.47145742 32073788.486165 26377638709660
-531	1948148 1235 9944 164471 0 39.000719659977 40 0 100.0229172492 3900.0229190375 390004.58451154
-532	1949383 82867 9944 168244 20.000834219969 39.990719659977 2000 0.000456899995 0.000571459987 0.91698950976398 0.00042073474638819
-533	2032250 78669 9944 168244 20.000834219969 39.990719659977 2000 0 4.7574141e-05 0.016816239844 1.4774376459286e-07
-550	2110919 122425 363 168200 0.094606583717 39.990348139981 4094 0 1046 2095008 2188424512
-551	2233344 746 369 161976 0.094613303716 39.190299939978 26 1 26 351 6201
-552	2234090 62416 9756 168195 20.000212299985 39.990348139981 2021 1 2021 2043231 2753594311
-553	2296506 791 369 161976 0.094613303716 39.190299939978 26 64 1664 22464 25399296
-554	2297297 68509 9756 168195 20.000212299985 39.990348139981 2021 64 2093344 2114593364 2.9513770812772e+15
-558	2365806 62416 9756 168195 20.000212299985 39.990348139981 2021 1 2021 2043231 2753594311
-563	2428222 60416 9766 168205 20.000219019984 39.99043341998 2021 1 2021 2043231 2753594311
-564	2488638 746 362 161969 0.094606583717 39.190293219979 26 1 26 351 6201
-565	2489384 66509 9766 168205 20.000219019984 39.99043341998 2021 64 2093344 2114593364 2.9513770812772e+15
-566	2555893 791 362 161969 0.094606583717 39.190293219979 26 64 1664 22464 25399296
-570	2556684 746 362 161969 0.094606583717 39.190293219979 26 1 26 351 6201
+vector 240  Homenet.room_B.eth[0].mac  framesSent  ETV
+vector 242  Homenet.room_B.eth[0].mac  bytesSent  ETV
+vector 532  Homenet.Emitter0.mac[1]  framesReceivedOK  ETV
+vector 534  Homenet.Emitter0.mac[1]  bytesReceivedOK  ETV
+vector 538  Homenet.Emitter0.mac[1]  framesPassedToHL  ETV
+vector 518  Homenet.Emitter0.relayUnit  "buffer level"  ETV
+vector 519  Homenet.Emitter0.mac[0]  framesSent  ETV
+vector 521  Homenet.Emitter0.mac[0]  bytesSent  ETV
+vector 397  Homenet.Host0.eth[0].mac  framesReceivedOK  ETV
+vector 399  Homenet.Host0.eth[0].mac  bytesReceivedOK  ETV
+vector 403  Homenet.Host0.eth[0].mac  framesPassedToHL  ETV
+vector 310  Homenet.living_room.eth[0].mac  framesSent  ETV
+vector 312  Homenet.living_room.eth[0].mac  bytesSent  ETV
+vector 462  Homenet.Host4.eth[0].mac  framesReceivedOK  ETV
+vector 464  Homenet.Host4.eth[0].mac  bytesReceivedOK  ETV
+vector 468  Homenet.Host4.eth[0].mac  framesPassedToHL  ETV
+vector 114  Homenet.garage.eth[2].mac  framesSent  ETV
+vector 116  Homenet.garage.eth[2].mac  bytesSent  ETV
+vector 325  Homenet.living_room.eth[1].mac  framesReceivedOK  ETV
+vector 327  Homenet.living_room.eth[1].mac  bytesReceivedOK  ETV
+vector 331  Homenet.living_room.eth[1].mac  framesPassedToHL  ETV
+vector 268  Homenet.room_B.eth[2].mac  framesSent  ETV
+vector 270  Homenet.room_B.eth[2].mac  bytesSent  ETV
+vector 3  Homenet.room_A.eth[0].mac  framesReceivedOK  ETV
+vector 5  Homenet.room_A.eth[0].mac  bytesReceivedOK  ETV
+vector 9  Homenet.room_A.eth[0].mac  framesPassedToHL  ETV
+vector 30  Homenet.room_A.eth[2].mac  framesSent  ETV
+vector 32  Homenet.room_A.eth[2].mac  bytesSent  ETV
+vector 353  Homenet.living_room.eth[3].mac  framesReceivedOK  ETV
+vector 355  Homenet.living_room.eth[3].mac  bytesReceivedOK  ETV
+vector 359  Homenet.living_room.eth[3].mac  framesPassedToHL  ETV
+vector 366  Homenet.living_room.eth[4].mac  framesSent  ETV
+vector 368  Homenet.living_room.eth[4].mac  bytesSent  ETV
+vector 199  Homenet.office.eth[2].mac  framesReceivedOK  ETV
+vector 201  Homenet.office.eth[2].mac  bytesReceivedOK  ETV
+vector 205  Homenet.office.eth[2].mac  framesPassedToHL  ETV
+vector 128  Homenet.kitchen.eth[0].mac  framesSent  ETV
+vector 130  Homenet.kitchen.eth[0].mac  bytesSent  ETV
+vector 491  Homenet.Receptor3.mac[0]  framesReceivedOK  ETV
+vector 493  Homenet.Receptor3.mac[0]  bytesReceivedOK  ETV
+vector 497  Homenet.Receptor3.mac[0]  framesPassedToHL  ETV
+vector 489  Homenet.Receptor3.relayUnit  "buffer level"  ETV
+vector 502  Homenet.Receptor3.mac[1]  framesSent  ETV
+vector 504  Homenet.Receptor3.mac[1]  bytesSent  ETV
+vector 446  Homenet.Host3.eth[0].mac  framesReceivedOK  ETV
+vector 448  Homenet.Host3.eth[0].mac  bytesReceivedOK  ETV
+vector 452  Homenet.Host3.eth[0].mac  framesPassedToHL  ETV
+vector 86  Homenet.garage.eth[0].mac  framesSent  ETV
+vector 88  Homenet.garage.eth[0].mac  bytesSent  ETV
+vector 478  Homenet.Host5.eth[0].mac  framesReceivedOK  ETV
+vector 480  Homenet.Host5.eth[0].mac  bytesReceivedOK  ETV
+vector 484  Homenet.Host5.eth[0].mac  framesPassedToHL  ETV
+vector 282  Homenet.room_B.eth[3].mac  framesSent  ETV
+vector 284  Homenet.room_B.eth[3].mac  bytesSent  ETV
+vector 339  Homenet.living_room.eth[2].mac  framesReceivedOK  ETV
+vector 341  Homenet.living_room.eth[2].mac  bytesReceivedOK  ETV
+vector 345  Homenet.living_room.eth[2].mac  framesPassedToHL  ETV
+vector 16  Homenet.room_A.eth[1].mac  framesSent  ETV
+vector 18  Homenet.room_A.eth[1].mac  bytesSent  ETV
+vector 213  Homenet.office.eth[3].mac  framesReceivedOK  ETV
+vector 215  Homenet.office.eth[3].mac  bytesReceivedOK  ETV
+vector 219  Homenet.office.eth[3].mac  framesPassedToHL  ETV
+vector 324  Homenet.living_room.eth[1].mac  framesSent  ETV
+vector 326  Homenet.living_room.eth[1].mac  bytesSent  ETV
+vector 115  Homenet.garage.eth[2].mac  framesReceivedOK  ETV
+vector 117  Homenet.garage.eth[2].mac  bytesReceivedOK  ETV
+vector 121  Homenet.garage.eth[2].mac  framesPassedToHL  ETV
+vector 72  Homenet.room_C.eth[2].mac  framesSent  ETV
+vector 74  Homenet.room_C.eth[2].mac  bytesSent  ETV
+vector 227  Homenet.office.eth[4].mac  framesReceivedOK  ETV
+vector 229  Homenet.office.eth[4].mac  bytesReceivedOK  ETV
+vector 233  Homenet.office.eth[4].mac  framesPassedToHL  ETV
+vector 44  Homenet.room_C.eth[0].mac  framesSent  ETV
+vector 46  Homenet.room_C.eth[0].mac  bytesSent  ETV
+vector 413  Homenet.Host1.eth[0].mac  framesReceivedOK  ETV
+vector 415  Homenet.Host1.eth[0].mac  bytesReceivedOK  ETV
+vector 419  Homenet.Host1.eth[0].mac  framesPassedToHL  ETV
+vector 170  Homenet.office.eth[0].mac  framesSent  ETV
+vector 172  Homenet.office.eth[0].mac  bytesSent  ETV
+vector 429  Homenet.Host2.eth[0].mac  framesReceivedOK  ETV
+vector 431  Homenet.Host2.eth[0].mac  bytesReceivedOK  ETV
+vector 435  Homenet.Host2.eth[0].mac  framesPassedToHL  ETV
+vector 156  Homenet.kitchen.eth[2].mac  framesSent  ETV
+vector 158  Homenet.kitchen.eth[2].mac  bytesSent  ETV
+vector 185  Homenet.office.eth[1].mac  framesReceivedOK  ETV
+vector 187  Homenet.office.eth[1].mac  bytesReceivedOK  ETV
+vector 191  Homenet.office.eth[1].mac  framesPassedToHL  ETV
+vector 184  Homenet.office.eth[1].mac  framesSent  ETV
+vector 186  Homenet.office.eth[1].mac  bytesSent  ETV
+vector 157  Homenet.kitchen.eth[2].mac  framesReceivedOK  ETV
+vector 159  Homenet.kitchen.eth[2].mac  bytesReceivedOK  ETV
+vector 163  Homenet.kitchen.eth[2].mac  framesPassedToHL  ETV
+vector 296  Homenet.room_B.eth[4].mac  framesSent  ETV
+vector 298  Homenet.room_B.eth[4].mac  bytesSent  ETV
+vector 101  Homenet.garage.eth[1].mac  framesReceivedOK  ETV
+vector 103  Homenet.garage.eth[1].mac  bytesReceivedOK  ETV
+vector 107  Homenet.garage.eth[1].mac  framesPassedToHL  ETV
+vector 338  Homenet.living_room.eth[2].mac  framesSent  ETV
+vector 340  Homenet.living_room.eth[2].mac  bytesSent  ETV
+vector 283  Homenet.room_B.eth[3].mac  framesReceivedOK  ETV
+vector 285  Homenet.room_B.eth[3].mac  bytesReceivedOK  ETV
+vector 289  Homenet.room_B.eth[3].mac  framesPassedToHL  ETV
+vector 380  Homenet.living_room.eth[5].mac  framesSent  ETV
+vector 382  Homenet.living_room.eth[5].mac  bytesSent  ETV
+vector 143  Homenet.kitchen.eth[1].mac  framesReceivedOK  ETV
+vector 145  Homenet.kitchen.eth[1].mac  bytesReceivedOK  ETV
+vector 149  Homenet.kitchen.eth[1].mac  framesPassedToHL  ETV
+vector 254  Homenet.room_B.eth[1].mac  framesSent  ETV
+vector 256  Homenet.room_B.eth[1].mac  bytesSent  ETV
+vector 59  Homenet.room_C.eth[1].mac  framesReceivedOK  ETV
+vector 61  Homenet.room_C.eth[1].mac  bytesReceivedOK  ETV
+vector 65  Homenet.room_C.eth[1].mac  framesPassedToHL  ETV
+vector 100  Homenet.garage.eth[1].mac  framesSent  ETV
+vector 102  Homenet.garage.eth[1].mac  bytesSent  ETV
+vector 297  Homenet.room_B.eth[4].mac  framesReceivedOK  ETV
+vector 299  Homenet.room_B.eth[4].mac  bytesReceivedOK  ETV
+vector 303  Homenet.room_B.eth[4].mac  framesPassedToHL  ETV
+vector 2  Homenet.room_A.eth[0].mac  framesSent  ETV
+vector 4  Homenet.room_A.eth[0].mac  bytesSent  ETV
+vector 269  Homenet.room_B.eth[2].mac  framesReceivedOK  ETV
+vector 271  Homenet.room_B.eth[2].mac  bytesReceivedOK  ETV
+vector 275  Homenet.room_B.eth[2].mac  framesPassedToHL  ETV
+vector 352  Homenet.living_room.eth[3].mac  framesSent  ETV
+vector 354  Homenet.living_room.eth[3].mac  bytesSent  ETV
+vector 31  Homenet.room_A.eth[2].mac  framesReceivedOK  ETV
+vector 33  Homenet.room_A.eth[2].mac  bytesReceivedOK  ETV
+vector 37  Homenet.room_A.eth[2].mac  framesPassedToHL  ETV
+vector 212  Homenet.office.eth[3].mac  framesSent  ETV
+vector 214  Homenet.office.eth[3].mac  bytesSent  ETV
+vector 17  Homenet.room_A.eth[1].mac  framesReceivedOK  ETV
+vector 19  Homenet.room_A.eth[1].mac  bytesReceivedOK  ETV
+vector 23  Homenet.room_A.eth[1].mac  framesPassedToHL  ETV
+vector 142  Homenet.kitchen.eth[1].mac  framesSent  ETV
+vector 144  Homenet.kitchen.eth[1].mac  bytesSent  ETV
+vector 381  Homenet.living_room.eth[5].mac  framesReceivedOK  ETV
+vector 383  Homenet.living_room.eth[5].mac  bytesReceivedOK  ETV
+vector 387  Homenet.living_room.eth[5].mac  framesPassedToHL  ETV
+vector 226  Homenet.office.eth[4].mac  framesSent  ETV
+vector 228  Homenet.office.eth[4].mac  bytesSent  ETV
+vector 73  Homenet.room_C.eth[2].mac  framesReceivedOK  ETV
+vector 75  Homenet.room_C.eth[2].mac  bytesReceivedOK  ETV
+vector 79  Homenet.room_C.eth[2].mac  framesPassedToHL  ETV
+vector 198  Homenet.office.eth[2].mac  framesSent  ETV
+vector 200  Homenet.office.eth[2].mac  bytesSent  ETV
+vector 367  Homenet.living_room.eth[4].mac  framesReceivedOK  ETV
+vector 369  Homenet.living_room.eth[4].mac  bytesReceivedOK  ETV
+vector 373  Homenet.living_room.eth[4].mac  framesPassedToHL  ETV
+vector 58  Homenet.room_C.eth[1].mac  framesSent  ETV
+vector 60  Homenet.room_C.eth[1].mac  bytesSent  ETV
+vector 255  Homenet.room_B.eth[1].mac  framesReceivedOK  ETV
+vector 257  Homenet.room_B.eth[1].mac  bytesReceivedOK  ETV
+vector 261  Homenet.room_B.eth[1].mac  framesPassedToHL  ETV
+vector 322  Homenet.living_room.eth[1].queue  "queue length"  ETV
+vector 112  Homenet.garage.eth[2].queue  "queue length"  ETV
+vector 182  Homenet.office.eth[1].queue  "queue length"  ETV
+vector 154  Homenet.kitchen.eth[2].queue  "queue length"  ETV
+vector 280  Homenet.room_B.eth[3].queue  "queue length"  ETV
+vector 336  Homenet.living_room.eth[2].queue  "queue length"  ETV
+vector 0  Homenet.room_A.eth[0].queue  "queue length"  ETV
+vector 266  Homenet.room_B.eth[2].queue  "queue length"  ETV
+vector 210  Homenet.office.eth[3].queue  "queue length"  ETV
+vector 14  Homenet.room_A.eth[1].queue  "queue length"  ETV
+vector 70  Homenet.room_C.eth[2].queue  "queue length"  ETV
+vector 224  Homenet.office.eth[4].queue  "queue length"  ETV
+vector 445  Homenet.Host3.eth[0].mac  framesSent  ETV
+vector 447  Homenet.Host3.eth[0].mac  bytesSent  ETV
+vector 503  Homenet.Receptor3.mac[1]  framesReceivedOK  ETV
+vector 505  Homenet.Receptor3.mac[1]  bytesReceivedOK  ETV
+vector 509  Homenet.Receptor3.mac[1]  framesPassedToHL  ETV
+vector 490  Homenet.Receptor3.mac[0]  framesSent  ETV
+vector 492  Homenet.Receptor3.mac[0]  bytesSent  ETV
+vector 129  Homenet.kitchen.eth[0].mac  framesReceivedOK  ETV
+vector 131  Homenet.kitchen.eth[0].mac  bytesReceivedOK  ETV
+vector 135  Homenet.kitchen.eth[0].mac  framesPassedToHL  ETV
+vector 396  Homenet.Host0.eth[0].mac  framesSent  ETV
+vector 398  Homenet.Host0.eth[0].mac  bytesSent  ETV
+vector 520  Homenet.Emitter0.mac[0]  framesReceivedOK  ETV
+vector 522  Homenet.Emitter0.mac[0]  bytesReceivedOK  ETV
+vector 526  Homenet.Emitter0.mac[0]  framesPassedToHL  ETV
+vector 531  Homenet.Emitter0.mac[1]  framesSent  ETV
+vector 533  Homenet.Emitter0.mac[1]  bytesSent  ETV
+vector 241  Homenet.room_B.eth[0].mac  framesReceivedOK  ETV
+vector 243  Homenet.room_B.eth[0].mac  bytesReceivedOK  ETV
+vector 247  Homenet.room_B.eth[0].mac  framesPassedToHL  ETV
+0	11199 48 6064 6070 5.107429787087 5.107436507086 2 0 1 1 1
+2	11247 698 1078 8903 0.107215587092 15.095241963703 28 1 28 406 7714
+3	11945 722 122 8893 0.088982873438 15.095225243704 29 1 29 435 8555
+4	12667 747 1078 8903 0.107215587092 15.095241963703 28 64 1792 25984 31596544
+5	13414 773 122 8893 0.088982873438 15.095225243704 29 64 1856 27840 35041280
+9	14187 722 122 8893 0.088982873438 15.095225243704 29 1 29 435 8555
+14	14909 50 6225 6234 5.111333656545 5.111340376544 2 0 1 1 1
+16	14959 825 224 8675 0.09252676747 11.000026719999 32 1 32 528 11440
+17	15784 829 1529 8435 0.111049096553 10.111049096553 32 1 32 528 11440
+18	16613 882 224 8675 0.09252676747 11.000026719999 32 64 2048 33792 46858240
+19	17495 886 1529 8435 0.111049096553 10.111049096553 32 64 2048 33792 46858240
+23	18381 829 1529 8435 0.111049096553 10.111049096553 32 1 32 528 11440
+30	19210 671 136 8708 0.089245142813 11.000036719999 26 1 26 351 6201
+31	19881 668 1360 8420 0.109572734096 10.109572734096 26 1 26 351 6201
+32	20549 716 136 8708 0.089245142813 11.000036719999 26 64 1664 22464 25399296
+33	21265 713 1360 8420 0.109572734096 10.109572734096 26 64 1664 22464 25399296
+37	21978 668 1360 8420 0.109572734096 10.109572734096 26 1 26 351 6201
+44	22646 50 438 8120 0.096859835972 10.096859835972 2 1 2 3 5
+46	22696 53 438 8120 0.096859835972 10.096859835972 2 64 128 192 20480
+58	22749 410 2862 8613 0.119780008279 11.000016719999 16 1 16 136 1496
+59	23159 541 909 8301 0.105651151584 10.105651151584 21 1 21 231 3311
+60	23700 435 2862 8613 0.119780008279 11.000016719999 16 64 1024 8704 6127616
+61	24135 576 909 8301 0.105651151584 10.105651151584 21 64 1344 14784 13561856
+65	24711 541 909 8301 0.105651151584 10.105651151584 21 1 21 231 3311
+70	25252 50 6332 6337 5.114104049429 5.114110769428 2 0 1 1 1
+72	25302 616 422 8104 0.096363700611 10.096363700611 24 1 24 300 4900
+73	25918 671 2259 8683 0.113853129435 11.000026819999 26 1 26 351 6201
+74	26589 657 422 8104 0.096363700611 10.096363700611 24 64 1536 19200 20070400
+75	27246 716 2259 8683 0.113853129435 11.000026819999 26 64 1664 22464 25399296
+79	27962 671 2259 8683 0.113853129435 11.000026819999 26 1 26 351 6201
+86	28633 48 194 7103 0.09027874745 10.09027874745 2 1 2 3 5
+88	28681 51 194 7103 0.09027874745 10.09027874745 2 64 128 192 20480
+100	28732 558 923 8966 0.10676142479 15.107436507086 21 1 21 231 3311
+101	29290 805 668 8978 0.099096241008 15.107453427085 30 1 30 465 9455
+102	30095 593 923 8966 0.10676142479 15.107436507086 21 64 1344 14784 13561856
+103	30688 858 668 8978 0.099096241008 15.107453427085 30 64 1920 29760 38727680
+107	31546 805 668 8978 0.099096241008 15.107453427085 30 1 30 465 9455
+112	32351 106 3239 7205 5.094841143709 10.094847863708 4 0 1 2 2
+114	32457 741 106 8614 0.087844424168 11.000016719999 28 1 28 406 7714
+115	33198 906 240 8625 0.094606583717 11.000016819999 34 1 34 595 13685
+116	34104 790 106 8614 0.087844424168 11.000016719999 28 64 1792 25984 31596544
+117	34894 967 240 8625 0.094606583717 11.000016819999 34 64 2176 38080 56053760
+121	35861 906 240 8625 0.094606583717 11.000016819999 34 1 34 595 13685
+128	36767 104 167 9502 0.08989012085 20.000834119969 4 1 4 10 30
+129	36871 54 9179 9222 20.000023639998 20.000070919994 2 1 2 3 5
+130	36925 112 167 9502 0.08989012085 20.000834119969 4 64 1238 1622 1589988
+131	37037 57 9179 9222 20.000023639998 20.000070919994 2 64 128 192 20480
+135	37094 54 9179 9222 20.000023639998 20.000070919994 2 1 2 3 5
+142	37148 674 2061 9479 0.111753480163 20.000643359971 25 1 25 325 5525
+143	37822 780 894 9491 0.103069880731 20.00073883997 29 1 29 435 8555
+144	38602 717 2061 9479 0.111753480163 20.000643359971 25 64 1600 20800 22630400
+145	39319 831 894 9491 0.103069880731 20.00073883997 29 64 2838 28822 39650788
+149	40150 780 894 9491 0.103069880731 20.00073883997 29 1 29 435 8555
+154	40930 52 5889 5898 5.098884158677 5.098890878676 2 0 1 1 1
+156	40982 661 469 8676 0.09801304182 11.000026719999 25 1 25 325 5525
+157	41643 908 485 8167 0.098649598685 10.098649598685 34 1 34 595 13685
+158	42551 704 469 8676 0.09801304182 11.000026719999 25 64 1600 20800 22630400
+159	43255 969 485 8167 0.098649598685 10.098649598685 34 64 2176 38080 56053760
+163	44224 908 485 8167 0.098649598685 10.098649598685 34 1 34 595 13685
+170	45132 52 454 8136 0.097467412056 10.097467412056 2 1 2 3 5
+172	45184 55 454 8136 0.097467412056 10.097467412056 2 64 128 192 20480
+182	45239 52 5876 5881 5.098877338678 5.098884058677 2 0 1 1 1
+184	45291 908 484 8166 0.098649498685 10.098649498685 34 1 34 595 13685
+185	46199 661 470 8682 0.09801314182 11.000026819999 25 1 25 325 5525
+186	46860 969 484 8166 0.098649498685 10.098649498685 34 64 2176 38080 56053760
+187	47829 704 470 8682 0.09801314182 11.000026819999 25 64 1600 20800 22630400
+191	48533 661 470 8682 0.09801314182 11.000026819999 25 1 25 325 5525
+198	49194 644 2679 8616 0.118243337752 11.000016719999 24 1 24 300 4900
+199	49838 643 152 8685 0.089809324551 11.000026819999 24 1 24 300 4900
+200	50481 685 2679 8616 0.118243337752 11.000016719999 24 64 1536 19200 20070400
+201	51166 684 152 8685 0.089809324551 11.000026819999 24 64 1536 19200 20070400
+205	51850 643 152 8685 0.089809324551 11.000026819999 24 1 24 300 4900
+210	52493 52 6208 6217 5.111326836546 5.111333556545 2 0 1 1 1
+212	52545 861 1528 8434 0.111048996553 10.111048996553 32 1 32 528 11440
+213	53406 857 225 8681 0.09252686747 11.000026819999 32 1 32 528 11440
+214	54263 918 1528 8434 0.111048996553 10.111048996553 32 64 2048 33792 46858240
+215	55181 914 225 8681 0.09252686747 11.000026819999 32 64 2048 33792 46858240
+219	56095 857 225 8681 0.09252686747 11.000026819999 32 1 32 528 11440
+224	56952 52 6345 6361 5.114110869428 5.114117589427 2 0 1 1 1
+226	57004 697 2258 8677 0.113853029435 11.000026719999 26 1 26 351 6201
+227	57701 640 423 8105 0.096363800611 10.096363800611 24 1 24 300 4900
+228	58341 742 2258 8677 0.113853029435 11.000026719999 26 64 1664 22464 25399296
+229	59083 681 423 8105 0.096363800611 10.096363800611 24 64 1536 19200 20070400
+233	59764 640 423 8105 0.096363800611 10.096363800611 24 1 24 300 4900
+240	60404 132 68 9392 0.072665481895 20.000293119979 5 1 5 15 55
+241	60536 80 9332 9425 20.000219119984 20.000480799976 3 1 3 6 14
+242	60616 141 68 9392 0.072665481895 20.000293119979 5 64 320 960 225280
+243	60757 86 9332 9425 20.000219119984 20.000480799976 3 64 1174 1366 1398756
+247	60843 80 9332 9425 20.000219119984 20.000480799976 3 1 3 6 14
+254	60923 562 908 8300 0.105651051584 10.105651051584 21 1 21 231 3311
+255	61485 426 2863 8620 0.119780108279 11.000016819999 16 1 16 136 1496
+256	61911 597 908 8300 0.105651051584 10.105651051584 21 64 1344 14784 13561856
+257	62508 451 2863 8620 0.119780108279 11.000016819999 16 64 1024 8704 6127616
+261	62959 426 2863 8620 0.119780108279 11.000016819999 16 1 16 136 1496
+266	63385 52 6078 6094 5.107436607086 5.107443327085 2 0 1 1 1
+268	63437 780 121 8892 0.088982773438 15.095225143704 29 1 29 435 8555
+269	64217 754 1079 8904 0.107215687092 15.095242063703 28 1 28 406 7714
+270	64971 831 121 8892 0.088982773438 15.095225143704 29 64 1856 27840 35041280
+271	65802 803 1079 8904 0.107215687092 15.095242063703 28 64 1792 25984 31596544
+275	66605 754 1079 8904 0.107215687092 15.095242063703 28 1 28 406 7714
+280	67359 106 5978 8236 5.101529557482 10.101536277481 4 0 1 2 2
+282	67465 938 209 9457 0.092490713726 20.000609719973 35 1 35 630 14910
+283	68403 881 683 9447 0.101318637488 20.000514439974 33 1 33 561 12529
+284	69284 1001 209 9457 0.092490713726 20.000609719973 35 64 3222 41302 66435044
+285	70285 940 683 9447 0.101318637488 20.000514439974 33 64 2112 35904 51318784
+289	71225 881 683 9447 0.101318637488 20.000514439974 33 1 33 561 12529
+296	72106 805 667 8977 0.099096141008 15.107453327085 30 1 30 465 9455
+297	72911 558 924 8967 0.10676152479 15.107436607086 21 1 21 231 3311
+298	73469 858 667 8977 0.099096141008 15.107453327085 30 64 1920 29760 38727680
+299	74327 593 924 8967 0.10676152479 15.107436607086 21 64 1344 14784 13561856
+303	74920 558 924 8967 0.10676152479 15.107436607086 21 1 21 231 3311
+310	75478 51 91 7000 0.087580165193 10.087580165193 2 1 2 3 5
+312	75529 54 91 7000 0.087580165193 10.087580165193 2 64 128 192 20480
+322	75583 104 3226 7188 5.09483432371 10.094841043709 4 0 1 2 2
+324	75687 906 239 8618 0.094606483717 11.000016719999 34 1 34 595 13685
+325	76593 741 107 8621 0.087844524168 11.000016819999 28 1 28 406 7714
+326	77334 967 239 8618 0.094606483717 11.000016719999 34 64 2176 38080 56053760
+327	78301 790 107 8621 0.087844524168 11.000016819999 28 64 1792 25984 31596544
+331	79091 741 107 8621 0.087844524168 11.000016819999 28 1 28 406 7714
+336	79832 104 5991 8253 5.101536377481 10.10154309748 4 0 1 2 2
+338	79936 881 682 9446 0.101318537488 20.000514339974 33 1 33 561 12529
+339	80817 938 210 9458 0.092490813726 20.000609819973 35 1 35 630 14910
+340	81755 940 682 9446 0.101318537488 20.000514339974 33 64 2112 35904 51318784
+341	82695 1001 210 9458 0.092490813726 20.000609819973 35 64 3222 41302 66435044
+345	83696 938 210 9458 0.092490813726 20.000609819973 35 1 35 630 14910
+352	84634 694 1359 8419 0.109572634096 10.109572634096 26 1 26 351 6201
+353	85328 697 137 8712 0.089245242813 11.000036819999 26 1 26 351 6201
+354	86025 739 1359 8419 0.109572634096 10.109572634096 26 64 1664 22464 25399296
+355	86764 742 137 8712 0.089245242813 11.000036819999 26 64 1664 22464 25399296
+359	87506 697 137 8712 0.089245242813 11.000036819999 26 1 26 351 6201
+366	88203 643 151 8679 0.089809224551 11.000026719999 24 1 24 300 4900
+367	88846 644 2680 8623 0.118243437752 11.000016819999 24 1 24 300 4900
+368	89490 684 151 8679 0.089809224551 11.000026719999 24 64 1536 19200 20070400
+369	90174 685 2680 8623 0.118243437752 11.000016819999 24 64 1536 19200 20070400
+373	90859 644 2680 8623 0.118243437752 11.000016819999 24 1 24 300 4900
+380	91503 780 893 9490 0.103069780731 20.00073873997 29 1 29 435 8555
+381	92283 674 2062 9480 0.111753580163 20.000643459971 25 1 25 325 5525
+382	92957 831 893 9490 0.103069780731 20.00073873997 29 64 2838 28822 39650788
+383	93788 717 2062 9480 0.111753580163 20.000643459971 25 64 1600 20800 22630400
+387	94505 674 2062 9480 0.111753580163 20.000643459971 25 1 25 325 5525
+396	95179 81 9320 9413 20.000212199985 20.000395319977 3 1 3 6 14
+397	95260 132 76 9400 0.072672401894 20.000300039978 5 1 5 15 55
+398	95392 87 9320 9413 20.000212199985 20.000395319977 3 64 1174 1366 1398756
+399	95479 141 76 9400 0.072672401894 20.000300039978 5 64 320 960 225280
+403	95620 132 76 9400 0.072672401894 20.000300039978 5 1 5 15 55
+413	95752 52 439 8121 0.096860035972 10.096860035972 2 1 2 3 5
+415	95804 55 439 8121 0.096860035972 10.096860035972 2 64 128 192 20480
+419	95859 52 439 8121 0.096860035972 10.096860035972 2 1 2 3 5
+429	95911 52 455 8137 0.097467612056 10.097467612056 2 1 2 3 5
+431	95963 55 455 8137 0.097467612056 10.097467612056 2 64 128 192 20480
+435	96018 52 455 8137 0.097467612056 10.097467612056 2 1 2 3 5
+445	96070 54 9170 9213 20.000016719999 20.000063999995 2 1 2 3 5
+446	96124 79 179 9201 0.089897040849 20.000047279996 3 1 3 6 14
+447	96203 57 9170 9213 20.000016719999 20.000063999995 2 64 128 192 20480
+448	96260 84 179 9201 0.089897040849 20.000047279996 3 64 192 384 57344
+452	96344 79 179 9201 0.089897040849 20.000047279996 3 1 3 6 14
+462	96423 51 92 7001 0.087580365193 10.087580365193 2 1 2 3 5
+464	96474 54 92 7001 0.087580365193 10.087580365193 2 64 128 192 20480
+468	96528 51 92 7001 0.087580365193 10.087580365193 2 1 2 3 5
+478	96579 50 195 7104 0.09027894745 10.09027894745 2 1 2 3 5
+480	96629 53 195 7104 0.09027894745 10.09027894745 2 64 128 192 20480
+484	96682 50 195 7104 0.09027894745 10.09027894745 2 1 2 3 5
+489	96732 267 173 9216 0.08989022085 20.000064099995 10 0 64 320 20480
+490	96999 54 9178 9221 20.000023539998 20.000070819994 2 1 2 3 5
+491	97053 104 168 9503 0.08989022085 20.000834219969 4 1 4 10 30
+492	97157 57 9178 9221 20.000023539998 20.000070819994 2 64 128 192 20480
+493	97214 112 168 9503 0.08989022085 20.000834219969 4 64 1238 1622 1589988
+497	97326 104 168 9503 0.08989022085 20.000834219969 4 1 4 10 30
+502	97430 79 178 9200 0.089896940849 20.000047179996 3 1 3 6 14
+503	97509 54 9171 9214 20.000016819999 20.000064099995 2 1 2 3 5
+504	97563 84 178 9200 0.089896940849 20.000047179996 3 64 192 384 57344
+505	97647 57 9171 9214 20.000016819999 20.000064099995 2 64 128 192 20480
+509	97704 54 9171 9214 20.000016819999 20.000064099995 2 1 2 3 5
+518	97758 436 70 9419 0.072665581895 20.000395419977 16 0 1046 1494 1122788
+519	98194 132 75 9399 0.072672301894 20.000299939978 5 1 5 15 55
+520	98326 81 9321 9414 20.000212299985 20.000395419977 3 1 3 6 14
+521	98407 141 75 9399 0.072672301894 20.000299939978 5 64 320 960 225280
+522	98548 87 9321 9414 20.000212299985 20.000395419977 3 64 1174 1366 1398756
+526	98635 81 9321 9414 20.000212299985 20.000395419977 3 1 3 6 14
+531	98716 80 9331 9424 20.000219019984 20.000480699976 3 1 3 6 14
+532	98796 132 69 9393 0.072665581895 20.000293219979 5 1 5 15 55
+533	98928 86 9331 9424 20.000219019984 20.000480699976 3 64 1174 1366 1398756
+534	99014 141 69 9393 0.072665581895 20.000293219979 5 64 320 960 225280
+538	99155 132 69 9393 0.072665581895 20.000293219979 5 1 5 15 55

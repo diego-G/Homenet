@@ -7,8 +7,8 @@
 <h2 class="comptitle">Compound Module <i>Stats</i></h2>
 <b>Package:</b> homenet.src<br/><b>File: <a href="src-Stats.ned.html">src/Stats.ned</a></b><br/>
 <p>This module is very important. Inside of it, we will take the measurements 
-and record the results. There will be one in emitter and another in receiver
-mode.</p>
+and record the results. It will develop two roles depending on whether 
+sending or receiving statistics.</p>
 <img src="homenet.src.Stats-type.png" ismap="yes" usemap="#type-diagram"/><map name="type-diagram">
 <area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html" title="MACRelayUnit" alt="MACRelayUnit" coords="296,160,358,221">
 <area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html" title="EtherMAC" alt="EtherMAC" coords="59,247,180,308">
@@ -49,6 +49,27 @@ obtain the end-to-end delay and jitter.</p>
 <p>This module is the generator of traffic. It takes the time when the packet 
 was created and the moment when it arrives to the module. This data is 
 attached in the packet.</p>
+
+   </td>
+</tr>
+</table>
+<h3 class="subtitle">Networks:</h3>
+<table class="typestable">
+   <tr>
+      <th class="name">Name</th>
+      <th class="type">Type</th>
+      <th class="description">Description</th>
+   </tr>
+<tr>
+   <td>
+<a href="homenet.simulations.Homenet.html">Homenet</a>
+   </td>
+   <td>
+<i>network</i>
+   </td>
+   <td>
+
+<p><h3> Homenetwork topology scenario </h3> </p>
 
    </td>
 </tr>
@@ -260,9 +281,9 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>
       <i>int</i>
    </td>
-   <td>1</td>
+   <td>0</td>
    <td>
-<p>1 for emitter mode, 2 to receiver mode</p>
+<p>0 for Tx mode, 1 to Rx mode</p>
    </td>
 </tr>
 <tr>
@@ -279,8 +300,8 @@ additional frames are dropped. Only used if queueModule==""</p>
 <h3 class="subtitle">Source code:</h3>
 <pre class="src"><span style="color: #808080; font-style: italic; ">//
 // This module is very important. Inside of it, we will take the measurements 
-// and record the results. There will be one in emitter and another in receiver
-// mode.
+// and record the results. It will develop two roles depending on whether 
+// sending or receiving statistics.
 //
 </span><span style="color: #800000; font-weight: bold; ">module</span><span style="color: #000000; "> </span><span style="color: #000000; ">Stats</span><span style="color: #000000; ">
 {

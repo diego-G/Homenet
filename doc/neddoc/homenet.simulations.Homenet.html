@@ -36,8 +36,8 @@ overloaded.</p>
 <area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherHub.html" title="EtherHub" alt="EtherHub" coords="558,466,632,513">
 <area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherHub.html" title="EtherHub" alt="EtherHub" coords="408,466,482,513">
 <area shape="rect" href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherHub.html" title="EtherHub" alt="EtherHub" coords="258,466,332,513">
-<area shape="rect" href="homenet.src.Receiver.html" title="Receiver" alt="Receiver" coords="560,532,630,585">
-<area shape="rect" href="homenet.src.Trasmitter.html" title="Trasmitter" alt="Trasmitter" coords="108,285,168,334">
+<area shape="rect" href="homenet.src.Stats.html" title="Stats" alt="Stats" coords="94,285,182,334">
+<area shape="rect" href="homenet.src.Stats.html" title="Stats" alt="Stats" coords="560,532,630,585">
 </map>
 <h3 class="subtitle">Properties:</h3>
 <table class="propertiestable">
@@ -2319,247 +2319,7 @@ possible with DTE-to-DTE connection).</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.destAddr</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>
-<p>destination IP or IPv6 address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.srcAddr</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>
-<p>source IP or IPv6 address (useful with multi-homing)</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.packetSize</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>56B</td>
-   <td>
-<p>of ping payload, in bytes</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.interval</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>1s</td>
-   <td>
-<p>time to wait between pings (can be random)</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.hopLimit</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>32</td>
-   <td>
-<p>TTL or hopLimit for IP packets</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.count</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0</td>
-   <td>
-<p>stop after count ping requests, 0 means continuously</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.startTime</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>uniform(0s,this.interval)</td>
-   <td>
-<p>send first ping at startTime</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.stopTime</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0s</td>
-   <td>
-<p>send no pings after stopTime, 0 means forever</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.printPing</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>true</td>
-   <td>
-<p>dump on stdout</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.ipv4.IP.html">ip</a>.procDelay</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0s</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.retryTimeout</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>1s</td>
-   <td>
-<p>number seconds ARP waits between retries to resolve an IP address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.retryCount</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>3</td>
-   <td>
-<p>number of times ARP will attempt to resolve an IP address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.cacheTimeout</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>120s</td>
-   <td>
-<p>number seconds unused entries in the cache will time out</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>false</td>
-   <td>
-<p>if true, all packets are received, otherwise only the
-ones with matching destination MAC address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>"auto"</td>
-   <td>
-<p>MAC address as hex string (12 hex digits), or
-"auto". "auto" values will be replaced by
-a generated MAC address in init stage 0.</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>100Mbps</td>
-   <td>
-<p>maximum data rate supported by this station (bit/s);
-actually chosen speed may be lower due to auto-
-configuration. 0 means fully auto-configured.</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>true</td>
-   <td>
-<p>whether duplex mode can be enabled or not; whether
-MAC will actually use duplex mode depends on the result
-of the auto-configuration process (duplex is only
-possible with DTE-to-DTE connection).</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>1500</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.filterString</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td></td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.device</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td></td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.mtu</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>1500</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.dumpFile</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.threadEnable</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>false</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.snaplen</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>65535</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.verbosity</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>0</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableFile</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableFile</td>
    <td>
       <i>string</i>
    </td>
@@ -2569,7 +2329,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableSize</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableSize</td>
    <td>
       <i>int</i>
    </td>
@@ -2579,7 +2339,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.agingTime</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.agingTime</td>
    <td>
       <i>double</i>
    </td>
@@ -2590,7 +2350,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
    <td>
       <i>string</i>
    </td>
@@ -2602,7 +2362,7 @@ a generated MAC address in init stage 0.</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
    <td>
       <i>double</i>
    </td>
@@ -2614,7 +2374,7 @@ configuration. 0 means fully auto-configured.</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
    <td>
       <i>bool</i>
    </td>
@@ -2627,7 +2387,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
    <td>
       <i>int</i>
    </td>
@@ -2638,7 +2398,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
    <td>
       <i>int</i>
    </td>
@@ -2646,7 +2406,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.startTime</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.startTime</td>
    <td>
       <i>double</i>
    </td>
@@ -2654,7 +2414,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.batchSize</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.batchSize</td>
    <td>
       <i>int</i>
    </td>
@@ -2662,7 +2422,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.maxInterval</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.maxInterval</td>
    <td>
       <i>double</i>
    </td>
@@ -2671,7 +2431,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.emisor</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.emisor</td>
    <td>
       <i>int</i>
    </td>
@@ -2679,7 +2439,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.rcv_win</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.rcv_win</td>
    <td>
       <i>double</i>
    </td>
@@ -2687,7 +2447,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.tcp</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.tcp</td>
    <td>
       <i>int</i>
    </td>
@@ -2696,17 +2456,17 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.Copy.html">copy</a>.mode</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.Copy.html">copy</a>.mode</td>
    <td>
       <i>int</i>
    </td>
-   <td>1</td>
+   <td>0</td>
    <td>
-<p>1 for emitter mode, 2 to receiver mode</p>
+<p>0 for Tx mode, 1 to Rx mode</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.Copy.html">copy</a>.pktLost</td>
+   <td><a href="homenet.src.Stats.html">Transmitter0</a>.<a href="homenet.src.Copy.html">copy</a>.pktLost</td>
    <td>
       <i>double</i>
    </td>
@@ -2716,267 +2476,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Decider.html">decider</a>.emitter</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td></td>
-   <td>
-<p>1 emitter, 0 receiver</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Receiver.html">Receptor3</a>.<a href="homenet.src.Decider.html">decider</a>.passive</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td></td>
-   <td>
-<p>1 passive, 0 active</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.destAddr</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>
-<p>destination IP or IPv6 address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.srcAddr</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>
-<p>source IP or IPv6 address (useful with multi-homing)</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.packetSize</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>56B</td>
-   <td>
-<p>of ping payload, in bytes</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.interval</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>1s</td>
-   <td>
-<p>time to wait between pings (can be random)</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.hopLimit</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>32</td>
-   <td>
-<p>TTL or hopLimit for IP packets</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.count</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0</td>
-   <td>
-<p>stop after count ping requests, 0 means continuously</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.startTime</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>uniform(0s,this.interval)</td>
-   <td>
-<p>send first ping at startTime</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.stopTime</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0s</td>
-   <td>
-<p>send no pings after stopTime, 0 means forever</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.applications.pingapp.PingApp.html">pingApp</a>.printPing</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>true</td>
-   <td>
-<p>dump on stdout</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.ipv4.IP.html">ip</a>.procDelay</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>0s</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.retryTimeout</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>1s</td>
-   <td>
-<p>number seconds ARP waits between retries to resolve an IP address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.retryCount</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>3</td>
-   <td>
-<p>number of times ARP will attempt to resolve an IP address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.nodes.inet.NetworkLayer.html">networkLayer</a>.<a href="../../../inet/doc/neddoc/inet.networklayer.arp.ARP.html">arp</a>.cacheTimeout</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>120s</td>
-   <td>
-<p>number seconds unused entries in the cache will time out</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.promiscuous</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>false</td>
-   <td>
-<p>if true, all packets are received, otherwise only the
-ones with matching destination MAC address</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>"auto"</td>
-   <td>
-<p>MAC address as hex string (12 hex digits), or
-"auto". "auto" values will be replaced by
-a generated MAC address in init stage 0.</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
-   <td>
-      <i>double</i>
-   </td>
-   <td>100Mbps</td>
-   <td>
-<p>maximum data rate supported by this station (bit/s);
-actually chosen speed may be lower due to auto-
-configuration. 0 means fully auto-configured.</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>true</td>
-   <td>
-<p>whether duplex mode can be enabled or not; whether
-MAC will actually use duplex mode depends on the result
-of the auto-configuration process (duplex is only
-possible with DTE-to-DTE connection).</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EthernetInterface.html">eth</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>1500</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.filterString</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td></td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.device</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td></td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ext.ExtInterface.html">ext</a>.mtu</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>1500</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.dumpFile</td>
-   <td>
-      <i>string</i>
-   </td>
-   <td>""</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.threadEnable</td>
-   <td>
-      <i>bool</i>
-   </td>
-   <td>false</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.snaplen</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>65535</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.HomenetHost.html">statistics</a>.<a href="../../../inet/doc/neddoc/inet.util.TCPDump.html">tcpdump</a>.verbosity</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td>0</td>
-   <td>   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableFile</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableFile</td>
    <td>
       <i>string</i>
    </td>
@@ -2986,7 +2486,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableSize</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.addressTableSize</td>
    <td>
       <i>int</i>
    </td>
@@ -2996,7 +2496,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.agingTime</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.etherswitch.MACRelayUnit.html">relayUnit</a>.agingTime</td>
    <td>
       <i>double</i>
    </td>
@@ -3007,7 +2507,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.address</td>
    <td>
       <i>string</i>
    </td>
@@ -3019,7 +2519,7 @@ a generated MAC address in init stage 0.</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txrate</td>
    <td>
       <i>double</i>
    </td>
@@ -3031,7 +2531,7 @@ configuration. 0 means fully auto-configured.</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.duplexEnabled</td>
    <td>
       <i>bool</i>
    </td>
@@ -3044,7 +2544,7 @@ possible with DTE-to-DTE connection).</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.txQueueLimit</td>
    <td>
       <i>int</i>
    </td>
@@ -3055,7 +2555,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="../../../inet/doc/neddoc/inet.linklayer.ethernet.EtherMAC.html">mac</a>.mtu</td>
    <td>
       <i>int</i>
    </td>
@@ -3063,7 +2563,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.startTime</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.startTime</td>
    <td>
       <i>double</i>
    </td>
@@ -3071,7 +2571,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.batchSize</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.batchSize</td>
    <td>
       <i>int</i>
    </td>
@@ -3079,7 +2579,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.maxInterval</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.maxInterval</td>
    <td>
       <i>double</i>
    </td>
@@ -3088,7 +2588,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.emisor</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.emisor</td>
    <td>
       <i>int</i>
    </td>
@@ -3096,7 +2596,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.rcv_win</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.rcv_win</td>
    <td>
       <i>double</i>
    </td>
@@ -3104,7 +2604,7 @@ additional frames are dropped. Only used if queueModule==""</p>
    <td>   </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.tcp</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.ThM.html">thruputMeter</a>.tcp</td>
    <td>
       <i>int</i>
    </td>
@@ -3113,43 +2613,23 @@ additional frames are dropped. Only used if queueModule==""</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.Copy.html">copy</a>.mode</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.Copy.html">copy</a>.mode</td>
    <td>
       <i>int</i>
    </td>
-   <td>1</td>
+   <td>0</td>
    <td>
-<p>1 for emitter mode, 2 to receiver mode</p>
+<p>0 for Tx mode, 1 to Rx mode</p>
    </td>
 </tr>
 <tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Stats.html">stats</a>.<a href="homenet.src.Copy.html">copy</a>.pktLost</td>
+   <td><a href="homenet.src.Stats.html">Receptor3</a>.<a href="homenet.src.Copy.html">copy</a>.pktLost</td>
    <td>
       <i>double</i>
    </td>
    <td>0</td>
    <td>
 <p>Number of Packets lost</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Decider.html">decider</a>.emitter</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td></td>
-   <td>
-<p>1 emitter, 0 receiver</p>
-   </td>
-</tr>
-<tr>
-   <td><a href="homenet.src.Trasmitter.html">Emitter0</a>.<a href="homenet.src.Decider.html">decider</a>.passive</td>
-   <td>
-      <i>int</i>
-   </td>
-   <td></td>
-   <td>
-<p>1 passive, 0 active</p>
    </td>
 </tr>
 </table>
@@ -3289,13 +2769,15 @@ additional frames are dropped. Only used if queueModule==""</p>
             </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
                 </span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">2</span><span style="color: #000000; ">];
         }
-        </span><span style="color: #000000; ">Receptor3</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Receiver</span><span style="color: #000000; "> {
-            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=593,490&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; ">Transmitter0</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Stats</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=136,241;i=msg/mail&quot;</span><span style="color: #000000; ">);
             </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
                 </span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">2</span><span style="color: #000000; ">];
         }
-        </span><span style="color: #000000; ">Emitter0</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Trasmitter</span><span style="color: #000000; "> {
-            </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=136,241&quot;</span><span style="color: #000000; ">);
+        </span><span style="color: #000000; ">Receptor3</span><span style="color: #000000; ">: </span><span style="color: #000000; ">Stats</span><span style="color: #000000; "> {
+            </span><span style="color: #800000; font-weight: bold; ">parameters</span><span style="color: #000000; ">:
+                </span><span style="color: #000000; font-weight: bold; ">@display</span><span style="color: #000000; ">(</span><span style="color: #008000; ">&quot;p=593,490;i=old/mailbox&quot;</span><span style="color: #000000; ">);
             </span><span style="color: #800000; font-weight: bold; ">gates</span><span style="color: #000000; ">:
                 </span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">2</span><span style="color: #000000; ">];
         }
@@ -3324,8 +2806,8 @@ additional frames are dropped. Only used if queueModule==""</p>
         </span><span style="color: #000000; ">Host5</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">C</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">etherHub5</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
         </span><span style="color: #000000; ">etherHub5</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">1</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">C</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">garage</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
 
-        </span><span style="color: #000000; ">Host0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">C</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">Emitter0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
-        </span><span style="color: #000000; ">Emitter0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">1</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">etherHub0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
+        </span><span style="color: #000000; ">Host0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">C</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">Transmitter0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
+        </span><span style="color: #000000; ">Transmitter0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">1</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">etherHub0</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];
 
         </span><span style="color: #000000; ">Host3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">C</span><span style="color: #000000; "> </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">Receptor3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">1</span><span style="color: #000000; ">];
         </span><span style="color: #000000; ">Receptor3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">] </span><span style="color: #800000; font-weight: bold; ">&lt;--&gt;</span><span style="color: #000000; "> </span><span style="color: #000000; ">etherHub3</span><span style="color: #000000; ">.</span><span style="color: #000000; ">ethg</span><span style="color: #000000; ">[</span><span style="color: #008000; ">0</span><span style="color: #000000; ">];

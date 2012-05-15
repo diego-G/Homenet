@@ -19,7 +19,7 @@ import inet.util.TCPDump;
 // IP host with TCP and UDP layers and PING application.
 //
 // It is used as normal host in Homenet. Also It serves as statistics in 
-// decider module.
+// Decider module.
 //
 module HomenetHost
 {

@@ -8,7 +8,7 @@ package homenet.src;
 simple Copy
 {
     parameters:
-        int mode = default(1); // 1 for emitter mode, 2 to receiver mode
+        int mode = default(0); // 0 for Tx mode, 1 to Rx mode
         double pktLost = default(0); // Number of Packets lost
         @display("i=block/broadcast");
     gates:

@@ -2,8 +2,7 @@ package homenet.simulations;
 
 import homenet.src.HomenetHost;
 import homenet.src.HostWithDropsGenerator;
-import homenet.src.Receiver;
-import homenet.src.Trasmitter;
+import homenet.src.Stats;
 import inet.linklayer.ethernet.EtherHub;
 import inet.nodes.inet.OSPFRouter;
 import inet.world.ChannelInstaller;
@@ -146,13 +145,15 @@ network Homenet
             gates:
                 ethg[2];
         }
-        Receptor3: Receiver {
-            @display("p=593,490");
+        Transmitter0: Stats {
+            parameters:
+                @display("p=136,241;i=msg/mail");
             gates:
                 ethg[2];
         }
-        Emitter0: Trasmitter {
-            @display("p=136,241");
+        Receptor3: Stats {
+            parameters:
+                @display("p=593,490;i=old/mailbox");
             gates:
                 ethg[2];
         }
@@ -181,8 +182,8 @@ network Homenet
         Host5.ethg[0] <--> C <--> etherHub5.ethg[0];
         etherHub5.ethg[1] <--> C <--> garage.ethg[0];
 
-        Host0.ethg[0] <--> C <--> Emitter0.ethg[0];
-        Emitter0.ethg[1] <--> etherHub0.ethg[0];
+        Host0.ethg[0] <--> C <--> Transmitter0.ethg[0];
+        Transmitter0.ethg[1] <--> etherHub0.ethg[0];
 
         Host3.ethg[0] <--> C <--> Receptor3.ethg[1];
         Receptor3.ethg[0] <--> etherHub3.ethg[0];
