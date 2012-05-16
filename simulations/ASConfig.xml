@@ -150,11 +150,11 @@
     <RFC1583Compatible />
     <BroadcastInterface ifName="eth0">
       <AreaID>0.0.0.0</AreaID>    
-      <InterfaceOutputCost>1</InterfaceOutputCost> <!-- Metric-->
-      <RetransmissionInterval>5</RetransmissionInterval> <!-- LSA -->
-      <InterfaceTransmissionDelay>1</InterfaceTransmissionDelay><!-- LSU -->
+      <InterfaceOutputCost>1</InterfaceOutputCost>				  <!-- Metric-->
+      <RetransmissionInterval>5</RetransmissionInterval> 			<!-- LSA -->
+      <InterfaceTransmissionDelay>1</InterfaceTransmissionDelay> 	<!-- LSU -->
 	  <RouterPriority>1</RouterPriority>
-      <HelloInterval>10</HelloInterval> <!-- Updates -->
+      <HelloInterval>10</HelloInterval> 						<!-- Updates -->
       <RouterDeadInterval>40</RouterDeadInterval> 
       <AuthenticationType>NullType</AuthenticationType>
       <AuthenticationKey>0x00</AuthenticationKey>     

@@ -1,0 +1,491 @@
+<?xml version='1.0' encoding='ISO-8859-1' standalone='yes' ?>
+<tagfile>
+  <compound kind="file">
+    <name>Copy.cc</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Copy_8cc</filename>
+    <includes id="Copy_8h" name="Copy.h" local="yes" imported="no">Copy.h</includes>
+    <includes id="Values_8h" name="Values.h" local="yes" imported="no">Values.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Copy_8cc.html</anchorfile>
+      <anchor>a51677695be37adadb63a5c2f6db63a18</anchor>
+      <arglist>(Copy)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Copy.h</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Copy_8h</filename>
+    <class kind="class">Copy</class>
+  </compound>
+  <compound kind="file">
+    <name>Decider.cc</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Decider_8cc</filename>
+    <includes id="Decider_8h" name="Decider.h" local="yes" imported="no">Decider.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>Decider_8cc.html</anchorfile>
+      <anchor>ad9d20a6785f904217f10e8a7fb5d5537</anchor>
+      <arglist>(Decider)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Decider.h</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Decider_8h</filename>
+    <class kind="class">Decider</class>
+  </compound>
+  <compound kind="file">
+    <name>ThM.cc</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>ThM_8cc</filename>
+    <includes id="ThM_8h" name="ThM.h" local="yes" imported="no">ThM.h</includes>
+    <includes id="Values_8h" name="Values.h" local="yes" imported="no">Values.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>ThM_8cc.html</anchorfile>
+      <anchor>aea5b08ff3c7be3bffef50f32411a4731</anchor>
+      <arglist>(ThM)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>ThM.h</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>ThM_8h</filename>
+    <includes id="Values_8h" name="Values.h" local="yes" imported="no">Values.h</includes>
+    <class kind="class">ThM</class>
+  </compound>
+  <compound kind="file">
+    <name>Values.cc</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Values_8cc</filename>
+    <includes id="Values_8h" name="Values.h" local="yes" imported="no">Values.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Register_Class</name>
+      <anchorfile>Values_8cc.html</anchorfile>
+      <anchor>a512bdb692389188ad18d7503e783ee34</anchor>
+      <arglist>(Values)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>Values.h</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>Values_8h</filename>
+    <class kind="class">Values</class>
+  </compound>
+  <compound kind="class">
+    <name>Copy</name>
+    <filename>classCopy.html</filename>
+    <base>cSimpleModule</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a658c23ff1d0277d11440ab1beef69690</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a57a2eb5e752763f62fdb05bb58dda40d</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a92ce2586ba527c832026afeb5bb4d765</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>mode</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a6f7aa44452c7e659719fd05c0831bacc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>pktLost</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a192017b0baa16bc4c572fb736e03a9db</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>SqN</name>
+      <anchorfile>classCopy.html</anchorfile>
+      <anchor>a189a3f80c71fc9c723f9904af8740a5f</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Decider</name>
+    <filename>classDecider.html</filename>
+    <base>cSimpleModule</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classDecider.html</anchorfile>
+      <anchor>a03cc1a3f2c1e3e0824980880aa7417ad</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classDecider.html</anchorfile>
+      <anchor>a9cc937fe22f88f268a6b9dafe1234a7f</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classDecider.html</anchorfile>
+      <anchor>af8ecd8833465c585bb807466f85c9c41</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>passive</name>
+      <anchorfile>classDecider.html</anchorfile>
+      <anchor>ae034c224acf7823466ad3b6bdc0b0eb5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>emitter</name>
+      <anchorfile>classDecider.html</anchorfile>
+      <anchor>ab9c138128940c2301b04e31b1d37ceb8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ThM</name>
+    <filename>classThM.html</filename>
+    <base>cSimpleModule</base>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>updateStats</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a6ca69d6a791ac7551ad6c816cd12d1fa</anchor>
+      <arglist>(simtime_t now, unsigned long bits)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>beginNewInterval</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a958cf75665cc96124df38dc733eca7ee</anchor>
+      <arglist>(simtime_t now)</arglist>
+    </member>
+    <member kind="function" protection="protected">
+      <type>void</type>
+      <name>recordDelay</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a97356065cbc56339313b58bb2b1e3f77</anchor>
+      <arglist>(Values *homenetObject)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a2a21c0aaec17c7ce5c008b2665135e18</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>handleMessage</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a140b804d481adaa5d937b11396fb1533</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>finish</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a4ae1987b1071230ddb3aac97d268eff8</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>startTime</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a49cbc2baf7599dba19dbe562eb15e4f0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned int</type>
+      <name>batchSize</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a7cc1490449dbc3c6372d6f856a2b4e04</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>maxInterval</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a3bec961f304ac9580a4407acbb7c9a02</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned long</type>
+      <name>numPackets</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a37af1819dd7ffe49f3f70ab13479d225</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned long</type>
+      <name>numBits</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a36f32c7982fbb20dd1a337e7ce5985b2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>emisor</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a7b10c83a28e1e6a205b9971724982d72</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>double</type>
+      <name>rcv_win</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a390cc85e76d3601c3db596a442cdbe70</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>tcp</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>aaa08d6620eb65e4085d294886fc40d8a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>intvlStartTime</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a0b0f44a4f70b54a9e7c1747ba8e3811c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>intvlLastPkTime</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>afe8715911b4b7a82cbaaf236b90eabb0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned long</type>
+      <name>intvlNumPackets</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a9faab85e6e21f3b96c65c903605ecdc4</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>unsigned long</type>
+      <name>intvlNumBits</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a73178be768406548f62da0639f737814</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>SqN</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a221a3184efb8992aa6e58270f8578029</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>expectedReplySqN</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a7ce37681b9b8781ba0bcf2d7c2bd4173</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>outOfTimeReplySqN</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a01ec7312619378c2724ce8baf1d3ff60</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>outOfOrderArrivalCount</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a2a83055727db72625919f24871f071cc</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>tempExpired</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a5a48332998bb7ac4b5b1b62a52fd06c2</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cMessage *</type>
+      <name>timeOutEvent</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a98094cb3fc4f69066151070427bd75ee</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>eej</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a569921582fbc09ae67c5a4a9e5d6aaf1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>bitpersecVector</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a84dfa6f1e46f122e3d0c041d465d5539</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>pkpersecVector</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>af0050ddf872bf12abdb15d9c5c1835c3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>pkDelayVector</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>ab21192eaa95caf40309df62bb6814e8b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>jitterVector</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>ae78427aac17093859ee38bdf9d1c18be</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cStdDev</type>
+      <name>pkDelayStats</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a3cedd5a71d7ad857e7af8c32e78bff0e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cStdDev</type>
+      <name>pkJitter</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>a2900e5366d7eae799d4b07b8768c126a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cStdDev</type>
+      <name>pkJitter2</name>
+      <anchorfile>classThM.html</anchorfile>
+      <anchor>afdb9b1a86c0d4f146bd2c23d935eba5b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>Values</name>
+    <filename>classValues.html</filename>
+    <base>cObject</base>
+    <member kind="function">
+      <type></type>
+      <name>Values</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>aedb8e8a5c54a3442c35f093de97d298c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>~Values</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a9e43429c8795bdf46b7912228d1ec3a7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" virtualness="virtual">
+      <type>virtual Values *</type>
+      <name>dup</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>ae1f64158da20b77d8c6a3e4c0ad468f2</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>simtime_t</type>
+      <name>getEe1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a2639081af42bc02a8e00c72109203637</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setEe1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a164feef8e46a72231f0a729d1bd3a1aa</anchor>
+      <arglist>(simtime_t Ee1)</arglist>
+    </member>
+    <member kind="function">
+      <type>simtime_t</type>
+      <name>getSimtime1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a671d252a41f3034116558e6e34cad333</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSimtime1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>aa3e7c6d33042428c0fc1e36a65a88f7a</anchor>
+      <arglist>(simtime_t Simtime1)</arglist>
+    </member>
+    <member kind="function">
+      <type>long</type>
+      <name>getSqN</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>af67b26737348ca2cc1d284a6be3c59ff</anchor>
+      <arglist>() const </arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>setSqN</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>ad9fc75e47074de52c58dcc1485c0eec7</anchor>
+      <arglist>(long SqN)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>Ee1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a33f92812bcbbb528802237cd3b29d0a1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>simtime_t</type>
+      <name>Simtime1</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a335ea6a3f43ed263670bfce3aa56eb23</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>long</type>
+      <name>SqN</name>
+      <anchorfile>classValues.html</anchorfile>
+      <anchor>a7ff70a1266b2aa95fba28c9c56bf279b</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>NEDSupport</name>
+    <filename>namespaceNEDSupport.html</filename>
+  </compound>
+</tagfile>
