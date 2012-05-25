@@ -40,6 +40,25 @@
     <class kind="class">Decider</class>
   </compound>
   <compound kind="file">
+    <name>HomenetDropQueue.cc</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>HomenetDropQueue_8cc</filename>
+    <includes id="HomenetDropQueue_8h" name="HomenetDropQueue.h" local="yes" imported="no">HomenetDropQueue.h</includes>
+    <member kind="function">
+      <type></type>
+      <name>Define_Module</name>
+      <anchorfile>HomenetDropQueue_8cc.html</anchorfile>
+      <anchor>aff727a37d1c0f7f528e6d5f1990a9afe</anchor>
+      <arglist>(HomenetDropQueue)</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>HomenetDropQueue.h</name>
+    <path>/home/diego/git/Homenet/src/</path>
+    <filename>HomenetDropQueue_8h</filename>
+    <class kind="class">HomenetDropQueue</class>
+  </compound>
+  <compound kind="file">
     <name>ThM.cc</name>
     <path>/home/diego/git/Homenet/src/</path>
     <filename>ThM_8cc</filename>
@@ -163,6 +182,73 @@
       <name>emitter</name>
       <anchorfile>classDecider.html</anchorfile>
       <anchor>ab9c138128940c2301b04e31b1d37ceb8</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>HomenetDropQueue</name>
+    <filename>classHomenetDropQueue.html</filename>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>initialize</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a15284f96d1643853fed4a77be58c9bdc</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual bool</type>
+      <name>enqueue</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>abf1c70d3c4121d7e003c874d0f17b3e8</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual cMessage *</type>
+      <name>dequeue</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a59a195f2f8c71898bd51470fa279d234</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="protected" virtualness="virtual">
+      <type>virtual void</type>
+      <name>sendOut</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a40bb3fcdd1de95483dbdc32bd10f6aae</anchor>
+      <arglist>(cMessage *msg)</arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>frameCapacity</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a0dd7903e90432b593cedc8105670757c</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cQueue</type>
+      <name>queue</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>ab246eaa6f43db76b4cde460b51ba8248</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cGate *</type>
+      <name>outGate</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a9608ea2a1835c4feb0a21ff7a7944870</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>qlenVec</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a9c4bdc77939f66ad4b0309e006894f5e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
+      <type>cOutVector</type>
+      <name>dropVec</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>aa5038f8dcef1f2298d4e81eaca416c6b</anchor>
       <arglist></arglist>
     </member>
   </compound>

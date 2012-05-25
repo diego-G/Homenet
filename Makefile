@@ -46,6 +46,10 @@ INCLUDE_PATH = \
     -Isimulations \
     -Isimulations/inis \
     -Isimulations/results \
+    -Isimulations/results/S1_ping \
+    -Isimulations/results/S1_udp \
+    -Isimulations/results/S2_ping \
+    -Isimulations/results/S2_udp \
     -Isrc
 
 # Additional object and library files to link with
@@ -61,7 +65,7 @@ PROJECTRELATIVE_PATH =
 O = $(PROJECT_OUTPUT_DIR)/$(CONFIGNAME)/$(PROJECTRELATIVE_PATH)
 
 # Object files for local .cc and .msg files
-OBJS = $O/src/Values.o $O/src/ThM.o $O/src/Decider.o $O/src/Copy.o
+OBJS = $O/src/Values.o $O/src/ThM.o $O/src/HomenetDropQueue.o $O/src/Decider.o $O/src/Copy.o
 
 # Message files
 MSGFILES =
@@ -146,13 +150,17 @@ clean:
 	-rm -f simulations/*_m.cc simulations/*_m.h
 	-rm -f simulations/inis/*_m.cc simulations/inis/*_m.h
 	-rm -f simulations/results/*_m.cc simulations/results/*_m.h
+	-rm -f simulations/results/S1_ping/*_m.cc simulations/results/S1_ping/*_m.h
+	-rm -f simulations/results/S1_udp/*_m.cc simulations/results/S1_udp/*_m.h
+	-rm -f simulations/results/S2_ping/*_m.cc simulations/results/S2_ping/*_m.h
+	-rm -f simulations/results/S2_udp/*_m.cc simulations/results/S2_udp/*_m.h
 	-rm -f src/*_m.cc src/*_m.h
 
 cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc src/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc simulations/results/S1_ping/*.cc simulations/results/S1_udp/*.cc simulations/results/S2_ping/*.cc simulations/results/S2_udp/*.cc src/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/src/Copy.o: src/Copy.cc \
@@ -178,6 +186,11 @@ $O/src/Copy.o: src/Copy.cc \
 	$(INET_PROJ)/src/networklayer/contract/IPAddress.h
 $O/src/Decider.o: src/Decider.cc \
 	src/Decider.h
+$O/src/HomenetDropQueue.o: src/HomenetDropQueue.cc \
+	src/HomenetDropQueue.h \
+	$(INET_PROJ)/src/base/INETDefs.h \
+	$(INET_PROJ)/src/base/IPassiveQueue.h \
+	$(INET_PROJ)/src/base/PassiveQueueBase.h
 $O/src/ThM.o: src/ThM.cc \
 	src/ThM.h \
 	src/Values.h \

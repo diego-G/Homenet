@@ -173,9 +173,9 @@ void ThM::finish() {
 	simtime_t duration = simTime() - startTime;
 
 	ev << "  pk. delay, min:    " << pkDelayStats.getMin() << endl;
-	ev << "  pk. delay, max:    " << pkDelayStats.getMean() << endl;
+	ev << "  pk. delay, mean:    " << pkDelayStats.getMean() << endl;
 	// FIXME Mean between min and max, what happens?
-	ev << "  pk. delay, mean:   " << pkDelayStats.getMax() << endl;
+	ev << "  pk. delay, max:   " << pkDelayStats.getMax() << endl;
 	ev << "  pk. delay, stddev: " << pkDelayStats.getStddev() << endl;
 
 	recordScalar("JitterMean", pkJitter2.getMean());

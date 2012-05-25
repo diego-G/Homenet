@@ -42,6 +42,7 @@ var searchData=
   ['opp_5fstring_5fmap',['opp_string_map',['/home/diego/omnetpp-4.2//doc/api/classopp__string__map.html',1,'']]],
   ['opp_5fstring_5fvector',['opp_string_vector',['/home/diego/omnetpp-4.2//doc/api/classopp__string__vector.html',1,'']]],
   ['optype',['OpType',['/home/diego/omnetpp-4.2//doc/api/classcDynamicExpression.html#9c0e48b0297bf6501285584666679235',1,'cDynamicExpression']]],
+  ['outgate',['outGate',['../classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870',1,'HomenetDropQueue']]],
   ['outoforderarrivalcount',['outOfOrderArrivalCount',['../classThM.html#a2a83055727db72625919f24871f071cc',1,'ThM']]],
   ['outoftimereplysqn',['outOfTimeReplySqN',['../classThM.html#a01ec7312619378c2724ce8baf1d3ff60',1,'ThM']]],
   ['string',['string',['/home/diego/omnetpp-4.2//doc/api/classcNEDValue.html#1a63a1270a911a8a2325e45cb5438eaf',1,'cNEDValue::string()'],['/home/diego/omnetpp-4.2//doc/api/classcPar.html#689c0c2539a2db2e4402276feaf11ea4',1,'cPar::string()']]]

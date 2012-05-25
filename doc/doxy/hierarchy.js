@@ -20,6 +20,7 @@ var hierarchy =
       ] ],
       [ "Values", "classValues.html", null ]
     ] ],
+    [ "HomenetDropQueue", "classHomenetDropQueue.html", null ],
     [ "noncopyable", "/home/diego/omnetpp-4.2//doc/api/classnoncopyable.html", [
       [ "cNoncopyableOwnedObject", "/home/diego/omnetpp-4.2//doc/api/classcNoncopyableOwnedObject.html", null ]
     ] ]

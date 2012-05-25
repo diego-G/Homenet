@@ -15,5 +15,8 @@ var searchData=
   ['haspar',['hasPar',['/home/diego/omnetpp-4.2//doc/api/classcComponent.html#b141a27f189cdb719678436363e19ae2',1,'cComponent::hasPar()'],['/home/diego/omnetpp-4.2//doc/api/classcMessage.html#4d5db8a609199a86d4a516d7cbe5d0cf',1,'cMessage::hasPar()']]],
   ['hasstackoverflow',['hasStackOverflow',['/home/diego/omnetpp-4.2//doc/api/classcCoroutine.html#d9ca3ee1464887f1c5110049e3223724',1,'cCoroutine::hasStackOverflow()'],['/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#8e3867232e08037e1794790150b4c0b4',1,'cSimpleModule::hasStackOverflow()']]],
   ['hasvarargs',['hasVarArgs',['/home/diego/omnetpp-4.2//doc/api/classcNEDFunction.html#f0cbe05a5ec9ac6e7b9bc6c775ea2945',1,'cNEDFunction']]],
-  ['head',['head',['/home/diego/omnetpp-4.2//doc/api/classcLinkedList.html#84815256c700ec2f80d7d73f59a6e28e',1,'cLinkedList']]]
+  ['head',['head',['/home/diego/omnetpp-4.2//doc/api/classcLinkedList.html#84815256c700ec2f80d7d73f59a6e28e',1,'cLinkedList']]],
+  ['homenetdropqueue',['HomenetDropQueue',['../classHomenetDropQueue.html',1,'']]],
+  ['homenetdropqueue_2ecc',['HomenetDropQueue.cc',['../HomenetDropQueue_8cc.html',1,'']]],
+  ['homenetdropqueue_2eh',['HomenetDropQueue.h',['../HomenetDropQueue_8h.html',1,'']]]
 ];

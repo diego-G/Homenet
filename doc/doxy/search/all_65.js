@@ -14,6 +14,7 @@ var searchData=
   ['endsend',['endSend',['/home/diego/omnetpp-4.2//doc/api/classcEnvir.html#d310f5f6d616d2f617e43adb7070306e',1,'cEnvir::endSend()'],['/home/diego/omnetpp-4.2//doc/api/classcNullEnvir.html#b384524352e03d43655a983028a3d31f',1,'cNullEnvir::endSend()']]],
   ['endsimulation',['endSimulation',['/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#8713bf9b4d4970fcfe94995dcb42ce9e',1,'cSimpleModule']]],
   ['endtraversalexception',['EndTraversalException',['/home/diego/omnetpp-4.2//doc/api/classcVisitor_1_1EndTraversalException.html',1,'cVisitor']]],
+  ['enqueue',['enqueue',['../classHomenetDropQueue.html#abf1c70d3c4121d7e003c874d0f17b3e8',1,'HomenetDropQueue']]],
   ['equals',['equals',['/home/diego/omnetpp-4.2//doc/api/classcHasher.html#2886f553eac7efa5ad3a524609fe32b2',1,'cHasher']]],
   ['equalsto',['equalsTo',['/home/diego/omnetpp-4.2//doc/api/classcMsgPar.html#fb3fe56cb7cafc46c368adc9a3e993e9',1,'cMsgPar']]],
   ['erase',['erase',['/home/diego/omnetpp-4.2//doc/api/classcProperty.html#92bd723068a0cdb9cc77664bf5f96457',1,'cProperty']]],
