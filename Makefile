@@ -46,10 +46,18 @@ INCLUDE_PATH = \
     -Isimulations \
     -Isimulations/inis \
     -Isimulations/results \
-    -Isimulations/results/S1_ping \
-    -Isimulations/results/S1_udp \
-    -Isimulations/results/S2_ping \
-    -Isimulations/results/S2_udp \
+    -Isimulations/results/S1_Ping \
+    -Isimulations/results/S1_TCP \
+    -Isimulations/results/S1_UDP \
+    -Isimulations/results/S2_Ping \
+    -Isimulations/results/S2_TCP \
+    -Isimulations/results/S2_UDP \
+    -Isimulations/results/S3_Ping_losing \
+    -Isimulations/results/S3_Ping_not_losing \
+    -Isimulations/results/S3_TCP_losing \
+    -Isimulations/results/S3_TCP_not_losing \
+    -Isimulations/results/S3_UDP_losing \
+    -Isimulations/results/S3_UDP_not_losing \
     -Isrc
 
 # Additional object and library files to link with
@@ -150,17 +158,25 @@ clean:
 	-rm -f simulations/*_m.cc simulations/*_m.h
 	-rm -f simulations/inis/*_m.cc simulations/inis/*_m.h
 	-rm -f simulations/results/*_m.cc simulations/results/*_m.h
-	-rm -f simulations/results/S1_ping/*_m.cc simulations/results/S1_ping/*_m.h
-	-rm -f simulations/results/S1_udp/*_m.cc simulations/results/S1_udp/*_m.h
-	-rm -f simulations/results/S2_ping/*_m.cc simulations/results/S2_ping/*_m.h
-	-rm -f simulations/results/S2_udp/*_m.cc simulations/results/S2_udp/*_m.h
+	-rm -f simulations/results/S1_Ping/*_m.cc simulations/results/S1_Ping/*_m.h
+	-rm -f simulations/results/S1_TCP/*_m.cc simulations/results/S1_TCP/*_m.h
+	-rm -f simulations/results/S1_UDP/*_m.cc simulations/results/S1_UDP/*_m.h
+	-rm -f simulations/results/S2_Ping/*_m.cc simulations/results/S2_Ping/*_m.h
+	-rm -f simulations/results/S2_TCP/*_m.cc simulations/results/S2_TCP/*_m.h
+	-rm -f simulations/results/S2_UDP/*_m.cc simulations/results/S2_UDP/*_m.h
+	-rm -f simulations/results/S3_Ping_losing/*_m.cc simulations/results/S3_Ping_losing/*_m.h
+	-rm -f simulations/results/S3_Ping_not_losing/*_m.cc simulations/results/S3_Ping_not_losing/*_m.h
+	-rm -f simulations/results/S3_TCP_losing/*_m.cc simulations/results/S3_TCP_losing/*_m.h
+	-rm -f simulations/results/S3_TCP_not_losing/*_m.cc simulations/results/S3_TCP_not_losing/*_m.h
+	-rm -f simulations/results/S3_UDP_losing/*_m.cc simulations/results/S3_UDP_losing/*_m.h
+	-rm -f simulations/results/S3_UDP_not_losing/*_m.cc simulations/results/S3_UDP_not_losing/*_m.h
 	-rm -f src/*_m.cc src/*_m.h
 
 cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc simulations/results/S1_ping/*.cc simulations/results/S1_udp/*.cc simulations/results/S2_ping/*.cc simulations/results/S2_udp/*.cc src/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc simulations/results/S1_Ping/*.cc simulations/results/S1_TCP/*.cc simulations/results/S1_UDP/*.cc simulations/results/S2_Ping/*.cc simulations/results/S2_TCP/*.cc simulations/results/S2_UDP/*.cc simulations/results/S3_Ping_losing/*.cc simulations/results/S3_Ping_not_losing/*.cc simulations/results/S3_TCP_losing/*.cc simulations/results/S3_TCP_not_losing/*.cc simulations/results/S3_UDP_losing/*.cc simulations/results/S3_UDP_not_losing/*.cc src/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/src/Copy.o: src/Copy.cc \

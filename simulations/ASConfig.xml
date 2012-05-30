@@ -162,10 +162,10 @@
     <PointToPointInterface ifName="eth1">
       <AreaID>0.0.0.0</AreaID>
       <InterfaceOutputCost>1</InterfaceOutputCost>
-      <RetransmissionInterval>20</RetransmissionInterval>
-      <InterfaceTransmissionDelay>3</InterfaceTransmissionDelay>
+      <RetransmissionInterval>10</RetransmissionInterval>
+      <InterfaceTransmissionDelay>2</InterfaceTransmissionDelay>
 	  <RouterPriority>1</RouterPriority>
-      <HelloInterval>10</HelloInterval>
+      <HelloInterval>20</HelloInterval>
       <RouterDeadInterval>40</RouterDeadInterval>
       <AuthenticationType>NullType</AuthenticationType>
       <AuthenticationKey>0x00</AuthenticationKey>
@@ -220,11 +220,11 @@
     </BroadcastInterface>
     <PointToPointInterface ifName="eth1">
       <AreaID>0.0.0.0</AreaID>
-      <InterfaceOutputCost>1</InterfaceOutputCost>
+      <InterfaceOutputCost>10</InterfaceOutputCost>
       <RetransmissionInterval>10</RetransmissionInterval>
       <InterfaceTransmissionDelay>2</InterfaceTransmissionDelay>
 	  <RouterPriority>1</RouterPriority>
-      <HelloInterval>5</HelloInterval>
+      <HelloInterval>20</HelloInterval>
       <RouterDeadInterval>40</RouterDeadInterval>
       <AuthenticationType>NullType</AuthenticationType>
       <AuthenticationKey>0x00</AuthenticationKey>
