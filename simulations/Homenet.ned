@@ -357,7 +357,7 @@ network SimpleHomenet
 network ComplexHomenet
 {
     parameters:
-        @display("p=10,10;b=736,568;bgb=792,614");
+        @display("p=10,10;b=736,568;bgb=882,679");
     types:
         channel C extends DatarateChannel
         {
@@ -428,22 +428,22 @@ network ComplexHomenet
                 ethg[1];
         }
         Host2: HomenetHost {
-            @display("p=751,310");
+            @display("p=849,310");
             gates:
                 ethg[1];
         }
         Host3: HomenetHost {
-            @display("p=592,559");
+            @display("p=592,627");
             gates:
                 ethg[1];
         }
         Host4: HomenetHost {
-            @display("p=443,559");
+            @display("p=442,627");
             gates:
                 ethg[1];
         }
         Host5: HomenetHost {
-            @display("p=293,559");
+            @display("p=292,627");
             gates:
                 ethg[1];
         }
@@ -483,9 +483,33 @@ network ComplexHomenet
             gates:
                 ethg[2];
         }
+        Transmitter2: Stats {
+            parameters:
+                @display("p=768,310;i=msg/mail");
+            gates:
+                ethg[2];
+        }
+        Transmitter4: Stats {
+            parameters:
+                @display("p=444,559;i=msg/mail");
+            gates:
+                ethg[2];
+        }
         Receptor1: Stats {
             parameters:
                 @display("p=443,106;i=old/mailbox");
+            gates:
+                ethg[2];
+        }
+        Receptor3: Stats {
+            parameters:
+                @display("p=593,561;i=old/mailbox");
+            gates:
+                ethg[2];
+        }
+        Receptor5: Stats {
+            parameters:
+                @display("p=293,561;i=old/mailbox");
             gates:
                 ethg[2];
         }
@@ -504,14 +528,14 @@ network ComplexHomenet
         office.ethg[4] <--> C <--> room_C.ethg[2];
 
         etherHub0.ethg[1] <--> C <--> room_B.ethg[0];
-        Host3.ethg[0] <--> C <--> etherHub3.ethg[0];
+        Host3.ethg[0] <--> C <--> Receptor3.ethg[1];
 
-        Host2.ethg[0] <--> C <--> etherHub2.ethg[0];
+        Host2.ethg[0] <--> C <--> Transmitter2.ethg[0];
         etherHub2.ethg[1] <--> C <--> office.ethg[0];
         etherHub3.ethg[1] <--> C <--> kitchen.ethg[0];
-        Host4.ethg[0] <--> C <--> etherHub4.ethg[0];
+        Host4.ethg[0] <--> C <--> Transmitter4.ethg[0];
         etherHub4.ethg[1] <--> C <--> living_room.ethg[0];
-        Host5.ethg[0] <--> C <--> etherHub5.ethg[0];
+        Host5.ethg[0] <--> C <--> Receptor5.ethg[1];
         etherHub5.ethg[1] <--> C <--> garage.ethg[0];
 
         Host0.ethg[0] <--> C <--> Transmitter0.ethg[0];
@@ -519,5 +543,10 @@ network ComplexHomenet
 
         Host1.ethg[0] <--> C <--> Receptor1.ethg[1];
         Receptor1.ethg[0] <--> etherHub1.ethg[0];
+
         etherHub1.ethg[1] <--> C <--> room_C.ethg[0];
+        Transmitter2.ethg[1] <--> etherHub2.ethg[0];
+        Transmitter4.ethg[1] <--> etherHub4.ethg[0];
+        Receptor5.ethg[0] <--> etherHub5.ethg[0];
+        Receptor3.ethg[0] <--> etherHub3.ethg[0];
 }

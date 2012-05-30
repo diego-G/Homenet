@@ -26,8 +26,6 @@ void Copy::initialize() {
 
 void Copy::handleMessage(cMessage *msg) {
 
-	//double p = dblrand();
-
 	// If the message is ARP, don't copy and just send to the network
 	if (dynamic_cast<ARPPacket *>(msg)) {
 
@@ -36,15 +34,11 @@ void Copy::handleMessage(cMessage *msg) {
 
 	} else {
 		if (mode == 1) {
-			// Rx mode
-			//if (p > pktLost) {
-				// Duplicate message and send the copy.
-				cMessage *copy = (cMessage *) msg->dup();
+			// Duplicate message and send the copy.
+			cMessage *copy = (cMessage *) msg->dup();
 
-				send(msg, "outEncapGate");
-				send(copy, "thGate");
-			//} else
-				//delete (msg);
+			send(msg, "outEncapGate");
+			send(copy, "thGate");
 		} else {
 			// Tx mode
 			Values *homenetObject = new Values();

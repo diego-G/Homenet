@@ -1,3 +1,4 @@
 # Partial Tkenv config file -- see $HOME/.tkenvrc as well
+inspector "SimpleHomenet.room_B" "OSPFRouter" "2" "697x423+569+89:normal"
 inspector "FirstHomenet.room_B.routingTable.routes" "std::vector<IPRoute *>" "1" "675x675+0+24:normal"
 
