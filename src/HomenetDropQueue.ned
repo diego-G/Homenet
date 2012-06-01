@@ -10,6 +10,7 @@ simple HomenetDropQueue like OutputQueue
 {
     parameters:
         int frameCapacity = default(100);
+        int percentageDrops = default(0);
         @display("i=block/queue");
     gates:
         input in;

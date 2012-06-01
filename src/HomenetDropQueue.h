@@ -12,6 +12,7 @@ class INET_API HomenetDropQueue : public PassiveQueueBase
   protected:
     // configuration
     int frameCapacity;
+    int percentageDrops;
 
     // state
     cQueue queue;

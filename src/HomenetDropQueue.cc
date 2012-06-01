@@ -14,6 +14,7 @@ void HomenetDropQueue::initialize() {
 
 	// configuration
 	frameCapacity = par("frameCapacity");
+	percentageDrops = par("percentageDrops");
 }
 
 bool HomenetDropQueue::enqueue(cMessage *msg) {
@@ -42,7 +43,7 @@ cMessage *HomenetDropQueue::dequeue() {
 }
 
 void HomenetDropQueue::sendOut(cMessage *msg) {
-	if (uniform(0, 1) > 0) {
+	if (uniform(0, 1) > percentageDrops) {
 		delete msg;
 		dropVec.record(1);
 	} else

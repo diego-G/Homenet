@@ -46,24 +46,18 @@ INCLUDE_PATH = \
     -Isimulations \
     -Isimulations/inis \
     -Isimulations/results \
-    -Isimulations/results/Complex \
-    -Isimulations/results/Complex/S1_Ping \
-    -Isimulations/results/Complex/S1_UDP \
-    -Isimulations/results/Complex/S2_Ping \
-    -Isimulations/results/Complex/S2_UDP \
-    -Isimulations/results/Simplex \
-    -Isimulations/results/Simplex/S1_Ping \
-    -Isimulations/results/Simplex/S1_TCP \
-    -Isimulations/results/Simplex/S1_UDP \
-    -Isimulations/results/Simplex/S2_Ping \
-    -Isimulations/results/Simplex/S2_TCP \
-    -Isimulations/results/Simplex/S2_UDP \
-    -Isimulations/results/Simplex/S3_Ping_losing \
-    -Isimulations/results/Simplex/S3_Ping_not_losing \
-    -Isimulations/results/Simplex/S3_TCP_losing \
-    -Isimulations/results/Simplex/S3_TCP_not_losing \
-    -Isimulations/results/Simplex/S3_UDP_losing \
-    -Isimulations/results/Simplex/S3_UDP_not_losing \
+    -Isimulations/results/S1_Ping \
+    -Isimulations/results/S1_TCP \
+    -Isimulations/results/S1_UDP \
+    -Isimulations/results/S2_Ping \
+    -Isimulations/results/S2_TCP \
+    -Isimulations/results/S2_UDP \
+    -Isimulations/results/S3_Ping \
+    -Isimulations/results/S3_Ping_Drop \
+    -Isimulations/results/S3_TCP \
+    -Isimulations/results/S3_TCP_DROP \
+    -Isimulations/results/S3_UDP \
+    -Isimulations/results/S3_UDP_DROP \
     -Isrc
 
 # Additional object and library files to link with
@@ -164,31 +158,25 @@ clean:
 	-rm -f simulations/*_m.cc simulations/*_m.h
 	-rm -f simulations/inis/*_m.cc simulations/inis/*_m.h
 	-rm -f simulations/results/*_m.cc simulations/results/*_m.h
-	-rm -f simulations/results/Complex/*_m.cc simulations/results/Complex/*_m.h
-	-rm -f simulations/results/Complex/S1_Ping/*_m.cc simulations/results/Complex/S1_Ping/*_m.h
-	-rm -f simulations/results/Complex/S1_UDP/*_m.cc simulations/results/Complex/S1_UDP/*_m.h
-	-rm -f simulations/results/Complex/S2_Ping/*_m.cc simulations/results/Complex/S2_Ping/*_m.h
-	-rm -f simulations/results/Complex/S2_UDP/*_m.cc simulations/results/Complex/S2_UDP/*_m.h
-	-rm -f simulations/results/Simplex/*_m.cc simulations/results/Simplex/*_m.h
-	-rm -f simulations/results/Simplex/S1_Ping/*_m.cc simulations/results/Simplex/S1_Ping/*_m.h
-	-rm -f simulations/results/Simplex/S1_TCP/*_m.cc simulations/results/Simplex/S1_TCP/*_m.h
-	-rm -f simulations/results/Simplex/S1_UDP/*_m.cc simulations/results/Simplex/S1_UDP/*_m.h
-	-rm -f simulations/results/Simplex/S2_Ping/*_m.cc simulations/results/Simplex/S2_Ping/*_m.h
-	-rm -f simulations/results/Simplex/S2_TCP/*_m.cc simulations/results/Simplex/S2_TCP/*_m.h
-	-rm -f simulations/results/Simplex/S2_UDP/*_m.cc simulations/results/Simplex/S2_UDP/*_m.h
-	-rm -f simulations/results/Simplex/S3_Ping_losing/*_m.cc simulations/results/Simplex/S3_Ping_losing/*_m.h
-	-rm -f simulations/results/Simplex/S3_Ping_not_losing/*_m.cc simulations/results/Simplex/S3_Ping_not_losing/*_m.h
-	-rm -f simulations/results/Simplex/S3_TCP_losing/*_m.cc simulations/results/Simplex/S3_TCP_losing/*_m.h
-	-rm -f simulations/results/Simplex/S3_TCP_not_losing/*_m.cc simulations/results/Simplex/S3_TCP_not_losing/*_m.h
-	-rm -f simulations/results/Simplex/S3_UDP_losing/*_m.cc simulations/results/Simplex/S3_UDP_losing/*_m.h
-	-rm -f simulations/results/Simplex/S3_UDP_not_losing/*_m.cc simulations/results/Simplex/S3_UDP_not_losing/*_m.h
+	-rm -f simulations/results/S1_Ping/*_m.cc simulations/results/S1_Ping/*_m.h
+	-rm -f simulations/results/S1_TCP/*_m.cc simulations/results/S1_TCP/*_m.h
+	-rm -f simulations/results/S1_UDP/*_m.cc simulations/results/S1_UDP/*_m.h
+	-rm -f simulations/results/S2_Ping/*_m.cc simulations/results/S2_Ping/*_m.h
+	-rm -f simulations/results/S2_TCP/*_m.cc simulations/results/S2_TCP/*_m.h
+	-rm -f simulations/results/S2_UDP/*_m.cc simulations/results/S2_UDP/*_m.h
+	-rm -f simulations/results/S3_Ping/*_m.cc simulations/results/S3_Ping/*_m.h
+	-rm -f simulations/results/S3_Ping_Drop/*_m.cc simulations/results/S3_Ping_Drop/*_m.h
+	-rm -f simulations/results/S3_TCP/*_m.cc simulations/results/S3_TCP/*_m.h
+	-rm -f simulations/results/S3_TCP_DROP/*_m.cc simulations/results/S3_TCP_DROP/*_m.h
+	-rm -f simulations/results/S3_UDP/*_m.cc simulations/results/S3_UDP/*_m.h
+	-rm -f simulations/results/S3_UDP_DROP/*_m.cc simulations/results/S3_UDP_DROP/*_m.h
 	-rm -f src/*_m.cc src/*_m.h
 
 cleanall: clean
 	-rm -rf $(PROJECT_OUTPUT_DIR)
 
 depend:
-	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc simulations/results/Complex/*.cc simulations/results/Complex/S1_Ping/*.cc simulations/results/Complex/S1_UDP/*.cc simulations/results/Complex/S2_Ping/*.cc simulations/results/Complex/S2_UDP/*.cc simulations/results/Simplex/*.cc simulations/results/Simplex/S1_Ping/*.cc simulations/results/Simplex/S1_TCP/*.cc simulations/results/Simplex/S1_UDP/*.cc simulations/results/Simplex/S2_Ping/*.cc simulations/results/Simplex/S2_TCP/*.cc simulations/results/Simplex/S2_UDP/*.cc simulations/results/Simplex/S3_Ping_losing/*.cc simulations/results/Simplex/S3_Ping_not_losing/*.cc simulations/results/Simplex/S3_TCP_losing/*.cc simulations/results/Simplex/S3_TCP_not_losing/*.cc simulations/results/Simplex/S3_UDP_losing/*.cc simulations/results/Simplex/S3_UDP_not_losing/*.cc src/*.cc
+	$(MAKEDEPEND) $(INCLUDE_PATH) -f Makefile -P\$$O/ -- $(MSG_CC_FILES)  ./*.cc doc/*.cc doc/doxy/*.cc doc/doxy/search/*.cc doc/neddoc/*.cc simulations/*.cc simulations/inis/*.cc simulations/results/*.cc simulations/results/S1_Ping/*.cc simulations/results/S1_TCP/*.cc simulations/results/S1_UDP/*.cc simulations/results/S2_Ping/*.cc simulations/results/S2_TCP/*.cc simulations/results/S2_UDP/*.cc simulations/results/S3_Ping/*.cc simulations/results/S3_Ping_Drop/*.cc simulations/results/S3_TCP/*.cc simulations/results/S3_TCP_DROP/*.cc simulations/results/S3_UDP/*.cc simulations/results/S3_UDP_DROP/*.cc src/*.cc
 
 # DO NOT DELETE THIS LINE -- make depend depends on it.
 $O/src/Copy.o: src/Copy.cc \
