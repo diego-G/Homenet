@@ -224,6 +224,13 @@
       <arglist></arglist>
     </member>
     <member kind="variable" protection="protected">
+      <type>int</type>
+      <name>percentageDrops</name>
+      <anchorfile>classHomenetDropQueue.html</anchorfile>
+      <anchor>a675e5da15f670adf194df2a9bb16fe6e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="protected">
       <type>cQueue</type>
       <name>queue</name>
       <anchorfile>classHomenetDropQueue.html</anchorfile>

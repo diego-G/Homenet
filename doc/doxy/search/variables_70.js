@@ -2,6 +2,7 @@ var searchData=
 [
   ['parent',['parent',['/home/diego/omnetpp-4.2//doc/api/structcKSplit_1_1Grid.html#9ca937765e4eb0e7391cfaa8bf4655e5',1,'cKSplit::Grid']]],
   ['passive',['passive',['../classDecider.html#ae034c224acf7823466ad3b6bdc0b0eb5',1,'Decider']]],
+  ['percentagedrops',['percentageDrops',['../classHomenetDropQueue.html#a675e5da15f670adf194df2a9bb16fe6e',1,'HomenetDropQueue']]],
   ['pkdelaystats',['pkDelayStats',['../classThM.html#a3cedd5a71d7ad857e7af8c32e78bff0e',1,'ThM']]],
   ['pkdelayvector',['pkDelayVector',['../classThM.html#ab21192eaa95caf40309df62bb6814e8b',1,'ThM']]],
   ['pkjitter',['pkJitter',['../classThM.html#a2900e5366d7eae799d4b07b8768c126a',1,'ThM']]],

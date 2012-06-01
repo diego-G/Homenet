@@ -109,28 +109,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a name="l00012"></a>00012   <span class="keyword">protected</span>:
 <a name="l00013"></a>00013     <span class="comment">// configuration</span>
 <a name="l00014"></a><a class="code" href="classHomenetDropQueue.html#a0dd7903e90432b593cedc8105670757c">00014</a>     <span class="keywordtype">int</span> <a class="code" href="classHomenetDropQueue.html#a0dd7903e90432b593cedc8105670757c">frameCapacity</a>;
-<a name="l00015"></a>00015 
-<a name="l00016"></a>00016     <span class="comment">// state</span>
-<a name="l00017"></a><a class="code" href="classHomenetDropQueue.html#ab246eaa6f43db76b4cde460b51ba8248">00017</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcQueue.html">cQueue</a> <a class="code" href="classHomenetDropQueue.html#ab246eaa6f43db76b4cde460b51ba8248">queue</a>;
-<a name="l00018"></a><a class="code" href="classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870">00018</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcGate.html">cGate</a> *<a class="code" href="classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870">outGate</a>;
-<a name="l00019"></a>00019 
-<a name="l00020"></a>00020     <span class="comment">// statistics</span>
-<a name="l00021"></a><a class="code" href="classHomenetDropQueue.html#a9c4bdc77939f66ad4b0309e006894f5e">00021</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcOutVector.html">cOutVector</a> <a class="code" href="classHomenetDropQueue.html#a9c4bdc77939f66ad4b0309e006894f5e">qlenVec</a>;
-<a name="l00022"></a><a class="code" href="classHomenetDropQueue.html#aa5038f8dcef1f2298d4e81eaca416c6b">00022</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcOutVector.html">cOutVector</a> <a class="code" href="classHomenetDropQueue.html#aa5038f8dcef1f2298d4e81eaca416c6b">dropVec</a>;
-<a name="l00023"></a>00023 
-<a name="l00024"></a>00024   <span class="keyword">protected</span>:
-<a name="l00025"></a>00025     <span class="keyword">virtual</span> <span class="keywordtype">void</span> initialize();
-<a name="l00026"></a>00026 
-<a name="l00030"></a>00030     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> enqueue(<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *msg);
-<a name="l00031"></a>00031 
-<a name="l00035"></a>00035     <span class="keyword">virtual</span> <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *dequeue();
-<a name="l00036"></a>00036 
-<a name="l00040"></a>00040     <span class="keyword">virtual</span> <span class="keywordtype">void</span> sendOut(<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *msg);
-<a name="l00041"></a>00041 };
-<a name="l00042"></a>00042 
-<a name="l00043"></a>00043 <span class="preprocessor">#endif</span>
-<a name="l00044"></a>00044 <span class="preprocessor"></span>
-<a name="l00045"></a>00045 
+<a name="l00015"></a><a class="code" href="classHomenetDropQueue.html#a675e5da15f670adf194df2a9bb16fe6e">00015</a>     <span class="keywordtype">int</span> <a class="code" href="classHomenetDropQueue.html#a675e5da15f670adf194df2a9bb16fe6e">percentageDrops</a>;
+<a name="l00016"></a>00016 
+<a name="l00017"></a>00017     <span class="comment">// state</span>
+<a name="l00018"></a><a class="code" href="classHomenetDropQueue.html#ab246eaa6f43db76b4cde460b51ba8248">00018</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcQueue.html">cQueue</a> <a class="code" href="classHomenetDropQueue.html#ab246eaa6f43db76b4cde460b51ba8248">queue</a>;
+<a name="l00019"></a><a class="code" href="classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870">00019</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcGate.html">cGate</a> *<a class="code" href="classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870">outGate</a>;
+<a name="l00020"></a>00020 
+<a name="l00021"></a>00021     <span class="comment">// statistics</span>
+<a name="l00022"></a><a class="code" href="classHomenetDropQueue.html#a9c4bdc77939f66ad4b0309e006894f5e">00022</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcOutVector.html">cOutVector</a> <a class="code" href="classHomenetDropQueue.html#a9c4bdc77939f66ad4b0309e006894f5e">qlenVec</a>;
+<a name="l00023"></a><a class="code" href="classHomenetDropQueue.html#aa5038f8dcef1f2298d4e81eaca416c6b">00023</a>     <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcOutVector.html">cOutVector</a> <a class="code" href="classHomenetDropQueue.html#aa5038f8dcef1f2298d4e81eaca416c6b">dropVec</a>;
+<a name="l00024"></a>00024 
+<a name="l00025"></a>00025   <span class="keyword">protected</span>:
+<a name="l00026"></a>00026     <span class="keyword">virtual</span> <span class="keywordtype">void</span> initialize();
+<a name="l00027"></a>00027 
+<a name="l00031"></a>00031     <span class="keyword">virtual</span> <span class="keywordtype">bool</span> enqueue(<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *msg);
+<a name="l00032"></a>00032 
+<a name="l00036"></a>00036     <span class="keyword">virtual</span> <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *dequeue();
+<a name="l00037"></a>00037 
+<a name="l00041"></a>00041     <span class="keyword">virtual</span> <span class="keywordtype">void</span> sendOut(<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *msg);
+<a name="l00042"></a>00042 };
+<a name="l00043"></a>00043 
+<a name="l00044"></a>00044 <span class="preprocessor">#endif</span>
+<a name="l00045"></a>00045 <span class="preprocessor"></span>
+<a name="l00046"></a>00046 
 </pre></div></div><!-- contents -->
 </div>
 <!-- window showing the filter options -->
@@ -151,7 +152,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
     <ul>
       <li class="navelem"><a class="el" href="HomenetDropQueue_8h.html">HomenetDropQueue.h</a>      </li>
 
-    <li class="footer">Generated on Wed May 30 2012 18:01:48 for Homenet by
+    <li class="footer">Generated on Fri Jun 1 2012 13:00:41 for Homenet by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>

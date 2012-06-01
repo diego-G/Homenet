@@ -20,6 +20,7 @@ var searchData=
   ['pathcontains',['pathContains',['/home/diego/omnetpp-4.2//doc/api/classcGate.html#0af6130bef41e321eab3d43dfd9547f9',1,'cGate']]],
   ['peek',['peek',['/home/diego/omnetpp-4.2//doc/api/classcMessageHeap.html#afa11c9b7648634a44a287cca02e4386',1,'cMessageHeap::peek()'],['/home/diego/omnetpp-4.2//doc/api/classcStringPool.html#a3f7b6a8ab4ac102b5e53a7e3e8eca36',1,'cStringPool::peek()']]],
   ['peekfirst',['peekFirst',['/home/diego/omnetpp-4.2//doc/api/classcMessageHeap.html#7f3a9ac51503b8793a72505cf1f4586c',1,'cMessageHeap']]],
+  ['percentagedrops',['percentageDrops',['../classHomenetDropQueue.html#a675e5da15f670adf194df2a9bb16fe6e',1,'HomenetDropQueue']]],
   ['pkdelaystats',['pkDelayStats',['../classThM.html#a3cedd5a71d7ad857e7af8c32e78bff0e',1,'ThM']]],
   ['pkdelayvector',['pkDelayVector',['../classThM.html#ab21192eaa95caf40309df62bb6814e8b',1,'ThM']]],
   ['pkjitter',['pkJitter',['../classThM.html#a2900e5366d7eae799d4b07b8768c126a',1,'ThM']]],

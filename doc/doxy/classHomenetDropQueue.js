@@ -7,6 +7,7 @@ var classHomenetDropQueue =
     [ "dropVec", "classHomenetDropQueue.html#aa5038f8dcef1f2298d4e81eaca416c6b", null ],
     [ "frameCapacity", "classHomenetDropQueue.html#a0dd7903e90432b593cedc8105670757c", null ],
     [ "outGate", "classHomenetDropQueue.html#a9608ea2a1835c4feb0a21ff7a7944870", null ],
+    [ "percentageDrops", "classHomenetDropQueue.html#a675e5da15f670adf194df2a9bb16fe6e", null ],
     [ "qlenVec", "classHomenetDropQueue.html#a9c4bdc77939f66ad4b0309e006894f5e", null ],
     [ "queue", "classHomenetDropQueue.html#ab246eaa6f43db76b4cde460b51ba8248", null ]
 ];

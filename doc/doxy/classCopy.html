@@ -160,7 +160,7 @@ Protected Attributes</h2></td></tr>
 
 <p>Reimplemented from <a class="elRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcComponent.html#85912f961df471a9795d4e8454d9f6b0">cComponent</a>.</p>
 
-<p>Definition at line <a class="el" href="Copy_8cc_source.html#l00062">62</a> of file <a class="el" href="Copy_8cc_source.html">Copy.cc</a>.</p>
+<p>Definition at line <a class="el" href="Copy_8cc_source.html#l00056">56</a> of file <a class="el" href="Copy_8cc_source.html">Copy.cc</a>.</p>
 <div class="fragment"><pre class="fragment">                  {
 }
 </pre></div>
@@ -186,8 +186,6 @@ Protected Attributes</h2></td></tr>
 <p>Definition at line <a class="el" href="Copy_8cc_source.html#l00027">27</a> of file <a class="el" href="Copy_8cc_source.html">Copy.cc</a>.</p>
 <div class="fragment"><pre class="fragment">                                      {
 
-        <span class="comment">//double p = dblrand();</span>
-
         <span class="comment">// If the message is ARP, don&#39;t copy and just send to the network</span>
         <span class="keywordflow">if</span> (dynamic_cast&lt;ARPPacket *&gt;(msg)) {
 
@@ -196,15 +194,11 @@ Protected Attributes</h2></td></tr>
 
         } <span class="keywordflow">else</span> {
                 <span class="keywordflow">if</span> (<a class="code" href="classCopy.html#a6f7aa44452c7e659719fd05c0831bacc">mode</a> == 1) {
-                        <span class="comment">// Rx mode</span>
-                        <span class="comment">//if (p &gt; pktLost) {</span>
-                                <span class="comment">// Duplicate message and send the copy.</span>
-                                <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *copy = (<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *) msg-&gt;<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html#231c291bf665945146df73676f591bc2">dup</a>();
+                        <span class="comment">// Duplicate message and send the copy.</span>
+                        <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *copy = (<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html">cMessage</a> *) msg-&gt;<a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcMessage.html#231c291bf665945146df73676f591bc2">dup</a>();
 
-                                <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#94590ba6481116f29f4c43d00733deea">send</a>(msg, <span class="stringliteral">&quot;outEncapGate&quot;</span>);
-                                <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#94590ba6481116f29f4c43d00733deea">send</a>(copy, <span class="stringliteral">&quot;thGate&quot;</span>);
-                        <span class="comment">//} else</span>
-                                <span class="comment">//delete (msg);</span>
+                        <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#94590ba6481116f29f4c43d00733deea">send</a>(msg, <span class="stringliteral">&quot;outEncapGate&quot;</span>);
+                        <a class="codeRef" doxygen="opptags.xml:/home/diego/omnetpp-4.2//doc/api/" href="/home/diego/omnetpp-4.2//doc/api/classcSimpleModule.html#94590ba6481116f29f4c43d00733deea">send</a>(copy, <span class="stringliteral">&quot;thGate&quot;</span>);
                 } <span class="keywordflow">else</span> {
                         <span class="comment">// Tx mode</span>
                         <a class="code" href="classValues.html" title="Useful to transmit values in the message.">Values</a> *homenetObject = <span class="keyword">new</span> <a class="code" href="classValues.html" title="Useful to transmit values in the message.">Values</a>();
@@ -318,7 +312,7 @@ Protected Attributes</h2></td></tr>
     <ul>
       <li class="navelem"><a class="el" href="classCopy.html">Copy</a>      </li>
 
-    <li class="footer">Generated on Wed May 30 2012 18:01:48 for Homenet by
+    <li class="footer">Generated on Fri Jun 1 2012 13:00:41 for Homenet by
     <a href="http://www.doxygen.org/index.html">
     <img class="footer" src="doxygen.png" alt="doxygen"/></a> 1.7.6.1 </li>
    </ul>
