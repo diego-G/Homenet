@@ -176,7 +176,7 @@ network FirstHomenet
 }
 
 //
-// <h2> Simple Homenetwork topology scenario </h2> 
+// <h2> Homenetwork topology scenario </h2> 
 //
 // The network remains the same, except for the new modules for statistics.
 // There is just one app connection between host1 and host0.
@@ -245,12 +245,12 @@ network SimpleHomenet
                 ethg[6];
         }
         Host0: HostWithDropsGenerator {
-            @display("p=41,310");
+            @display("p=41,310;i=device/pc4;i2=-");
             gates:
                 ethg[1];
         }
         Host1: HomenetHost {
-            @display("p=443,34");
+            @display("p=443,34;i=device/pc4");
             gates:
                 ethg[1];
         }
